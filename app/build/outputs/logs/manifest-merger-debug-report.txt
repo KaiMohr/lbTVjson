@@ -1,0 +1,392 @@
+-- Merging decision tree log ---
+permission#com.example.android.tvleanback.ACCESS_VIDEO_DATA
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:20:5-22:47
+	android:protectionLevel
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:22:9-44
+	android:name
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:21:9-58
+uses-permission#com.example.android.tvleanback.ACCESS_VIDEO_DATA
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:24:5-74
+	android:name
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:24:22-71
+provider#com.example.android.tvleanback.data.VideoProvider
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:103:9-111:20
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:103:9-111:20
+	android:authorities
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:105:13-49
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:107:13-36
+	android:permission
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:106:13-68
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:104:13-47
+manifest
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.leanback:leanback:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-1.0.0.aar/556d63cea119e195f3d9700b59aa4280/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-preference-v14:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-preference-v14-1.0.0.aar/236ab192d4779ab69bcd455e0390459c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.preference:preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/31aaf3654a19e2d508238c9f55bf8539/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recyclerview-1.1.0.aar/1b85b31b9146e9223055d7795af2ad4c/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/b4e1e15811b76d07ce229c1ceab9b5a2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2fb140f88b208318b969ac18a3255ef1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/11ebba5ee5754e7cc5843c1eb0d17913/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fcd12d4a2627c856feeec02406475c7f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/41e3444f06aed2890c6469cc826aab8d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/9611d291b8ceefc014ef18c4e9b4823f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8c97c439fa8415710d9219cd59aaa7e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/ae98f085acf1f7b6b0dae5ab3e489517/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1ee442b94a43181ca4519de6e433351a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/eedbbeeddc0347c1e2e751d4ac3a9b3a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f546207621fe02344a86fca25b31f319/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5cadec7ed4d1a05168b4ce782e56f60d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/52ac346ccf73a0f3ed559e4af848e3e7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a9995f6b1c10291ec0ab8a42ecb7c504/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/56d8e20258ba9e8bb7aa16802e03e3a8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/86fc1216361899fc45bf5004ce470e86/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d1e8c21f6a5c4c6a30f118f0f7b6511c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/30e46d347d432df8f1dde821f165745f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/241b37ba8af93cab0bad7c5044637890/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26880cfd4edda091176206a989b2e7c3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8399382f95aae0cc86886a36ed9fafb4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/7e76e4f90cfa10ac5456b5098573e6c6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/33b912e1ef3a74acc259bbc2e6e28e82/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0eb0fe8fef4b5fa844dd7eb831caa107/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+	package
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:18:5-45
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:17:5-51
+	android:versionCode
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:25:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:26:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:27:5-71
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:27:22-68
+uses-feature#android.hardware.microphone
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:29:5-31:36
+	android:required
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:30:9-51
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:33:9-52
+uses-feature#android.software.leanback
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:35:5-37:35
+	android:required
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:37:9-32
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:36:9-49
+application
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:39:5-140:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:43:9-41
+	tools:ignore
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:46:9-48
+	android:icon
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:42:9-50
+	android:allowBackup
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:40:9-36
+	android:banner
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:41:9-59
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:45:9-46
+	android:logo
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:44:9-57
+activity#com.example.android.tvleanback.ui.MainActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:47:9-59:20
+	android:screenOrientation
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:52:13-50
+	android:label
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:50:13-45
+	android:icon
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:49:13-61
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:53:13-57
+	android:logo
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:51:13-61
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:48:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:54:13-58:29
+action#android.intent.action.MAIN
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:55:17-69
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:55:25-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:57:17-86
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:57:27-83
+activity#com.example.android.tvleanback.mobile.MobileWelcomeActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:61:9-67:20
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:61:19-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:62:13-66:29
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:65:17-77
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:65:27-74
+meta-data#android.app.default_searchable
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:69:9-70:56
+	android:value
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:70:13-53
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:69:20-65
+activity#com.example.android.tvleanback.ui.VideoDetailsActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:71:9-86:20
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:73:13-36
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:74:13-58
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:72:13-52
+intent-filter#action:name:android.intent.action.SEARCH
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:77:13-80:29
+action#android.intent.action.SEARCH
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:78:17-71
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:78:25-68
+meta-data#android.app.searchable
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:83:13-85:54
+	android:resource
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:85:17-51
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:84:17-54
+activity#com.example.android.tvleanback.ui.PlaybackActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:87:9-91:49
+	android:launchMode
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:90:13-44
+	android:resizeableActivity
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:91:13-46
+	android:configChanges
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:89:13-107
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:88:13-48
+activity#com.example.android.tvleanback.ui.VerticalGridActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:92:9-96:66
+	android:parentActivityName
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:95:13-58
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:94:13-36
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:96:13-63
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:93:13-52
+activity#com.example.android.tvleanback.ui.SearchActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:97:9-55
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:97:19-52
+activity#com.example.android.tvleanback.ui.GuidedStepActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:98:9-100:72
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:100:13-69
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:99:13-50
+receiver#com.example.android.tvleanback.recommendation.RecommendationReceiver
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:113:9-120:20
+	android:enabled
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:115:13-35
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:116:13-37
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:114:13-66
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:117:13-119:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:118:17-79
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:118:25-76
+service#com.example.android.tvleanback.data.FetchVideoService
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:122:9-124:40
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:124:13-37
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:123:13-51
+service#com.example.android.tvleanback.recommendation.UpdateRecommendationsService
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:125:9-127:38
+	android:enabled
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:127:13-35
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:126:13-72
+activity#com.example.android.tvleanback.ui.OnboardingActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:129:9-132:64
+	android:enabled
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:130:13-35
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:131:13-36
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:132:13-61
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:129:19-56
+activity#com.example.android.tvleanback.ui.SettingsActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:133:9-136:15
+	android:exported
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:134:13-36
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:135:13-55
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:133:19-54
+activity#com.example.android.tvleanback.ui.AuthenticationActivity
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:137:9-139:72
+	android:theme
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:139:13-69
+	android:name
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:138:13-54
+uses-sdk
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.leanback:leanback:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-1.0.0.aar/556d63cea119e195f3d9700b59aa4280/AndroidManifest.xml:20:5-44
+MERGED from [androidx.leanback:leanback:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-1.0.0.aar/556d63cea119e195f3d9700b59aa4280/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-preference-v14:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-preference-v14-1.0.0.aar/236ab192d4779ab69bcd455e0390459c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-preference-v14:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-preference-v14-1.0.0.aar/236ab192d4779ab69bcd455e0390459c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/31aaf3654a19e2d508238c9f55bf8539/AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/31aaf3654a19e2d508238c9f55bf8539/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recyclerview-1.1.0.aar/1b85b31b9146e9223055d7795af2ad4c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recyclerview-1.1.0.aar/1b85b31b9146e9223055d7795af2ad4c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/b4e1e15811b76d07ce229c1ceab9b5a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/b4e1e15811b76d07ce229c1ceab9b5a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2fb140f88b208318b969ac18a3255ef1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2fb140f88b208318b969ac18a3255ef1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/11ebba5ee5754e7cc5843c1eb0d17913/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/11ebba5ee5754e7cc5843c1eb0d17913/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fcd12d4a2627c856feeec02406475c7f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fcd12d4a2627c856feeec02406475c7f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/41e3444f06aed2890c6469cc826aab8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/41e3444f06aed2890c6469cc826aab8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/9611d291b8ceefc014ef18c4e9b4823f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/9611d291b8ceefc014ef18c4e9b4823f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8c97c439fa8415710d9219cd59aaa7e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8c97c439fa8415710d9219cd59aaa7e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/ae98f085acf1f7b6b0dae5ab3e489517/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/ae98f085acf1f7b6b0dae5ab3e489517/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1ee442b94a43181ca4519de6e433351a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1ee442b94a43181ca4519de6e433351a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/eedbbeeddc0347c1e2e751d4ac3a9b3a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/eedbbeeddc0347c1e2e751d4ac3a9b3a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f546207621fe02344a86fca25b31f319/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f546207621fe02344a86fca25b31f319/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5cadec7ed4d1a05168b4ce782e56f60d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5cadec7ed4d1a05168b4ce782e56f60d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/52ac346ccf73a0f3ed559e4af848e3e7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/52ac346ccf73a0f3ed559e4af848e3e7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a9995f6b1c10291ec0ab8a42ecb7c504/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a9995f6b1c10291ec0ab8a42ecb7c504/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/56d8e20258ba9e8bb7aa16802e03e3a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/56d8e20258ba9e8bb7aa16802e03e3a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/86fc1216361899fc45bf5004ce470e86/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/86fc1216361899fc45bf5004ce470e86/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d1e8c21f6a5c4c6a30f118f0f7b6511c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d1e8c21f6a5c4c6a30f118f0f7b6511c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/30e46d347d432df8f1dde821f165745f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/30e46d347d432df8f1dde821f165745f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/241b37ba8af93cab0bad7c5044637890/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/241b37ba8af93cab0bad7c5044637890/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26880cfd4edda091176206a989b2e7c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26880cfd4edda091176206a989b2e7c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8399382f95aae0cc86886a36ed9fafb4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8399382f95aae0cc86886a36ed9fafb4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/7e76e4f90cfa10ac5456b5098573e6c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/7e76e4f90cfa10ac5456b5098573e6c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/33b912e1ef3a74acc259bbc2e6e28e82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/33b912e1ef3a74acc259bbc2e6e28e82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0eb0fe8fef4b5fa844dd7eb831caa107/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0eb0fe8fef4b5fa844dd7eb831caa107/AndroidManifest.xml:20:5-44
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
+path-permission
+ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:108:13-110:77
+	android:readPermission
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:110:17-74
+	android:pathPrefix
+		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:109:17-45
