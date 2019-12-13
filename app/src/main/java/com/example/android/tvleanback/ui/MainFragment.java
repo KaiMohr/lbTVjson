@@ -122,41 +122,6 @@ public class MainFragment extends BrowseSupportFragment
         mCategoryRowAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         setAdapter(mCategoryRowAdapter);
 
-
-        // updateRecommendations();
-    }
-
-    @Override
-    public void onDestroy() {
-        mHandler.removeCallbacks(mBackgroundTask);
-        mBackgroundManager = null;
-        super.onDestroy();
-    }
-
-    @Override
-    public void onStop() {
-
-        Log.i("info", "kai I am on stop");
-
-//        try {
-//
-//         resetAndRedownloadDatabase();
-//
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
-        mBackgroundManager.release();
-        super.onStop();
-    }
-
-    @Override
-    public void onResume() {
-
-        super.onResume();
-        this.onCreate(null);
-        Log.i("info", "kai I have resumed");
-
         new AlertDialog.Builder(getActivity())
                 .setTitle("aktualisieren ?")
                 .setPositiveButton("JA", new DialogInterface.OnClickListener() {
@@ -181,6 +146,67 @@ public class MainFragment extends BrowseSupportFragment
                     }
                 })
                 .create().show();
+
+
+        // updateRecommendations();
+    }
+
+    @Override
+    public void onDestroy() {
+        mHandler.removeCallbacks(mBackgroundTask);
+        mBackgroundManager = null;
+        super.onDestroy();
+    }
+
+    @Override
+    public void onStop() {
+
+        Log.i("info", "kai I am on stop");
+        new AlertDialog.Builder(getActivity())
+                .setTitle("aktualisieren ?")
+                .setPositiveButton("JA", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // User chose YES
+                        Log.i("info", "kai I am updating");
+
+                        try {
+
+                            resetAndRedownloadDatabase();
+
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                })
+                .setNegativeButton("Nein", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // User chose NO
+                    }
+                })
+                .create().show();
+
+
+//        try {
+//
+//         resetAndRedownloadDatabase();
+//
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
+        mBackgroundManager.release();
+        super.onStop();
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+        this.onCreate(null);
+        Log.i("info", "kai I have resumed");
+
 
 
 

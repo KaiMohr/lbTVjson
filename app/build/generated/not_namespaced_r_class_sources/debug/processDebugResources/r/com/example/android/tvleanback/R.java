@@ -49,6 +49,7 @@ public final class R {
   }
   public static final class attr {
     /**
+     * Custom divider drawable to use for elements in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -56,6 +57,7 @@ public final class R {
      */
     public static final int actionBarDivider=0x7f030000;
     /**
+     * Custom item state list drawable background for action bar items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -63,6 +65,8 @@ public final class R {
      */
     public static final int actionBarItemBackground=0x7f030001;
     /**
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -70,6 +74,8 @@ public final class R {
      */
     public static final int actionBarPopupTheme=0x7f030002;
     /**
+     * Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -86,6 +92,10 @@ public final class R {
      */
     public static final int actionBarSize=0x7f030003;
     /**
+     * Reference to a style for the split Action Bar. This style
+     * controls the split component that holds the menu/action
+     * buttons. actionBarStyle is still used for the primary
+     * bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -93,6 +103,7 @@ public final class R {
      */
     public static final int actionBarSplitStyle=0x7f030004;
     /**
+     * Reference to a style for the Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -107,6 +118,7 @@ public final class R {
      */
     public static final int actionBarTabBarStyle=0x7f030006;
     /**
+     * Default style for tabs within an action bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -121,6 +133,9 @@ public final class R {
      */
     public static final int actionBarTabTextStyle=0x7f030008;
     /**
+     * Reference to a theme that should be used to inflate the
+     * action bar. This will be inherited by any widget inflated
+     * into the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -128,6 +143,13 @@ public final class R {
      */
     public static final int actionBarTheme=0x7f030009;
     /**
+     * Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar. Most of the time
+     * this will be a reference to the current theme, but when
+     * the action bar has a significantly different contrast
+     * profile than the rest of the activity the difference
+     * can become important. If this is set to @null the current
+     * theme will be used.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -135,6 +157,7 @@ public final class R {
      */
     public static final int actionBarWidgetTheme=0x7f03000a;
     /**
+     * Default action button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -142,6 +165,7 @@ public final class R {
      */
     public static final int actionButtonStyle=0x7f03000b;
     /**
+     * Default ActionBar dropdown style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -149,6 +173,9 @@ public final class R {
      */
     public static final int actionDropDownStyle=0x7f03000c;
     /**
+     * An optional layout to be used as an action view.
+     * See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -156,6 +183,8 @@ public final class R {
      */
     public static final int actionLayout=0x7f03000d;
     /**
+     * TextAppearance style that will be applied to text that
+     * appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -163,6 +192,7 @@ public final class R {
      */
     public static final int actionMenuTextAppearance=0x7f03000e;
     /**
+     * Color for text that appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -173,6 +203,7 @@ public final class R {
      */
     public static final int actionMenuTextColor=0x7f03000f;
     /**
+     * Background drawable to use for action mode UI
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -187,6 +218,7 @@ public final class R {
      */
     public static final int actionModeCloseButtonStyle=0x7f030011;
     /**
+     * Drawable to use for the close action mode button
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -194,6 +226,7 @@ public final class R {
      */
     public static final int actionModeCloseDrawable=0x7f030012;
     /**
+     * Drawable to use for the Copy action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -201,6 +234,7 @@ public final class R {
      */
     public static final int actionModeCopyDrawable=0x7f030013;
     /**
+     * Drawable to use for the Cut action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -208,6 +242,7 @@ public final class R {
      */
     public static final int actionModeCutDrawable=0x7f030014;
     /**
+     * Drawable to use for the Find action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -215,6 +250,7 @@ public final class R {
      */
     public static final int actionModeFindDrawable=0x7f030015;
     /**
+     * Drawable to use for the Paste action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -222,6 +258,7 @@ public final class R {
      */
     public static final int actionModePasteDrawable=0x7f030016;
     /**
+     * PopupWindow style to use for action modes when showing as a window overlay.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -229,6 +266,7 @@ public final class R {
      */
     public static final int actionModePopupWindowStyle=0x7f030017;
     /**
+     * Drawable to use for the Select all action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -236,6 +274,7 @@ public final class R {
      */
     public static final int actionModeSelectAllDrawable=0x7f030018;
     /**
+     * Drawable to use for the Share action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -243,6 +282,7 @@ public final class R {
      */
     public static final int actionModeShareDrawable=0x7f030019;
     /**
+     * Background drawable to use for action mode UI in the lower split bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -257,6 +297,7 @@ public final class R {
      */
     public static final int actionModeStyle=0x7f03001b;
     /**
+     * Drawable to use for the Web Search action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -278,20 +319,30 @@ public final class R {
      */
     public static final int actionOverflowMenuStyle=0x7f03001e;
     /**
+     * The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.
+     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionProviderClass=0x7f03001f;
     /**
+     * The name of an optional View class to instantiate and use as an
+     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionViewClass=0x7f030020;
     /**
+     * Defines the duration in milliseconds of the activated animation for
+     * a card layout.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int activatedAnimationDuration=0x7f030021;
     /**
+     * Default ActivityChooserView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -313,6 +364,10 @@ public final class R {
      */
     public static final int ad_marker_width=0x7f030024;
     /**
+     * Attribute indicating whether the slider within this preference can be adjusted, that is
+     * pressing left/right keys when this preference is focused will move the slider accordingly
+     * (e.g. inline adjustable preferences). False, if the slider within the preference is
+     * read-only and cannot be adjusted. By default, the seekbar is adjustable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -337,6 +392,7 @@ public final class R {
      */
     public static final int alertDialogStyle=0x7f030028;
     /**
+     * Theme to use for alert dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -344,30 +400,38 @@ public final class R {
      */
     public static final int alertDialogTheme=0x7f030029;
     /**
+     * Whether the preference allows displaying divider on top
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowDividerAbove=0x7f03002a;
     /**
+     * Whether a divider is allowed to draw after the last item
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowDividerAfterLastItem=0x7f03002b;
     /**
+     * Whether the preference allows displaying divider below it
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowDividerBelow=0x7f03002c;
     /**
+     * Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowStacking=0x7f03002d;
     /**
+     * Alpha multiplier applied to the base color.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int alpha=0x7f03002e;
     /**
+     * The alphabetic modifier key. This is the modifier when using a keyboard
+     * with alphabetic keys. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -384,6 +448,7 @@ public final class R {
      */
     public static final int alphabeticModifiers=0x7f03002f;
     /**
+     * Attribute for background color of the arrow in PagingIndicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -391,6 +456,7 @@ public final class R {
      */
     public static final int arrowBgColor=0x7f030030;
     /**
+     * Attribute for the arrow color in PagingIndicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -398,6 +464,7 @@ public final class R {
      */
     public static final int arrowColor=0x7f030031;
     /**
+     * The length of the arrow head when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -406,6 +473,7 @@ public final class R {
      */
     public static final int arrowHeadLength=0x7f030032;
     /**
+     * Attributes for the radius of the arrow.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -413,6 +481,7 @@ public final class R {
      */
     public static final int arrowRadius=0x7f030033;
     /**
+     * The length of the shaft when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -421,6 +490,7 @@ public final class R {
      */
     public static final int arrowShaftLength=0x7f030034;
     /**
+     * Default AutoCompleteTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -428,6 +498,7 @@ public final class R {
      */
     public static final int autoCompleteTextViewStyle=0x7f030035;
     /**
+     * The maximum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -436,6 +507,7 @@ public final class R {
      */
     public static final int autoSizeMaxTextSize=0x7f030036;
     /**
+     * The minimum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -444,6 +516,9 @@ public final class R {
      */
     public static final int autoSizeMinTextSize=0x7f030037;
     /**
+     * Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
+     * <code>autoSizeStepGranularity</code> if set.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -451,6 +526,9 @@ public final class R {
      */
     public static final int autoSizePresetSizes=0x7f030038;
     /**
+     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>. The default is 1px. Overwrites
+     * <code>autoSizePresetSizes</code> if set.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -459,14 +537,17 @@ public final class R {
      */
     public static final int autoSizeStepGranularity=0x7f030039;
     /**
+     * Specify the type of auto-size. Note that this feature is not supported by EditText,
+     * works only for TextView.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>uniform</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
+     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
+     * container.</td></tr>
      * </table>
      */
     public static final int autoSizeTextType=0x7f03003a;
@@ -476,6 +557,7 @@ public final class R {
      */
     public static final int auto_show=0x7f03003b;
     /**
+     * Specifies a background drawable for the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -483,6 +565,7 @@ public final class R {
      */
     public static final int background=0x7f03003c;
     /**
+     * Specifies a background drawable for the bottom component of a split action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -493,6 +576,7 @@ public final class R {
      */
     public static final int backgroundSplit=0x7f03003d;
     /**
+     * Specifies a background drawable for a second stacked row of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -503,28 +587,36 @@ public final class R {
      */
     public static final int backgroundStacked=0x7f03003e;
     /**
+     * Tint to apply to the background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int backgroundTint=0x7f03003f;
     /**
+     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int backgroundTintMode=0x7f030040;
     /**
+     * The length of the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -541,6 +633,7 @@ public final class R {
      */
     public static final int bar_height=0x7f030042;
     /**
+     * CardView styles
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -548,6 +641,7 @@ public final class R {
      */
     public static final int baseCardViewStyle=0x7f030043;
     /**
+     * Style for buttons without an explicit border, often used in groups.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -555,6 +649,7 @@ public final class R {
      */
     public static final int borderlessButtonStyle=0x7f030044;
     /**
+     * bottom padding of BrowseFragment
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -563,6 +658,7 @@ public final class R {
      */
     public static final int browsePaddingBottom=0x7f030045;
     /**
+     * end padding of BrowseFragment, RowsFragment, DetailsFragment
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -571,6 +667,7 @@ public final class R {
      */
     public static final int browsePaddingEnd=0x7f030046;
     /**
+     * start padding of BrowseFragment, RowsFragment, DetailsFragment
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -579,6 +676,7 @@ public final class R {
      */
     public static final int browsePaddingStart=0x7f030047;
     /**
+     * top padding of BrowseFragment
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -587,6 +685,7 @@ public final class R {
      */
     public static final int browsePaddingTop=0x7f030048;
     /**
+     * fading edge length of start of browse row when HeadersFragment is visible
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -595,6 +694,7 @@ public final class R {
      */
     public static final int browseRowsFadingEdgeLength=0x7f030049;
     /**
+     * start margin of RowsFragment inside BrowseFragment when HeadersFragment is visible
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -603,6 +703,7 @@ public final class R {
      */
     public static final int browseRowsMarginStart=0x7f03004a;
     /**
+     * top margin of RowsFragment inside BrowseFragment when BrowseFragment title is visible
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -611,6 +712,7 @@ public final class R {
      */
     public static final int browseRowsMarginTop=0x7f03004b;
     /**
+     * fragment title icon style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -618,6 +720,7 @@ public final class R {
      */
     public static final int browseTitleIconStyle=0x7f03004c;
     /**
+     * fragment title text style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -625,6 +728,7 @@ public final class R {
      */
     public static final int browseTitleTextStyle=0x7f03004d;
     /**
+     * customize title view layout file, it must have title view with id browse_title_group
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -632,6 +736,7 @@ public final class R {
      */
     public static final int browseTitleViewLayout=0x7f03004e;
     /**
+     * fragment title view style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -645,6 +750,7 @@ public final class R {
      */
     public static final int buffered_color=0x7f030050;
     /**
+     * Style for buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -652,6 +758,7 @@ public final class R {
      */
     public static final int buttonBarButtonStyle=0x7f030051;
     /**
+     * Style for the "negative" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -659,6 +766,7 @@ public final class R {
      */
     public static final int buttonBarNegativeButtonStyle=0x7f030052;
     /**
+     * Style for the "neutral" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -666,6 +774,7 @@ public final class R {
      */
     public static final int buttonBarNeutralButtonStyle=0x7f030053;
     /**
+     * Style for the "positive" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -673,6 +782,7 @@ public final class R {
      */
     public static final int buttonBarPositiveButtonStyle=0x7f030054;
     /**
+     * Style for button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -686,8 +796,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int buttonGravity=0x7f030056;
@@ -707,6 +817,7 @@ public final class R {
      */
     public static final int buttonPanelSideLayout=0x7f030058;
     /**
+     * Normal Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -714,6 +825,7 @@ public final class R {
      */
     public static final int buttonStyle=0x7f030059;
     /**
+     * Small Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -721,28 +833,36 @@ public final class R {
      */
     public static final int buttonStyleSmall=0x7f03005a;
     /**
+     * Tint to apply to the button drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int buttonTint=0x7f03005b;
     /**
+     * Blending mode used to apply the button tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int buttonTintMode=0x7f03005c;
     /**
+     * Defines the background of card
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -753,6 +873,7 @@ public final class R {
      */
     public static final int cardBackground=0x7f03005d;
     /**
+     * Defines the background of card
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -763,20 +884,29 @@ public final class R {
      */
     public static final int cardForeground=0x7f03005e;
     /**
+     * Defines the type of the card layout
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>infoOver</td><td>1</td><td></td></tr>
-     * <tr><td>infoUnder</td><td>2</td><td></td></tr>
-     * <tr><td>infoUnderWithExtra</td><td>3</td><td></td></tr>
-     * <tr><td>mainOnly</td><td>0</td><td></td></tr>
+     * <tr><td>infoOver</td><td>1</td><td>A card layout with two layout regions: a main area which is
+     * always visible, and an info region that appears over the lower
+     * area of the main region.</td></tr>
+     * <tr><td>infoUnder</td><td>2</td><td>A card layout with two layout regions: a main area which is
+     * always visible, and an info region that appears below the main
+     * region.</td></tr>
+     * <tr><td>infoUnderWithExtra</td><td>3</td><td>A card layout with three layout regions: a main area which is
+     * always visible, an info region that appears below the main
+     * region, and an extra region that appears below the info region
+     * after a small delay.</td></tr>
+     * <tr><td>mainOnly</td><td>0</td><td>A simple card layout with a single layout region.</td></tr>
      * </table>
      */
     public static final int cardType=0x7f03005f;
     /**
+     * Default style for CheckBoxPreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -784,6 +914,7 @@ public final class R {
      */
     public static final int checkBoxPreferenceStyle=0x7f030060;
     /**
+     * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -791,6 +922,7 @@ public final class R {
      */
     public static final int checkboxStyle=0x7f030061;
     /**
+     * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -798,6 +930,7 @@ public final class R {
      */
     public static final int checkedTextViewStyle=0x7f030062;
     /**
+     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -805,6 +938,7 @@ public final class R {
      */
     public static final int closeIcon=0x7f030063;
     /**
+     * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -819,11 +953,13 @@ public final class R {
      */
     public static final int closed_captioning=0x7f030065;
     /**
+     * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int collapseContentDescription=0x7f030066;
     /**
+     * Icon drawable to use for the collapse button.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -831,48 +967,58 @@ public final class R {
      */
     public static final int collapseIcon=0x7f030067;
     /**
+     * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int color=0x7f030068;
     /**
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorAccent=0x7f030069;
     /**
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorBackgroundFloating=0x7f03006a;
     /**
+     * The color applied to framework buttons in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorButtonNormal=0x7f03006b;
     /**
+     * The color applied to framework controls in their activated (ex. checked) state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlActivated=0x7f03006c;
     /**
+     * The color applied to framework control highlights (ex. ripples, list selectors).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlHighlight=0x7f03006d;
     /**
+     * The color applied to framework controls in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlNormal=0x7f03006e;
     /**
+     * Color used for error states and things that need to be drawn to
+     * the user's attention.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -883,24 +1029,30 @@ public final class R {
      */
     public static final int colorError=0x7f03006f;
     /**
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimary=0x7f030070;
     /**
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimaryDark=0x7f030071;
     /**
+     * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorSwitchThumbNormal=0x7f030072;
     /**
+     * Defining width of each column of VerticalGridView
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -917,6 +1069,7 @@ public final class R {
      */
     public static final int columnWidth=0x7f030073;
     /**
+     * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -924,11 +1077,14 @@ public final class R {
      */
     public static final int commitIcon=0x7f030074;
     /**
+     * The content description associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int contentDescription=0x7f030075;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -937,6 +1093,8 @@ public final class R {
      */
     public static final int contentInsetEnd=0x7f030076;
     /**
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -945,6 +1103,8 @@ public final class R {
      */
     public static final int contentInsetEndWithActions=0x7f030077;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -953,6 +1113,8 @@ public final class R {
      */
     public static final int contentInsetLeft=0x7f030078;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -961,6 +1123,8 @@ public final class R {
      */
     public static final int contentInsetRight=0x7f030079;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -969,6 +1133,8 @@ public final class R {
      */
     public static final int contentInsetStart=0x7f03007a;
     /**
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -977,6 +1143,7 @@ public final class R {
      */
     public static final int contentInsetStartWithNavigation=0x7f03007b;
     /**
+     * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -998,6 +1165,7 @@ public final class R {
      */
     public static final int coordinatorLayoutStyle=0x7f03007e;
     /**
+     * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1005,11 +1173,16 @@ public final class R {
      */
     public static final int customNavigationLayout=0x7f03007f;
     /**
+     * e.g. "MDY", "MY"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int datePickerFormat=0x7f030080;
     /**
+     * Default brand color used for the background of certain leanback visual elements
+     * such as the headers fragment. If your app runs on:
+     * a) SDK 21+: set colorPrimary, used by the leanback launcher and elsewhere, and defaultBrandColor will inherit it.
+     * b) SDK < 21: set the brand color explicitly via defaultBrandColor, or programatically.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1020,6 +1193,10 @@ public final class R {
      */
     public static final int defaultBrandColor=0x7f030081;
     /**
+     * Default dark brand color used for the background of certain leanback visual elements
+     * such as the actions background. If your app runs on:
+     * a) SDK 21+: set colorPrimaryDark, used by the leanback launcher and elsewhere, and defaultBrandColorDark will inherit it.
+     * b) SDK < 21: set the brand color explicitly via defaultBrandColorDark, or programatically.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1030,11 +1207,14 @@ public final class R {
      */
     public static final int defaultBrandColorDark=0x7f030082;
     /**
+     * Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int defaultQueryHint=0x7f030083;
     /**
+     * Default color that search orb pulses to.  If not set, this color is determined programatically based on the defaultSearchColor
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1045,6 +1225,7 @@ public final class R {
      */
     public static final int defaultSearchBrightColor=0x7f030084;
     /**
+     * Default background color for Search Icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1062,6 +1243,7 @@ public final class R {
      */
     public static final int defaultSearchIcon=0x7f030086;
     /**
+     * Default icon color for Search Icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1072,6 +1254,7 @@ public final class R {
      */
     public static final int defaultSearchIconColor=0x7f030087;
     /**
+     * Default color for SectionHeader, by default same as defaultSearchColor
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1082,6 +1265,9 @@ public final class R {
      */
     public static final int defaultSectionHeaderColor=0x7f030088;
     /**
+     * The default value for the preference, which will be set either if persistence
+     * is off or persistence is on and the preference is not found in the persistent
+     * storage.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1102,6 +1288,8 @@ public final class R {
      */
     public static final int default_artwork=0x7f03008a;
     /**
+     * The key of another Preference that this Preference will depend on.  If the other
+     * Preference is not set or is off, this Preference will be disabled.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -1128,6 +1316,7 @@ public final class R {
      */
     public static final int detailsDescriptionSubtitleStyle=0x7f03008e;
     /**
+     * for details overviews
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1135,6 +1324,7 @@ public final class R {
      */
     public static final int detailsDescriptionTitleStyle=0x7f03008f;
     /**
+     * Preferred corner radius of dialogs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1143,6 +1333,7 @@ public final class R {
      */
     public static final int dialogCornerRadius=0x7f030090;
     /**
+     * The icon for the dialog.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1150,6 +1341,9 @@ public final class R {
      */
     public static final int dialogIcon=0x7f030091;
     /**
+     * A layout to be used as the content View for the dialog. By default, this shouldn't
+     * be needed. If a custom DialogPreference is required, this should be set. For example,
+     * the EditTextPreference uses a layout with an EditText as this attribute.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1157,11 +1351,14 @@ public final class R {
      */
     public static final int dialogLayout=0x7f030092;
     /**
+     * The message in the dialog. If a dialogLayout is provided and contains
+     * a TextView with ID android:id/message, this message will be placed in there.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int dialogMessage=0x7f030093;
     /**
+     * Default style for DialogPreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1169,6 +1366,7 @@ public final class R {
      */
     public static final int dialogPreferenceStyle=0x7f030094;
     /**
+     * Preferred padding for dialog content.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1177,6 +1375,7 @@ public final class R {
      */
     public static final int dialogPreferredPadding=0x7f030095;
     /**
+     * Theme to use for dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1184,16 +1383,20 @@ public final class R {
      */
     public static final int dialogTheme=0x7f030096;
     /**
+     * The title in the dialog.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int dialogTitle=0x7f030097;
     /**
+     * The state (true for on, or false for off) that causes dependents to be disabled. By default,
+     * dependents will be disabled when this is unchecked, so the value of this preference is false.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int disableDependentsState=0x7f030098;
     /**
+     * Options affecting how the action bar is displayed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1211,6 +1414,7 @@ public final class R {
      */
     public static final int displayOptions=0x7f030099;
     /**
+     * Specifies the drawable used for item dividers.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1218,6 +1422,7 @@ public final class R {
      */
     public static final int divider=0x7f03009a;
     /**
+     * A drawable that may be used as a horizontal divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1225,6 +1430,7 @@ public final class R {
      */
     public static final int dividerHorizontal=0x7f03009b;
     /**
+     * Size of padding on either end of a divider.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1233,6 +1439,7 @@ public final class R {
      */
     public static final int dividerPadding=0x7f03009c;
     /**
+     * A drawable that may be used as a vertical divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1240,6 +1447,7 @@ public final class R {
      */
     public static final int dividerVertical=0x7f03009d;
     /**
+     * Attribute for background color of the dots in PagingIndicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1247,6 +1455,7 @@ public final class R {
      */
     public static final int dotBgColor=0x7f03009e;
     /**
+     * Attributes for the distance between the centers of the arrow circle and the adjacent dot.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1254,6 +1463,7 @@ public final class R {
      */
     public static final int dotToArrowGap=0x7f03009f;
     /**
+     * Attributes for the distance between the centers of the adjacent dots.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1261,6 +1471,7 @@ public final class R {
      */
     public static final int dotToDotGap=0x7f0300a0;
     /**
+     * The total size of the drawable
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1276,6 +1487,7 @@ public final class R {
      */
     public static final int drawerArrowStyle=0x7f0300a2;
     /**
+     * ListPopupWindow compatibility
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1283,6 +1495,7 @@ public final class R {
      */
     public static final int dropDownListViewStyle=0x7f0300a3;
     /**
+     * The preferred item height for dropdown lists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1291,6 +1504,7 @@ public final class R {
      */
     public static final int dropdownListPreferredItemHeight=0x7f0300a4;
     /**
+     * Default style for DropDownPreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1298,6 +1512,7 @@ public final class R {
      */
     public static final int dropdownPreferenceStyle=0x7f0300a5;
     /**
+     * EditText background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1305,6 +1520,7 @@ public final class R {
      */
     public static final int editTextBackground=0x7f0300a6;
     /**
+     * EditText text foreground color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1315,6 +1531,7 @@ public final class R {
      */
     public static final int editTextColor=0x7f0300a7;
     /**
+     * Default style for EditTextPreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1322,6 +1539,7 @@ public final class R {
      */
     public static final int editTextPreferenceStyle=0x7f0300a8;
     /**
+     * Default EditText style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1329,6 +1547,7 @@ public final class R {
      */
     public static final int editTextStyle=0x7f0300a9;
     /**
+     * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1337,11 +1556,14 @@ public final class R {
      */
     public static final int elevation=0x7f0300aa;
     /**
+     * Whether the Preference is enabled.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int enabled=0x7f0300ab;
     /**
+     * The human-readable array to present as a list. Each entry must have a corresponding
+     * index in entryValues.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1349,6 +1571,9 @@ public final class R {
      */
     public static final int entries=0x7f0300ac;
     /**
+     * The array to find the value to save for a preference when an entry from
+     * entries is selected. If a user clicks on the second item in entries, the
+     * second item in this array will be saved to the preference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1356,6 +1581,7 @@ public final class R {
      */
     public static final int entryValues=0x7f0300ad;
     /**
+     * for messages in the error fragment
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1363,6 +1589,11 @@ public final class R {
      */
     public static final int errorMessageStyle=0x7f0300ae;
     /**
+     * The drawable to show in the button for expanding the activities overflow popup.
+     * <strong>Note:</strong> Clients would like to set this drawable
+     * as a clue about the action the chosen activity will perform. For
+     * example, if share activity is to be chosen the drawable should
+     * give a clue that sharing is to be performed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1370,15 +1601,18 @@ public final class R {
      */
     public static final int expandActivityOverflowButtonDrawable=0x7f0300af;
     /**
+     * Defines when the extra region of a card layout is displayed.
+     * Depends on infoVisibility, meaning the extra region never displays
+     * if the info region is not displayed as well.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>activated</td><td>1</td><td></td></tr>
-     * <tr><td>always</td><td>0</td><td></td></tr>
-     * <tr><td>selected</td><td>2</td><td></td></tr>
+     * <tr><td>activated</td><td>1</td><td>Display the extra region only when activated.</td></tr>
+     * <tr><td>always</td><td>0</td><td>Always display the extra region.</td></tr>
+     * <tr><td>selected</td><td>2</td><td>Display the extra region only when selected.</td></tr>
      * </table>
      */
     public static final int extraVisibility=0x7f0300b0;
@@ -1427,6 +1661,8 @@ public final class R {
      */
     public static final int fastforward_increment=0x7f0300b7;
     /**
+     * Distance from the top of the TextView to the first text baseline. If set, this
+     * overrides the value set for paddingTop.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1435,26 +1671,35 @@ public final class R {
      */
     public static final int firstBaselineToTopHeight=0x7f0300b8;
     /**
+     * Allow DPAD key to navigate out at the end of the view, default is false
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int focusOutEnd=0x7f0300b9;
     /**
+     * Allow DPAD key to navigate out at the front of the View (where position = 0),
+     * default is false
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int focusOutFront=0x7f0300ba;
     /**
+     * Allow DPAD key to navigate out of last row, for HorizontalGridView, it's the
+     * bottom edge, for VerticalGridView it's the "end" edge.  Default value is true.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int focusOutSideEnd=0x7f0300bb;
     /**
+     * Allow DPAD key to navigate out of first row, for HorizontalGridView, it's the
+     * top edge, for VerticalGridView it's the "start" edge.  Default value is true.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int focusOutSideStart=0x7f0300bc;
     /**
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1462,16 +1707,23 @@ public final class R {
      */
     public static final int font=0x7f0300bd;
     /**
+     * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontFamily=0x7f0300be;
     /**
+     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f0300bf;
     /**
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1479,18 +1731,34 @@ public final class R {
      */
     public static final int fontProviderCerts=0x7f0300c0;
     /**
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchStrategy=0x7f0300c1;
     /**
+     * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1498,21 +1766,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchTimeout=0x7f0300c2;
     /**
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderPackage=0x7f0300c3;
     /**
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderQuery=0x7f0300c4;
     /**
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1525,20 +1801,32 @@ public final class R {
      */
     public static final int fontStyle=0x7f0300c5;
     /**
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontVariationSettings=0x7f0300c6;
     /**
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fontWeight=0x7f0300c7;
     /**
+     * When used inside of a modern PreferenceActivity, this declares
+     * a new PreferenceFragment to be shown when the user selects this item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fragment=0x7f0300c8;
     /**
+     * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1547,6 +1835,7 @@ public final class R {
      */
     public static final int gapBetweenBars=0x7f0300c9;
     /**
+     * Go button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1554,6 +1843,8 @@ public final class R {
      */
     public static final int goIcon=0x7f0300ca;
     /**
+     * Theme attribute for the style of the breadcrumb in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceBreadcrumbStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1561,6 +1852,8 @@ public final class R {
      */
     public static final int guidanceBreadcrumbStyle=0x7f0300cb;
     /**
+     * Theme attribute for the style of the main container in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceContainerStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1568,6 +1861,8 @@ public final class R {
      */
     public static final int guidanceContainerStyle=0x7f0300cc;
     /**
+     * Theme attribute for the style of the description in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceDescriptionStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1575,6 +1870,7 @@ public final class R {
      */
     public static final int guidanceDescriptionStyle=0x7f0300cd;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1582,6 +1878,8 @@ public final class R {
      */
     public static final int guidanceEntryAnimation=0x7f0300ce;
     /**
+     * Theme attribute for the style of the icon in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceIconStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1589,6 +1887,8 @@ public final class R {
      */
     public static final int guidanceIconStyle=0x7f0300cf;
     /**
+     * Theme attribute for the style of the title in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceTitleStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1596,6 +1896,7 @@ public final class R {
      */
     public static final int guidanceTitleStyle=0x7f0300d0;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1603,6 +1904,7 @@ public final class R {
      */
     public static final int guidedActionCheckedAnimation=0x7f0300d1;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1610,6 +1912,7 @@ public final class R {
      */
     public static final int guidedActionContentWidth=0x7f0300d2;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1617,6 +1920,8 @@ public final class R {
      */
     public static final int guidedActionContentWidthNoIcon=0x7f0300d3;
     /**
+     * Theme attribute used for the width weight of actions in comparison to guidance area.  Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_width_weight}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1624,6 +1929,8 @@ public final class R {
      */
     public static final int guidedActionContentWidthWeight=0x7f0300d4;
     /**
+     * Theme attribute used for the width weight of actions and button actions in comparison to guidance area.  Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_width_weight_two_panels}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1631,6 +1938,9 @@ public final class R {
      */
     public static final int guidedActionContentWidthWeightTwoPanels=0x7f0300d5;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_description_min_lines}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1638,6 +1948,9 @@ public final class R {
      */
     public static final int guidedActionDescriptionMinLines=0x7f0300d6;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is disabled. Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_item_disabled_chevron_alpha}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1645,6 +1958,9 @@ public final class R {
      */
     public static final int guidedActionDisabledChevronAlpha=0x7f0300d7;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is enabled. Default is {@link
+     * androidx.leanbackback.R.dimen#lb_guidedactions_item_enabled_chevron_alpha}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1652,6 +1968,9 @@ public final class R {
      */
     public static final int guidedActionEnabledChevronAlpha=0x7f0300d8;
     /**
+     * Theme attribute for the style of an action's checkmark in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemCheckmarkStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1659,6 +1978,9 @@ public final class R {
      */
     public static final int guidedActionItemCheckmarkStyle=0x7f0300d9;
     /**
+     * Theme attribute for the style of an action's chevron decoration in a
+     * GuidedActionsPresenter. Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemChevronStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1666,6 +1988,9 @@ public final class R {
      */
     public static final int guidedActionItemChevronStyle=0x7f0300da;
     /**
+     * Theme attribute for the style of the container of a single action in a
+     * GuidedActionsPresenter. Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemContainerStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1673,6 +1998,9 @@ public final class R {
      */
     public static final int guidedActionItemContainerStyle=0x7f0300db;
     /**
+     * Theme attribute for the style of an action's content in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemContentStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1680,6 +2008,9 @@ public final class R {
      */
     public static final int guidedActionItemContentStyle=0x7f0300dc;
     /**
+     * Theme attribute for the style of an action's description in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemDescriptionStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1687,6 +2018,9 @@ public final class R {
      */
     public static final int guidedActionItemDescriptionStyle=0x7f0300dd;
     /**
+     * Theme attribute for the style of an action's icon in a GuidedActionsPresenter. Default
+     * is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemIconStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1694,6 +2028,9 @@ public final class R {
      */
     public static final int guidedActionItemIconStyle=0x7f0300de;
     /**
+     * Theme attribute for the style of an action's title in a GuidedActionsPresenter. Default
+     * is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemTitleStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1701,6 +2038,9 @@ public final class R {
      */
     public static final int guidedActionItemTitleStyle=0x7f0300df;
     /**
+     * Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is pressed. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedactions_item_pressed}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1708,6 +2048,9 @@ public final class R {
      */
     public static final int guidedActionPressedAnimation=0x7f0300e0;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to true. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_title_max_lines}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1715,6 +2058,9 @@ public final class R {
      */
     public static final int guidedActionTitleMaxLines=0x7f0300e1;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_title_min_lines}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1722,6 +2068,7 @@ public final class R {
      */
     public static final int guidedActionTitleMinLines=0x7f0300e2;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1729,6 +2076,9 @@ public final class R {
      */
     public static final int guidedActionUncheckedAnimation=0x7f0300e3;
     /**
+     * Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is unpressed. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedactions_item_unpressed}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1736,6 +2086,9 @@ public final class R {
      */
     public static final int guidedActionUnpressedAnimation=0x7f0300e4;
     /**
+     * Theme attribute used in a GuidedActionsPresenter for the vertical padding between
+     * action views in the list. Default is {@link
+     * androidx.leanbackback.R.dimen#lb_guidedactions_vertical_padding}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1743,6 +2096,8 @@ public final class R {
      */
     public static final int guidedActionVerticalPadding=0x7f0300e5;
     /**
+     * Theme attribute for the background of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.color#lb_guidedactions_background}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1750,6 +2105,8 @@ public final class R {
      */
     public static final int guidedActionsBackground=0x7f0300e6;
     /**
+     * Theme attribute for the dark version background of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.color#lb_guidedactions_background_dark}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1757,6 +2114,7 @@ public final class R {
      */
     public static final int guidedActionsBackgroundDark=0x7f0300e7;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1764,6 +2122,8 @@ public final class R {
      */
     public static final int guidedActionsContainerStyle=0x7f0300e8;
     /**
+     * Theme attribute for the shadow elevation of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.dimen#lb_guidedactions_elevation}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1776,6 +2136,7 @@ public final class R {
      */
     public static final int guidedActionsElevation=0x7f0300e9;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1783,6 +2144,8 @@ public final class R {
      */
     public static final int guidedActionsEntryAnimation=0x7f0300ea;
     /**
+     * Theme attribute for the style of the list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedActionsListStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1790,6 +2153,8 @@ public final class R {
      */
     public static final int guidedActionsListStyle=0x7f0300eb;
     /**
+     * Theme attribute for the style of the item selector in a GuidedActionsPresenter. Default is
+     * ?android:attr/selectableItemBackground.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1797,6 +2162,7 @@ public final class R {
      */
     public static final int guidedActionsSelectorDrawable=0x7f0300ec;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1804,6 +2170,7 @@ public final class R {
      */
     public static final int guidedActionsSelectorHideAnimation=0x7f0300ed;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1811,6 +2178,7 @@ public final class R {
      */
     public static final int guidedActionsSelectorShowAnimation=0x7f0300ee;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1818,6 +2186,8 @@ public final class R {
      */
     public static final int guidedActionsSelectorStyle=0x7f0300ef;
     /**
+     * Theme attribute for the style of the list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedButtonActionsListStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1825,6 +2195,7 @@ public final class R {
      */
     public static final int guidedButtonActionsListStyle=0x7f0300f0;
     /**
+     * Theme attribute used for the width weight of button actions in compare to actions
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1832,6 +2203,7 @@ public final class R {
      */
     public static final int guidedButtonActionsWidthWeight=0x7f0300f1;
     /**
+     * Theme attribute of background drawable used by GuidedStepFragment.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1842,6 +2214,7 @@ public final class R {
      */
     public static final int guidedStepBackground=0x7f0300f2;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1849,6 +2222,7 @@ public final class R {
      */
     public static final int guidedStepEntryAnimation=0x7f0300f3;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1856,10 +2230,17 @@ public final class R {
      */
     public static final int guidedStepExitAnimation=0x7f0300f4;
     /**
+     * Used to control the height of the fragment. By default this fragment will take
+     * up the full height of it's parent. The height of this fragment is governed by
+     * this property. Default weight is set to 2.0, so inorder to render the fragment
+     * in half screen mode, this attribute should be set to 1.0
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int guidedStepHeightWeight=0x7f0300f5;
     /**
+     * Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME appearing. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedstep_slide_up}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1867,6 +2248,9 @@ public final class R {
      */
     public static final int guidedStepImeAppearingAnimation=0x7f0300f6;
     /**
+     * Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME disappearing. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedstep_slide_down}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1874,10 +2258,13 @@ public final class R {
      */
     public static final int guidedStepImeDisappearingAnimation=0x7f0300f7;
     /**
+     * Y offset to the bottom of the TitleView(font baseline) used to align the
+     * first action text on the right.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int guidedStepKeyline=0x7f0300f8;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1885,6 +2272,7 @@ public final class R {
      */
     public static final int guidedStepReentryAnimation=0x7f0300f9;
     /**
+     * Deprecated theme attribute, do not use
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1892,6 +2280,10 @@ public final class R {
      */
     public static final int guidedStepReturnAnimation=0x7f0300fa;
     /**
+     * Theme attribute for the overall theme used in a GuidedStepFragment. The Leanback themes
+     * set the default for this, but a custom theme that does not derive from a leanback theme
+     * can set this to <code>@style/Theme.Leanback.GuidedStep</code> in order to specify the
+     * default GuidedStepFragment styles.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1899,11 +2291,15 @@ public final class R {
      */
     public static final int guidedStepTheme=0x7f0300fb;
     /**
+     * @hide
+     * Theme attribute used to inspect theme inheritance.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int guidedStepThemeFlag=0x7f0300fc;
     /**
+     * Theme attribute for the style of the sub actions list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedSubActionsListStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1911,6 +2307,7 @@ public final class R {
      */
     public static final int guidedSubActionsListStyle=0x7f0300fd;
     /**
+     * header style inside HeadersFragment
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1918,6 +2315,7 @@ public final class R {
      */
     public static final int headerStyle=0x7f0300fe;
     /**
+     * vertical grid style inside HeadersFragment
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1933,6 +2331,7 @@ public final class R {
      */
     public static final int height=0x7f030100;
     /**
+     * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -1955,6 +2354,7 @@ public final class R {
      */
     public static final int high_quality=0x7f030104;
     /**
+     * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1962,6 +2362,7 @@ public final class R {
      */
     public static final int homeAsUpIndicator=0x7f030105;
     /**
+     * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1969,6 +2370,7 @@ public final class R {
      */
     public static final int homeLayout=0x7f030106;
     /**
+     * Deprecated, use android:horizontalSpacing
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1977,6 +2379,7 @@ public final class R {
      */
     public static final int horizontalMargin=0x7f030107;
     /**
+     * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1984,38 +2387,52 @@ public final class R {
      */
     public static final int icon=0x7f030108;
     /**
+     * Whether the space for the preference icon view will be reserved. If set to true, the
+     * preference will be offset as if it would have the icon and thus aligned with other
+     * preferences having icons. By default, preference icon view visibility will be set to
+     * GONE when there is no icon provided, so the default value of this attribute is false.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int iconSpaceReserved=0x7f030109;
     /**
+     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int iconTint=0x7f03010a;
     /**
+     * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int iconTintMode=0x7f03010b;
     /**
+     * The default state of the SearchView. If true, it will be iconified when not in
+     * use and expanded when clicked.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int iconifiedByDefault=0x7f03010c;
     /**
+     * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2065,6 +2482,7 @@ public final class R {
      */
     public static final int imageCardViewTitleStyle=0x7f030113;
     /**
+     * Specifies a style resource to use for an indeterminate progress spinner.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2072,6 +2490,7 @@ public final class R {
      */
     public static final int indeterminateProgressStyle=0x7f030114;
     /**
+     * Deprecated. Use 'imageCardViewInfoAreaStyle' instead.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2082,28 +2501,41 @@ public final class R {
      */
     public static final int infoAreaBackground=0x7f030115;
     /**
+     * Defines when the info region of a card layout is displayed.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>activated</td><td>1</td><td></td></tr>
-     * <tr><td>always</td><td>0</td><td></td></tr>
-     * <tr><td>selected</td><td>2</td><td></td></tr>
+     * <tr><td>activated</td><td>1</td><td>Display the info region only when activated.</td></tr>
+     * <tr><td>always</td><td>0</td><td>Always display the info region.</td></tr>
+     * <tr><td>selected</td><td>2</td><td>Display the info region only when selected.</td></tr>
      * </table>
      */
     public static final int infoVisibility=0x7f030116;
     /**
+     * The maximal number of items initially shown in the activity list.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int initialActivityCount=0x7f030117;
     /**
+     * The maximal number of children that are shown when the preference group is launched
+     * where the rest of the children will be hidden. If some children are hidden an expand
+     * button will be provided to show all the hidden children.
+     * Any child in any level of the hierarchy that is also a preference group (e.g.
+     * preference category) will not be counted towards the limit. But instead the children of
+     * such group will be counted.
+     * By default, all children will be shown, so the default value of this attribute is equal
+     * to Integer.MAX_VALUE.
+     * The group should have a key defined if an expandable preference is present to correctly
+     * persist state.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int initialExpandedChildrenCount=0x7f030118;
     /**
+     * attr indicating whether time is in 24 hour format (true) or AM/PM format (false).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2114,11 +2546,14 @@ public final class R {
      */
     public static final int isLightTheme=0x7f03011a;
     /**
+     * Whether the Preference is visible. By default, this is set to true.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int isPreferenceVisible=0x7f03011b;
     /**
+     * Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2127,6 +2562,7 @@ public final class R {
      */
     public static final int itemPadding=0x7f03011c;
     /**
+     * style for a vertical grid of items
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2134,11 +2570,17 @@ public final class R {
      */
     public static final int itemsVerticalGridStyle=0x7f03011d;
     /**
+     * The key to store the Preference value.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int key=0x7f03011e;
     /**
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2146,6 +2588,8 @@ public final class R {
      */
     public static final int keylines=0x7f03011f;
     /**
+     * Distance from the bottom of the TextView to the last text baseline. If set, this
+     * overrides the value set for paddingBottom.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2154,6 +2598,7 @@ public final class R {
      */
     public static final int lastBaselineToBottomHeight=0x7f030120;
     /**
+     * The layout to use for the search view.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2161,11 +2606,21 @@ public final class R {
      */
     public static final int layout=0x7f030121;
     /**
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must ext androidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f030122;
     /**
+     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2173,87 +2628,107 @@ public final class R {
      */
     public static final int layout_anchor=0x7f030123;
     /**
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int layout_anchorGravity=0x7f030124;
     /**
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layout_behavior=0x7f030125;
     /**
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
     public static final int layout_dodgeInsetEdges=0x7f030126;
     /**
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
     public static final int layout_insetEdge=0x7f030127;
     /**
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int layout_keyline=0x7f030128;
     /**
+     * The card layout region defined by this element. At most one of
+     * element of each type should be specified as an immediate child of
+     * the card layout.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>extra</td><td>2</td><td></td></tr>
-     * <tr><td>info</td><td>1</td><td></td></tr>
-     * <tr><td>main</td><td>0</td><td></td></tr>
+     * <tr><td>extra</td><td>2</td><td>The extra region of the card.</td></tr>
+     * <tr><td>info</td><td>1</td><td>The info region of the card.</td></tr>
+     * <tr><td>main</td><td>0</td><td>The main region of the card.</td></tr>
      * </table>
      */
     public static final int layout_viewType=0x7f030129;
     /**
+     * Attributes for the radius of the dot.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2261,6 +2736,7 @@ public final class R {
      */
     public static final int lbDotRadius=0x7f03012a;
     /**
+     * Defines what components the ImageCardView will use.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -2270,28 +2746,31 @@ public final class R {
      * <tr><td>Content</td><td>2</td><td></td></tr>
      * <tr><td>IconOnLeft</td><td>8</td><td></td></tr>
      * <tr><td>IconOnRight</td><td>4</td><td></td></tr>
-     * <tr><td>ImageOnly</td><td>0</td><td></td></tr>
+     * <tr><td>ImageOnly</td><td>0</td><td>Only display the main image.</td></tr>
      * <tr><td>Title</td><td>1</td><td></td></tr>
      * </table>
      */
     public static final int lbImageCardViewType=0x7f03012b;
     /**
+     * A duplication of Slide attribute slideEdge for KitKat
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Slide to and from the bottom edge of the Scene.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Slide to and from the x-axis position at the end of the Scene root.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Slide to and from the left edge of the Scene.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Slide to and from the right edge of the Scene.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Slide to and from the x-axis position at the start of the Scene root.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Slide to and from the top edge of the Scene.</td></tr>
      * </table>
      */
     public static final int lb_slideEdge=0x7f03012c;
     /**
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2300,6 +2779,7 @@ public final class R {
      */
     public static final int lineHeight=0x7f03012d;
     /**
+     * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2307,6 +2787,7 @@ public final class R {
      */
     public static final int listChoiceBackgroundIndicator=0x7f03012e;
     /**
+     * The list divider used in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2328,6 +2809,7 @@ public final class R {
      */
     public static final int listLayout=0x7f030131;
     /**
+     * Default menu-style ListView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2342,6 +2824,7 @@ public final class R {
      */
     public static final int listPopupWindowStyle=0x7f030133;
     /**
+     * The preferred list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2350,6 +2833,7 @@ public final class R {
      */
     public static final int listPreferredItemHeight=0x7f030134;
     /**
+     * A larger, more robust list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2358,6 +2842,7 @@ public final class R {
      */
     public static final int listPreferredItemHeightLarge=0x7f030135;
     /**
+     * A smaller, sleeker list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2366,6 +2851,7 @@ public final class R {
      */
     public static final int listPreferredItemHeightSmall=0x7f030136;
     /**
+     * The preferred padding along the left edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2374,6 +2860,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingLeft=0x7f030137;
     /**
+     * The preferred padding along the right edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2382,6 +2869,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingRight=0x7f030138;
     /**
+     * Specifies the drawable used for the application logo.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2389,11 +2877,14 @@ public final class R {
      */
     public static final int logo=0x7f030139;
     /**
+     * A content description string to describe the appearance of the
+     * associated logo image.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int logoDescription=0x7f03013a;
     /**
+     * Whether to maintain the same line spacing when text is resized, default is false
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2423,6 +2914,9 @@ public final class R {
      */
     public static final int maxWidth=0x7f03013e;
     /**
+     * When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child. If false, all children are
+     * measured normally.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2439,11 +2933,15 @@ public final class R {
      */
     public static final int multiChoiceItemLayout=0x7f030141;
     /**
+     * Text to set as the content description for the navigation button
+     * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int navigationContentDescription=0x7f030142;
     /**
+     * Icon drawable to use for the navigation button located at
+     * the start of the toolbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2451,32 +2949,38 @@ public final class R {
      */
     public static final int navigationIcon=0x7f030143;
     /**
+     * The type of navigation to use.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
-     * <tr><td>tabMode</td><td>2</td><td></td></tr>
+     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
+     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      */
     public static final int navigationMode=0x7f030144;
     /**
+     * The negative button text for the dialog. Set to @null to hide the negative button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int negativeButtonText=0x7f030145;
     /**
+     * Defining number of columns
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int numberOfColumns=0x7f030146;
     /**
+     * Defining number of rows
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int numberOfRows=0x7f030147;
     /**
+     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
+     * keyboard. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -2493,6 +2997,8 @@ public final class R {
      */
     public static final int numericModifiers=0x7f030148;
     /**
+     * Theme attribute for the style of the description text in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingDescriptionStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2500,6 +3006,8 @@ public final class R {
      */
     public static final int onboardingDescriptionStyle=0x7f030149;
     /**
+     * Theme attribute for the style of the header in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingHeaderStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2507,6 +3015,8 @@ public final class R {
      */
     public static final int onboardingHeaderStyle=0x7f03014a;
     /**
+     * Theme attribute for the style of the logo in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingLogoStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2514,6 +3024,8 @@ public final class R {
      */
     public static final int onboardingLogoStyle=0x7f03014b;
     /**
+     * Theme attribute for the style of the main icon in onboarding fragment. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingMainIconStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2521,6 +3033,8 @@ public final class R {
      */
     public static final int onboardingMainIconStyle=0x7f03014c;
     /**
+     * Theme attribute for the style of the navigator container in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingNavigatorContainerStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2528,6 +3042,8 @@ public final class R {
      */
     public static final int onboardingNavigatorContainerStyle=0x7f03014d;
     /**
+     * Theme attribute for the style of the page indicator in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingPageIndicatorStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2535,6 +3051,8 @@ public final class R {
      */
     public static final int onboardingPageIndicatorStyle=0x7f03014e;
     /**
+     * Theme attribute for the style of the start button in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingStartButtonStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2542,6 +3060,10 @@ public final class R {
      */
     public static final int onboardingStartButtonStyle=0x7f03014f;
     /**
+     * Theme attribute for the overall theme used in the onboarding. The Leanback themes set
+     * the default for this, but a custom theme that does not derive from a leanback theme can
+     * set this to <code>@style/Theme.Leanback.Onboarding</code> in order to specify the
+     * default OnboardingFragment styles.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2549,6 +3071,8 @@ public final class R {
      */
     public static final int onboardingTheme=0x7f030150;
     /**
+     * Theme attribute for the style of the title text in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingTitleStyle}.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2556,20 +3080,27 @@ public final class R {
      */
     public static final int onboardingTitleStyle=0x7f030151;
     /**
+     * The order for the Preference (lower values are to be ordered first). If this is not
+     * specified, the default ordering will be alphabetic.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int order=0x7f030152;
     /**
+     * Whether to order the Preference under this group as they appear in the XML file.
+     * If this is false, the ordering will follow the Preference order attribute and
+     * default to alphabetic for those without the order attribute.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int orderingFromXml=0x7f030153;
     /**
+     * Whether the popup window should overlap its anchor view.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int overlapAnchor=0x7f030154;
     /**
+     * Default level of dimming for active views.
      * <p>May be a fractional value, which is a floating point number appended with
      * either % or %p, such as "<code>14.5%</code>".
      * The % suffix always means a percentage of the base size;
@@ -2577,6 +3108,7 @@ public final class R {
      */
     public static final int overlayDimActiveLevel=0x7f030155;
     /**
+     * Default level of dimming for dimmed views.
      * <p>May be a fractional value, which is a floating point number appended with
      * either % or %p, such as "<code>14.5%</code>".
      * The % suffix always means a percentage of the base size;
@@ -2584,12 +3116,14 @@ public final class R {
      */
     public static final int overlayDimDimmedLevel=0x7f030156;
     /**
+     * Default color for dimmed views.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int overlayDimMaskColor=0x7f030157;
     /**
+     * Bottom padding to use when no buttons are present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2598,6 +3132,7 @@ public final class R {
      */
     public static final int paddingBottomNoButtons=0x7f030158;
     /**
+     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2606,6 +3141,7 @@ public final class R {
      */
     public static final int paddingEnd=0x7f030159;
     /**
+     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2614,6 +3150,7 @@ public final class R {
      */
     public static final int paddingStart=0x7f03015a;
     /**
+     * Top padding to use when no title is present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2622,6 +3159,7 @@ public final class R {
      */
     public static final int paddingTopNoTitle=0x7f03015b;
     /**
+     * The background of a panel when it is inset from the left and right edges of the screen.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2629,6 +3167,7 @@ public final class R {
      */
     public static final int panelBackground=0x7f03015c;
     /**
+     * Default Panel Menu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2636,6 +3175,7 @@ public final class R {
      */
     public static final int panelMenuListTheme=0x7f03015d;
     /**
+     * Default Panel Menu width.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2651,6 +3191,7 @@ public final class R {
      */
     public static final int pause=0x7f03015f;
     /**
+     * Whether the Preference stores its value to the shared preferences.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2684,6 +3225,11 @@ public final class R {
      */
     public static final int playbackControlsActionIcons=0x7f030164;
     /**
+     * Milliseconds to auto hide playback controls after user interacts with playback controls (i.e.
+     * after fragment.tickle() is called).
+     * Default value is disabled (0), app can turn it on by setting a positive milliseconds.
+     * When enabled, value of playbackControlsAutoHideTickleTimeout usually should be set longer than playbackControlsAutoHideTimeout
+     * for user to have enough time to think.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2692,6 +3238,7 @@ public final class R {
      */
     public static final int playbackControlsAutoHideTickleTimeout=0x7f030165;
     /**
+     * Milliseconds to auto hide playback controls when media start playing.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2810,6 +3357,7 @@ public final class R {
      */
     public static final int playbackPaddingEnd=0x7f030175;
     /**
+     * for playlist and playback controls styling
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2857,6 +3405,7 @@ public final class R {
      */
     public static final int player_layout_id=0x7f03017b;
     /**
+     * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2864,6 +3413,8 @@ public final class R {
      */
     public static final int popupMenuStyle=0x7f03017c;
     /**
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2871,6 +3422,7 @@ public final class R {
      */
     public static final int popupTheme=0x7f03017d;
     /**
+     * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2878,11 +3430,13 @@ public final class R {
      */
     public static final int popupWindowStyle=0x7f03017e;
     /**
+     * The positive button text for the dialog. Set to @null to hide the positive button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int positiveButtonText=0x7f03017f;
     /**
+     * Default style for the PreferenceActivity.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2890,6 +3444,7 @@ public final class R {
      */
     public static final int preferenceActivityStyle=0x7f030180;
     /**
+     * Default style for PreferenceCategory.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2897,6 +3452,7 @@ public final class R {
      */
     public static final int preferenceCategoryStyle=0x7f030181;
     /**
+     * Default style for Headers pane in PreferenceActivity.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2904,6 +3460,7 @@ public final class R {
      */
     public static final int preferenceFragmentCompatStyle=0x7f030182;
     /**
+     * Preference fragment list style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2911,6 +3468,7 @@ public final class R {
      */
     public static final int preferenceFragmentListStyle=0x7f030183;
     /**
+     * Preference fragment padding side
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2919,6 +3477,7 @@ public final class R {
      */
     public static final int preferenceFragmentPaddingSide=0x7f030184;
     /**
+     * Default style for Headers pane in PreferenceActivity.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2926,6 +3485,7 @@ public final class R {
      */
     public static final int preferenceFragmentStyle=0x7f030185;
     /**
+     * Preference headers panel style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2933,6 +3493,7 @@ public final class R {
      */
     public static final int preferenceHeaderPanelStyle=0x7f030186;
     /**
+     * Default style for informational Preference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2940,6 +3501,7 @@ public final class R {
      */
     public static final int preferenceInformationStyle=0x7f030187;
     /**
+     * The preference layout that has the child/tabbed effect.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2947,6 +3509,7 @@ public final class R {
      */
     public static final int preferenceLayoutChild=0x7f030188;
     /**
+     * Preference list style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2954,6 +3517,7 @@ public final class R {
      */
     public static final int preferenceListStyle=0x7f030189;
     /**
+     * Preference panel style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2961,6 +3525,7 @@ public final class R {
      */
     public static final int preferencePanelStyle=0x7f03018a;
     /**
+     * Default style for PreferenceScreen.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2968,6 +3533,7 @@ public final class R {
      */
     public static final int preferenceScreenStyle=0x7f03018b;
     /**
+     * Default style for Preference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2975,6 +3541,7 @@ public final class R {
      */
     public static final int preferenceStyle=0x7f03018c;
     /**
+     * Theme for inflating Preference objects
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2982,11 +3549,13 @@ public final class R {
      */
     public static final int preferenceTheme=0x7f03018d;
     /**
+     * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int preserveIconSpacing=0x7f03018e;
     /**
+     * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2995,6 +3564,7 @@ public final class R {
      */
     public static final int progressBarPadding=0x7f03018f;
     /**
+     * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3002,6 +3572,7 @@ public final class R {
      */
     public static final int progressBarStyle=0x7f030190;
     /**
+     * Background for the section containing the search query
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3009,11 +3580,13 @@ public final class R {
      */
     public static final int queryBackground=0x7f030191;
     /**
+     * An optional user-defined query hint string to be displayed in the empty query field.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int queryHint=0x7f030192;
     /**
+     * Default RadioButton style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3021,6 +3594,7 @@ public final class R {
      */
     public static final int radioButtonStyle=0x7f030193;
     /**
+     * Default RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3028,6 +3602,7 @@ public final class R {
      */
     public static final int ratingBarStyle=0x7f030194;
     /**
+     * Indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3035,6 +3610,7 @@ public final class R {
      */
     public static final int ratingBarStyleIndicator=0x7f030195;
     /**
+     * Small indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3076,13 +3652,14 @@ public final class R {
      */
     public static final int repeat_toggle_modes=0x7f03019a;
     /**
+     * Conditions used to trigger text resizing
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>maxLines</td><td>1</td><td></td></tr>
+     * <tr><td>maxLines</td><td>1</td><td>Resize text whenever it lays out into the maximum number of lines</td></tr>
      * </table>
      */
     public static final int resizeTrigger=0x7f03019b;
@@ -3101,6 +3678,7 @@ public final class R {
      */
     public static final int resize_mode=0x7f03019c;
     /**
+     * Adjustment to bottom padding for resized text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3109,6 +3687,7 @@ public final class R {
      */
     public static final int resizedPaddingAdjustmentBottom=0x7f03019d;
     /**
+     * Adjustment to top padding for resized text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3117,6 +3696,7 @@ public final class R {
      */
     public static final int resizedPaddingAdjustmentTop=0x7f03019e;
     /**
+     * Text size for resized text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3141,6 +3721,7 @@ public final class R {
      */
     public static final int rewind_increment=0x7f0301a2;
     /**
+     * Default style for RingtonePreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3148,6 +3729,7 @@ public final class R {
      */
     public static final int ringtonePreferenceStyle=0x7f0301a3;
     /**
+     * header description style inside a row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3155,6 +3737,7 @@ public final class R {
      */
     public static final int rowHeaderDescriptionStyle=0x7f0301a4;
     /**
+     * style for the layout that hosting Header inside a row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3162,6 +3745,7 @@ public final class R {
      */
     public static final int rowHeaderDockStyle=0x7f0301a5;
     /**
+     * header style inside a row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3169,6 +3753,7 @@ public final class R {
      */
     public static final int rowHeaderStyle=0x7f0301a6;
     /**
+     * Defining height of each row of HorizontalGridView
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3185,6 +3770,7 @@ public final class R {
      */
     public static final int rowHeight=0x7f0301a7;
     /**
+     * horizontal grid style inside a row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3192,6 +3778,7 @@ public final class R {
      */
     public static final int rowHorizontalGridStyle=0x7f0301a8;
     /**
+     * hover card description style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3199,6 +3786,7 @@ public final class R {
      */
     public static final int rowHoverCardDescriptionStyle=0x7f0301a9;
     /**
+     * hover card title style
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3206,6 +3794,7 @@ public final class R {
      */
     public static final int rowHoverCardTitleStyle=0x7f0301aa;
     /**
+     * vertical grid style inside RowsFragment
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3250,6 +3839,7 @@ public final class R {
      */
     public static final int scrubber_enabled_size=0x7f0301b0;
     /**
+     * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3257,6 +3847,7 @@ public final class R {
      */
     public static final int searchHintIcon=0x7f0301b1;
     /**
+     * Search icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3264,6 +3855,7 @@ public final class R {
      */
     public static final int searchIcon=0x7f0301b2;
     /**
+     * Defining pulse color of the search affordance
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3274,6 +3866,7 @@ public final class R {
      */
     public static final int searchOrbBrightColor=0x7f0301b3;
     /**
+     * Defining color of the search affordance
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3284,6 +3877,7 @@ public final class R {
      */
     public static final int searchOrbColor=0x7f0301b4;
     /**
+     * Defining icon of the search affordance
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3291,6 +3885,7 @@ public final class R {
      */
     public static final int searchOrbIcon=0x7f0301b5;
     /**
+     * Defining icon tint color of the search affordance
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3301,6 +3896,7 @@ public final class R {
      */
     public static final int searchOrbIconColor=0x7f0301b6;
     /**
+     * Style for searchOrb
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3308,6 +3904,7 @@ public final class R {
      */
     public static final int searchOrbViewStyle=0x7f0301b7;
     /**
+     * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3315,6 +3912,7 @@ public final class R {
      */
     public static final int searchViewStyle=0x7f0301b8;
     /**
+     * Non selectable header style inside HeadersFragment
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3322,10 +3920,13 @@ public final class R {
      */
     public static final int sectionHeaderStyle=0x7f0301b9;
     /**
+     * Attribute controlling the amount to increment or decrement the seekbar when the user
+     * presses the arrow keys
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int seekBarIncrement=0x7f0301ba;
     /**
+     * Default style for seekbar preferences.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3333,6 +3934,7 @@ public final class R {
      */
     public static final int seekBarPreferenceStyle=0x7f0301bb;
     /**
+     * Default SeekBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3340,11 +3942,15 @@ public final class R {
      */
     public static final int seekBarStyle=0x7f0301bc;
     /**
+     * Whether the Preference is selectable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int selectable=0x7f0301bd;
     /**
+     * A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3352,6 +3958,7 @@ public final class R {
      */
     public static final int selectableItemBackground=0x7f0301be;
     /**
+     * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3359,34 +3966,51 @@ public final class R {
      */
     public static final int selectableItemBackgroundBorderless=0x7f0301bf;
     /**
+     * Defines the delay in milliseconds before the selection animation
+     * runs for a card layout.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int selectedAnimationDelay=0x7f0301c0;
     /**
+     * Defines the duration in milliseconds of the selection animation for
+     * a card layout.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int selectedAnimationDuration=0x7f0301c1;
     /**
+     * Whether the view of this Preference should be disabled when
+     * this Preference is disabled.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int shouldDisableView=0x7f0301c2;
     /**
+     * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td></td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
-     * <tr><td>never</td><td>0</td><td></td></tr>
-     * <tr><td>withText</td><td>4</td><td></td></tr>
+     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
+     * the system's limits of how much stuff to put there. This may make
+     * your action bar look bad on some screens. In most cases you should
+     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
+     * item. When expanded, the action view takes over a
+     * larger segment of its container.</td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
+     * by the system. Favor this option over "always" where possible.
+     * Mutually exclusive with "never" and "always".</td></tr>
+     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
+     * Mutually exclusive with "ifRoom" and "always".</td></tr>
+     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
+     * label with it even if it has an icon representation.</td></tr>
      * </table>
      */
     public static final int showAsAction=0x7f0301c3;
     /**
+     * Setting for which dividers to show.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3401,11 +4025,15 @@ public final class R {
      */
     public static final int showDividers=0x7f0301c4;
     /**
+     * Flag indicating whether the TextView next to the seekbar that shows the current seekbar
+     * value will be displayed. If true, the view is VISIBLE; if false, the view will be GONE.
+     * By default, this view is VISIBLE.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int showSeekBarValue=0x7f0301c5;
     /**
+     * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3445,6 +4073,8 @@ public final class R {
      */
     public static final int singleChoiceItemLayout=0x7f0301cc;
     /**
+     * Whether to use single line for the preference title text. By default, preference title
+     * will be constrained to one line, so the default value of this attribute is true.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3468,11 +4098,13 @@ public final class R {
      */
     public static final int spanCount=0x7f0301d0;
     /**
+     * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int spinBars=0x7f0301d1;
     /**
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3480,6 +4112,7 @@ public final class R {
      */
     public static final int spinnerDropDownItemStyle=0x7f0301d2;
     /**
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3487,11 +4120,14 @@ public final class R {
      */
     public static final int spinnerStyle=0x7f0301d3;
     /**
+     * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int splitTrack=0x7f0301d4;
     /**
+     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+     * when running on older versions of the platform.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3504,11 +4140,13 @@ public final class R {
      */
     public static final int stackFromEnd=0x7f0301d6;
     /**
+     * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int state_above_anchor=0x7f0301d7;
     /**
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3519,6 +4157,7 @@ public final class R {
      */
     public static final int statusBarBackground=0x7f0301d8;
     /**
+     * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3526,6 +4165,7 @@ public final class R {
      */
     public static final int subMenuArrow=0x7f0301d9;
     /**
+     * Background for the section containing the action (e.g. voice search)
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3533,6 +4173,7 @@ public final class R {
      */
     public static final int submitBackground=0x7f0301da;
     /**
+     * Specifies subtitle text used for navigationMode="normal"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3545,12 +4186,14 @@ public final class R {
      */
     public static final int subtitleTextAppearance=0x7f0301dc;
     /**
+     * A color to apply to the subtitle string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int subtitleTextColor=0x7f0301dd;
     /**
+     * Specifies a style to use for subtitle text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3558,6 +4201,7 @@ public final class R {
      */
     public static final int subtitleTextStyle=0x7f0301de;
     /**
+     * Layout for query suggestion rows
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3565,16 +4209,23 @@ public final class R {
      */
     public static final int suggestionRowLayout=0x7f0301df;
     /**
+     * The summary for the Preference in a PreferenceActivity screen.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int summary=0x7f0301e0;
     /**
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is unchecked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int summaryOff=0x7f0301e1;
     /**
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is checked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3593,6 +4244,7 @@ public final class R {
      */
     public static final int surface_type=0x7f0301e3;
     /**
+     * Minimum width for the switch component
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3601,6 +4253,7 @@ public final class R {
      */
     public static final int switchMinWidth=0x7f0301e4;
     /**
+     * Minimum space between the switch and caption text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3609,6 +4262,7 @@ public final class R {
      */
     public static final int switchPadding=0x7f0301e5;
     /**
+     * Default style for switch compat preferences.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3616,6 +4270,7 @@ public final class R {
      */
     public static final int switchPreferenceCompatStyle=0x7f0301e6;
     /**
+     * Default style for switch preferences.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3623,6 +4278,7 @@ public final class R {
      */
     public static final int switchPreferenceStyle=0x7f0301e7;
     /**
+     * Default style for the Switch widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3630,6 +4286,7 @@ public final class R {
      */
     public static final int switchStyle=0x7f0301e8;
     /**
+     * TextAppearance style for text displayed on the switch thumb.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3637,16 +4294,21 @@ public final class R {
      */
     public static final int switchTextAppearance=0x7f0301e9;
     /**
+     * The text used on the switch itself when in the "off" state.
+     * This should be a very SHORT string, as it appears in a small space.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int switchTextOff=0x7f0301ea;
     /**
+     * The text used on the switch itself when in the "on" state.
+     * This should be a very SHORT string, as it appears in a small space.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int switchTextOn=0x7f0301eb;
     /**
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3656,6 +4318,7 @@ public final class R {
      */
     public static final int textAllCaps=0x7f0301ec;
     /**
+     * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3663,6 +4326,7 @@ public final class R {
      */
     public static final int textAppearanceLargePopupMenu=0x7f0301ed;
     /**
+     * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3670,6 +4334,7 @@ public final class R {
      */
     public static final int textAppearanceListItem=0x7f0301ee;
     /**
+     * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3677,6 +4342,7 @@ public final class R {
      */
     public static final int textAppearanceListItemSecondary=0x7f0301ef;
     /**
+     * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3684,6 +4350,7 @@ public final class R {
      */
     public static final int textAppearanceListItemSmall=0x7f0301f0;
     /**
+     * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3691,6 +4358,7 @@ public final class R {
      */
     public static final int textAppearancePopupMenuHeader=0x7f0301f1;
     /**
+     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3698,6 +4366,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultSubtitle=0x7f0301f2;
     /**
+     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3705,6 +4374,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultTitle=0x7f0301f3;
     /**
+     * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3712,6 +4382,7 @@ public final class R {
      */
     public static final int textAppearanceSmallPopupMenu=0x7f0301f4;
     /**
+     * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3722,6 +4393,7 @@ public final class R {
      */
     public static final int textColorAlertDialogListItem=0x7f0301f5;
     /**
+     * Text color for urls in search suggestions, used by things like global search
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3732,6 +4404,7 @@ public final class R {
      */
     public static final int textColorSearchUrl=0x7f0301f6;
     /**
+     * Deprecated.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3739,6 +4412,7 @@ public final class R {
      */
     public static final int theme=0x7f0301f7;
     /**
+     * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3747,6 +4421,7 @@ public final class R {
      */
     public static final int thickness=0x7f0301f8;
     /**
+     * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3755,24 +4430,31 @@ public final class R {
      */
     public static final int thumbTextPadding=0x7f0301f9;
     /**
+     * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int thumbTint=0x7f0301fa;
     /**
+     * Blending mode used to apply the thumb tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int thumbTintMode=0x7f0301fb;
@@ -3805,6 +4487,7 @@ public final class R {
      */
     public static final int thumb_up_outline=0x7f0301ff;
     /**
+     * Drawable displayed at each progress position on a seekbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3812,46 +4495,60 @@ public final class R {
      */
     public static final int tickMark=0x7f030200;
     /**
+     * Tint to apply to the tick mark drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickMarkTint=0x7f030201;
     /**
+     * Blending mode used to apply the tick mark tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int tickMarkTintMode=0x7f030202;
     /**
+     * Tint to apply to the image source.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tint=0x7f030203;
     /**
+     * Blending mode used to apply the image source tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int tintMode=0x7f030204;
@@ -3861,6 +4558,8 @@ public final class R {
      */
     public static final int title=0x7f030205;
     /**
+     * Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3869,6 +4568,9 @@ public final class R {
      */
     public static final int titleMargin=0x7f030206;
     /**
+     * Specifies extra space on the bottom side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3877,6 +4579,9 @@ public final class R {
      */
     public static final int titleMarginBottom=0x7f030207;
     /**
+     * Specifies extra space on the end side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3885,6 +4590,9 @@ public final class R {
      */
     public static final int titleMarginEnd=0x7f030208;
     /**
+     * Specifies extra space on the start side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3893,6 +4601,9 @@ public final class R {
      */
     public static final int titleMarginStart=0x7f030209;
     /**
+     * Specifies extra space on the top side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3901,12 +4612,14 @@ public final class R {
      */
     public static final int titleMarginTop=0x7f03020a;
     /**
+     * {@deprecated Use titleMargin}
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
+    @Deprecated
     public static final int titleMargins=0x7f03020b;
     /**
      * <p>May be a reference to another resource, in the form
@@ -3916,12 +4629,14 @@ public final class R {
      */
     public static final int titleTextAppearance=0x7f03020c;
     /**
+     * A color to apply to the title string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int titleTextColor=0x7f03020d;
     /**
+     * Specifies a style to use for title text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3929,6 +4644,7 @@ public final class R {
      */
     public static final int titleTextStyle=0x7f03020e;
     /**
+     * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3936,6 +4652,7 @@ public final class R {
      */
     public static final int toolbarNavigationButtonStyle=0x7f03020f;
     /**
+     * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3943,6 +4660,7 @@ public final class R {
      */
     public static final int toolbarStyle=0x7f030210;
     /**
+     * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3953,6 +4671,7 @@ public final class R {
      */
     public static final int tooltipForegroundColor=0x7f030211;
     /**
+     * Background to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3960,6 +4679,7 @@ public final class R {
      */
     public static final int tooltipFrameBackground=0x7f030212;
     /**
+     * The tooltip text associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3973,6 +4693,7 @@ public final class R {
      */
     public static final int touch_target_height=0x7f030214;
     /**
+     * Drawable to use as the "track" that the switch thumb slides within.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3980,28 +4701,37 @@ public final class R {
      */
     public static final int track=0x7f030215;
     /**
+     * Tint to apply to the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackTint=0x7f030216;
     /**
+     * Blending mode used to apply the track tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int trackTintMode=0x7f030217;
     /**
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int ttcIndex=0x7f030218;
@@ -4012,6 +4742,8 @@ public final class R {
      */
     public static final int unplayed_color=0x7f030219;
     /**
+     * attr indicating whether time fields should be initially set to the current time.
+     * By default, it's true i.e. TimePicker initializes fields with the current time.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4027,6 +4759,7 @@ public final class R {
      */
     public static final int use_controller=0x7f03021c;
     /**
+     * Deprecated, use android:verticalSpacing
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4040,6 +4773,7 @@ public final class R {
      */
     public static final int viewInflaterClass=0x7f03021e;
     /**
+     * Voice button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4047,6 +4781,10 @@ public final class R {
      */
     public static final int voiceIcon=0x7f03021f;
     /**
+     * The layout for the controllable widget portion of a Preference. This is inflated
+     * into the layout for a Preference and should be used more frequently than
+     * the layout attribute. For example, a checkbox preference would specify
+     * a custom layout (consisting of just the CheckBox) here.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4054,21 +4792,31 @@ public final class R {
      */
     public static final int widgetLayout=0x7f030220;
     /**
+     * Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBar=0x7f030221;
     /**
+     * Flag indicating whether this window's Action Bar should overlay
+     * application content. Does nothing if the window would not
+     * have an Action Bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBarOverlay=0x7f030222;
     /**
+     * Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionModeOverlay=0x7f030223;
     /**
+     * A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4081,6 +4829,9 @@ public final class R {
      */
     public static final int windowFixedHeightMajor=0x7f030224;
     /**
+     * A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4093,6 +4844,9 @@ public final class R {
      */
     public static final int windowFixedHeightMinor=0x7f030225;
     /**
+     * A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4105,6 +4859,9 @@ public final class R {
      */
     public static final int windowFixedWidthMajor=0x7f030226;
     /**
+     * A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4117,6 +4874,10 @@ public final class R {
      */
     public static final int windowFixedWidthMinor=0x7f030227;
     /**
+     * The minimum width the window is allowed to be, along the major
+     * axis of the screen.  That is, when in landscape.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4129,6 +4890,10 @@ public final class R {
      */
     public static final int windowMinWidthMajor=0x7f030228;
     /**
+     * The minimum width the window is allowed to be, along the minor
+     * axis of the screen.  That is, when in portrait.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4141,11 +4906,13 @@ public final class R {
      */
     public static final int windowMinWidthMinor=0x7f030229;
     /**
+     * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowNoTitle=0x7f03022a;
     /**
+     * Default style for YesNoPreference.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -7100,35 +7867,39 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.example.android.tvleanback:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.android.tvleanback:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.android.tvleanback:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.android.tvleanback:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.android.tvleanback:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.android.tvleanback:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.android.tvleanback:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.android.tvleanback:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.android.tvleanback:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.android.tvleanback:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.example.android.tvleanback:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.example.android.tvleanback:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.example.android.tvleanback:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.example.android.tvleanback:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.android.tvleanback:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.android.tvleanback:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.android.tvleanback:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.android.tvleanback:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * are present.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.android.tvleanback:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.android.tvleanback:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.android.tvleanback:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.android.tvleanback:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button.</td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.android.tvleanback:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.example.android.tvleanback:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.example.android.tvleanback:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.example.android.tvleanback:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #ActionBar_height com.example.android.tvleanback:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.android.tvleanback:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.android.tvleanback:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.example.android.tvleanback:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.example.android.tvleanback:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.android.tvleanback:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.example.android.tvleanback:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.example.android.tvleanback:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.example.android.tvleanback:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.android.tvleanback:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.android.tvleanback:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.example.android.tvleanback:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.android.tvleanback:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.android.tvleanback:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.android.tvleanback:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.example.android.tvleanback:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.example.android.tvleanback:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.android.tvleanback:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.example.android.tvleanback:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.example.android.tvleanback:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.example.android.tvleanback:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.android.tvleanback:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.android.tvleanback:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.example.android.tvleanback:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.android.tvleanback:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
      * <tr><td><code>{@link #ActionBar_title com.example.android.tvleanback:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.android.tvleanback:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.android.tvleanback:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -7171,8 +7942,9 @@ public final class R {
       0x7f03020e
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#background}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7183,8 +7955,9 @@ public final class R {
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#backgroundSplit}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for the bottom component of a split action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7198,8 +7971,9 @@ public final class R {
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#backgroundStacked}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for a second stacked row of the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7213,8 +7987,10 @@ public final class R {
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetEnd}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7226,8 +8002,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetEndWithActions}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7239,8 +8017,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetLeft}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7252,8 +8032,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetRight}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7265,8 +8047,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetStart}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7278,8 +8062,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetStartWithNavigation}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7291,8 +8077,9 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#customNavigationLayout}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a layout for custom navigation. Overrides navigationMode.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7303,8 +8090,9 @@ public final class R {
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#displayOptions}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Options affecting how the action bar is displayed.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -7325,8 +8113,9 @@ public final class R {
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#divider}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for item dividers.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7337,8 +8126,9 @@ public final class R {
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#elevation}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7350,8 +8140,9 @@ public final class R {
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#height}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a fixed height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7363,8 +8154,9 @@ public final class R {
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#hideOnContentScroll}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Set true to hide the action bar on a vertical nested scroll of content.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7373,8 +8165,9 @@ public final class R {
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#homeAsUpIndicator}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Up navigation glyph
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7385,8 +8178,9 @@ public final class R {
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#homeLayout}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a layout to use for the "home" section of the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7397,8 +8191,9 @@ public final class R {
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#icon}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7409,8 +8204,9 @@ public final class R {
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#indeterminateProgressStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style resource to use for an indeterminate progress spinner.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7421,8 +8217,10 @@ public final class R {
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#itemPadding}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7434,8 +8232,9 @@ public final class R {
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#logo}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application logo.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7446,8 +8245,9 @@ public final class R {
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#navigationMode}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * The type of navigation to use.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -7455,17 +8255,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
-     * <tr><td>tabMode</td><td>2</td><td></td></tr>
+     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
+     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7476,8 +8278,9 @@ public final class R {
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#progressBarPadding}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the horizontal padding on either end for an embedded progress bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7489,8 +8292,9 @@ public final class R {
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#progressBarStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style resource to use for an embedded progress bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7501,8 +8305,9 @@ public final class R {
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subtitle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies subtitle text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -7511,8 +8316,9 @@ public final class R {
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subtitleTextStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for subtitle text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7523,8 +8329,9 @@ public final class R {
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#title}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies title text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -7533,8 +8340,9 @@ public final class R {
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleTextStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for title text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7623,12 +8431,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.example.android.tvleanback:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.android.tvleanback:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.android.tvleanback:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.example.android.tvleanback:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.android.tvleanback:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.android.tvleanback:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
      * <tr><td><code>{@link #ActionMode_height com.example.android.tvleanback:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.android.tvleanback:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.android.tvleanback:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.android.tvleanback:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.android.tvleanback:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -7642,8 +8450,9 @@ public final class R {
       0x7f0301de, 0x7f03020e
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#background}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a background for the action mode bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7654,8 +8463,9 @@ public final class R {
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#backgroundSplit}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a background for the split action mode bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7669,8 +8479,9 @@ public final class R {
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#closeItemLayout}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a layout to use for the "close" item at the starting edge.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7681,8 +8492,9 @@ public final class R {
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#height}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a fixed height for the action mode bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7694,8 +8506,9 @@ public final class R {
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subtitleTextStyle}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for subtitle text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7706,8 +8519,9 @@ public final class R {
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleTextStyle}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for title text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7724,8 +8538,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.android.tvleanback:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.android.tvleanback:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.android.tvleanback:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.android.tvleanback:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -7734,8 +8548,13 @@ public final class R {
       0x7f0300af, 0x7f030117
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#expandActivityOverflowButtonDrawable}
-     * attribute's value can be found in the {@link #ActivityChooserView} array.
+     * <p>
+     * @attr description
+     * The drawable to show in the button for expanding the activities overflow popup.
+     * <strong>Note:</strong> Clients would like to set this drawable
+     * as a clue about the action the chosen activity will perform. For
+     * example, if share activity is to be chosen the drawable should
+     * give a clue that sharing is to be performed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7746,8 +8565,9 @@ public final class R {
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#initialActivityCount}
-     * attribute's value can be found in the {@link #ActivityChooserView} array.
+     * <p>
+     * @attr description
+     * The maximal number of items initially shown in the activity list.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -7905,8 +8725,11 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dither}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Enables or disables dithering of the bitmap if the bitmap does not have the
+     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
+     * an RGB 565 screen).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7915,8 +8738,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_dither=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Indicates whether the drawable should be initially visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7925,8 +8749,14 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_visible=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * If true, allows the drawable's padding to change based on the
+     * current state that is selected.  If false, the padding will
+     * stay the same (based on the maximum padding of all the states).
+     * Enabling this feature requires that the owner of the drawable
+     * deal with performing layout when the state changes, which is
+     * often not supported.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7935,8 +8765,12 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_variablePadding=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * If true, the drawable's reported internal size will remain
+     * constant as the state changes; the size is the maximum of all
+     * of the states.  If false, the size will vary based on the
+     * current state.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7945,8 +8779,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_constantSize=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade in a new state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -7954,8 +8789,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_enterFadeDuration=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade out an old state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -7979,8 +8815,9 @@ public final class R {
       0x010100d0, 0x01010199
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for use in specifying transitions.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7991,8 +8828,10 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableItem_android_id=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Reference to a drawable resource to use for the frame.  If not
+     * given, the drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8023,8 +8862,10 @@ public final class R {
       0x01010199, 0x01010449, 0x0101044a, 0x0101044b
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Reference to a animation drawable resource to use for the frame.  If not
+     * given, the animation drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8035,8 +8876,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_drawable=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#toId}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for the ending state.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8047,8 +8889,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_toId=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fromId}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for the starting state.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8059,8 +8902,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_fromId=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#reversible}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Whether this transition is reversible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8076,9 +8920,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.android.tvleanback:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.example.android.tvleanback:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.android.tvleanback:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.android.tvleanback:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.example.android.tvleanback:tint}</code></td><td>Tint to apply to the image source.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.android.tvleanback:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -8104,8 +8948,10 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#srcCompat}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+     * when running on older versions of the platform.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8116,8 +8962,9 @@ public final class R {
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tint}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the image source.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8127,8 +8974,9 @@ public final class R {
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tintMode}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the image source tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8136,12 +8984,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:tintMode
@@ -8155,9 +9008,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.android.tvleanback:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.android.tvleanback:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.android.tvleanback:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.android.tvleanback:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.android.tvleanback:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.android.tvleanback:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -8180,8 +9033,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tickMark}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Drawable displayed at each progress position on a seekbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8192,8 +9046,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tickMarkTint}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the tick mark drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8203,8 +9058,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tickMarkTintMode}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the tick mark tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8212,12 +9068,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:tickMarkTintMode
@@ -8360,16 +9221,18 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.android.tvleanback:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.android.tvleanback:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.android.tvleanback:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.android.tvleanback:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.android.tvleanback:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.android.tvleanback:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.android.tvleanback:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.android.tvleanback:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.android.tvleanback:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.android.tvleanback:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.android.tvleanback:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.android.tvleanback:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.android.tvleanback:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.android.tvleanback:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.android.tvleanback:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.android.tvleanback:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.android.tvleanback:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.android.tvleanback:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.android.tvleanback:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.android.tvleanback:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -8401,8 +9264,9 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoSizeMaxTextSize}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The maximum text size constraint to be used when auto-sizing text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8414,8 +9278,9 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoSizeMinTextSize}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The minimum text size constraint to be used when auto-sizing text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8427,8 +9292,11 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoSizePresetSizes}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
+     * <code>autoSizeStepGranularity</code> if set.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8439,8 +9307,11 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoSizeStepGranularity}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>. The default is 1px. Overwrites
+     * <code>autoSizePresetSizes</code> if set.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8452,8 +9323,10 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoSizeTextType}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Specify the type of auto-size. Note that this feature is not supported by EditText,
+     * works only for TextView.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8461,16 +9334,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>uniform</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
+     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
+     * container.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#firstBaselineToTopHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Distance from the top of the TextView to the first text baseline. If set, this
+     * overrides the value set for paddingTop.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8482,8 +9358,9 @@ public final class R {
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontFamily}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The attribute for the font family.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -8492,8 +9369,10 @@ public final class R {
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#lastBaselineToBottomHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Distance from the bottom of the TextView to the last text baseline. If set, this
+     * overrides the value set for paddingBottom.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8505,8 +9384,10 @@ public final class R {
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#lineHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8518,8 +9399,9 @@ public final class R {
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAllCaps}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8540,125 +9422,142 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.android.tvleanback:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.android.tvleanback:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.android.tvleanback:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.android.tvleanback:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.android.tvleanback:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.android.tvleanback:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.android.tvleanback:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.android.tvleanback:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.android.tvleanback:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.android.tvleanback:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.android.tvleanback:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.android.tvleanback:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.android.tvleanback:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.android.tvleanback:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.android.tvleanback:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.android.tvleanback:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.android.tvleanback:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.android.tvleanback:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.android.tvleanback:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.android.tvleanback:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.android.tvleanback:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.android.tvleanback:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.android.tvleanback:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.android.tvleanback:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
+     * action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.android.tvleanback:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.android.tvleanback:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.android.tvleanback:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.android.tvleanback:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
+     * appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.android.tvleanback:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.android.tvleanback:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.android.tvleanback:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.android.tvleanback:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.android.tvleanback:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.android.tvleanback:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.android.tvleanback:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.android.tvleanback:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.android.tvleanback:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.android.tvleanback:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.android.tvleanback:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.android.tvleanback:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.android.tvleanback:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.android.tvleanback:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.android.tvleanback:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.android.tvleanback:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.android.tvleanback:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.android.tvleanback:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.android.tvleanback:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.android.tvleanback:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.android.tvleanback:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.android.tvleanback:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.android.tvleanback:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.android.tvleanback:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.android.tvleanback:actionOverflowButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.android.tvleanback:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.android.tvleanback:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.android.tvleanback:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.android.tvleanback:alertDialogButtonGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.android.tvleanback:alertDialogCenterButtons}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.android.tvleanback:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.android.tvleanback:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.android.tvleanback:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.android.tvleanback:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.android.tvleanback:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.android.tvleanback:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.android.tvleanback:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.android.tvleanback:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.android.tvleanback:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.android.tvleanback:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.android.tvleanback:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.android.tvleanback:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.android.tvleanback:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.android.tvleanback:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.android.tvleanback:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.android.tvleanback:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.android.tvleanback:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.android.tvleanback:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.android.tvleanback:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.android.tvleanback:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.android.tvleanback:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.android.tvleanback:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.android.tvleanback:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.android.tvleanback:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.android.tvleanback:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.android.tvleanback:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.android.tvleanback:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.android.tvleanback:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.android.tvleanback:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.android.tvleanback:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.android.tvleanback:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.android.tvleanback:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.android.tvleanback:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.android.tvleanback:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.android.tvleanback:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.android.tvleanback:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.android.tvleanback:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.android.tvleanback:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.android.tvleanback:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.android.tvleanback:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.android.tvleanback:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.android.tvleanback:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.android.tvleanback:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.android.tvleanback:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.android.tvleanback:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.android.tvleanback:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.android.tvleanback:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.android.tvleanback:buttonStyle}</code></td><td>Normal Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.android.tvleanback:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.android.tvleanback:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.android.tvleanback:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.android.tvleanback:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.android.tvleanback:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.android.tvleanback:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.android.tvleanback:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.android.tvleanback:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.android.tvleanback:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.android.tvleanback:colorError}</code></td><td>Color used for error states and things that need to be drawn to
+     * the user's attention.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.android.tvleanback:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.android.tvleanback:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.android.tvleanback:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.android.tvleanback:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.android.tvleanback:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.android.tvleanback:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.android.tvleanback:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.android.tvleanback:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.android.tvleanback:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.android.tvleanback:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.android.tvleanback:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.android.tvleanback:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.android.tvleanback:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.android.tvleanback:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.android.tvleanback:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.android.tvleanback:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.android.tvleanback:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.android.tvleanback:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.android.tvleanback:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.android.tvleanback:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.android.tvleanback:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.android.tvleanback:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.android.tvleanback:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.android.tvleanback:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.android.tvleanback:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.android.tvleanback:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.android.tvleanback:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.android.tvleanback:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.android.tvleanback:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.android.tvleanback:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.android.tvleanback:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.android.tvleanback:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.android.tvleanback:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.android.tvleanback:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.android.tvleanback:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.android.tvleanback:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.android.tvleanback:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.android.tvleanback:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.android.tvleanback:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.android.tvleanback:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.android.tvleanback:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.android.tvleanback:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.android.tvleanback:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.android.tvleanback:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.android.tvleanback:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.android.tvleanback:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.android.tvleanback:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.android.tvleanback:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.android.tvleanback:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.android.tvleanback:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.android.tvleanback:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.android.tvleanback:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.android.tvleanback:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.android.tvleanback:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.android.tvleanback:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.android.tvleanback:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.android.tvleanback:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.android.tvleanback:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.android.tvleanback:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.android.tvleanback:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.android.tvleanback:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.android.tvleanback:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.android.tvleanback:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.android.tvleanback:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.android.tvleanback:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.android.tvleanback:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.android.tvleanback:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.android.tvleanback:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.android.tvleanback:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.android.tvleanback:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.android.tvleanback:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.android.tvleanback:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.android.tvleanback:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.android.tvleanback:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.android.tvleanback:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.android.tvleanback:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.android.tvleanback:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.android.tvleanback:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.android.tvleanback:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.android.tvleanback:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.android.tvleanback:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.android.tvleanback:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.android.tvleanback:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.android.tvleanback:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.android.tvleanback:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.android.tvleanback:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.android.tvleanback:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.android.tvleanback:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.android.tvleanback:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.android.tvleanback:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.android.tvleanback:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.android.tvleanback:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.android.tvleanback:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.android.tvleanback:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.android.tvleanback:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.android.tvleanback:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.android.tvleanback:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.android.tvleanback:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.android.tvleanback:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.android.tvleanback:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.android.tvleanback:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.android.tvleanback:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.android.tvleanback:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
+     * application content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.android.tvleanback:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.android.tvleanback:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.android.tvleanback:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.android.tvleanback:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.android.tvleanback:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.android.tvleanback:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
+     * axis of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.android.tvleanback:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
+     * axis of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.android.tvleanback:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -8838,8 +9737,9 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarDivider}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Custom divider drawable to use for elements in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8850,8 +9750,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarItemBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Custom item state list drawable background for action bar items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8862,8 +9763,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarPopupTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8874,8 +9777,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarSize}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8895,8 +9800,12 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarSplitStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a style for the split Action Bar. This style
+     * controls the split component that holds the menu/action
+     * buttons. actionBarStyle is still used for the primary
+     * bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8907,8 +9816,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a style for the Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8931,8 +9841,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarTabStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default style for tabs within an action bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8955,8 +9866,11 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate the
+     * action bar. This will be inherited by any widget inflated
+     * into the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8967,8 +9881,15 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionBarWidgetTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar. Most of the time
+     * this will be a reference to the current theme, but when
+     * the action bar has a significantly different contrast
+     * profile than the rest of the activity the difference
+     * can become important. If this is set to @null the current
+     * theme will be used.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8979,8 +9900,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default action button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8991,8 +9913,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionDropDownStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default ActionBar dropdown style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9003,8 +9926,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionMenuTextAppearance}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * TextAppearance style that will be applied to text that
+     * appears within action menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9015,8 +9940,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionMenuTextColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color for text that appears within action menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9030,8 +9956,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for action mode UI
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9054,8 +9981,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeCloseDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the close action mode button
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9066,8 +9994,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeCopyDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Copy action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9078,8 +10007,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeCutDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Cut action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9090,8 +10020,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeFindDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Find action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9102,8 +10033,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModePasteDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Paste action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9114,8 +10046,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModePopupWindowStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * PopupWindow style to use for action modes when showing as a window overlay.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9126,8 +10059,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeSelectAllDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Select all action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9138,8 +10072,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeShareDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Share action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9150,8 +10085,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeSplitBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for action mode UI in the lower split bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9174,8 +10110,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionModeWebSearchDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Web Search action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9210,8 +10147,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#activityChooserViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default ActivityChooserView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9256,8 +10194,9 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#alertDialogTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Theme to use for alert dialogs spawned from this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9268,8 +10207,9 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#autoCompleteTextViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default AutoCompleteTextView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9280,8 +10220,9 @@ public final class R {
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#borderlessButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for buttons without an explicit border, often used in groups.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9292,8 +10233,9 @@ public final class R {
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonBarButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9304,8 +10246,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonBarNegativeButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "negative" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9316,8 +10259,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonBarNeutralButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "neutral" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9328,8 +10272,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonBarPositiveButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "positive" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9340,8 +10285,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9352,8 +10298,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Normal Button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9364,8 +10311,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonStyleSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Small Button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9376,8 +10324,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#checkboxStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Checkbox style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9388,8 +10337,9 @@ public final class R {
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#checkedTextViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default CheckedTextView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9400,8 +10350,10 @@ public final class R {
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorAccent}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9411,8 +10363,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorBackgroundFloating}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9422,8 +10375,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorButtonNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework buttons in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9433,8 +10387,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorControlActivated}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework controls in their activated (ex. checked) state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9444,8 +10399,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorControlHighlight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework control highlights (ex. ripples, list selectors).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9455,8 +10411,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorControlNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework controls in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9466,8 +10423,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorError}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color used for error states and things that need to be drawn to
+     * the user's attention.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9481,8 +10440,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorPrimary}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9492,8 +10453,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorPrimaryDark}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9503,8 +10466,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#colorSwitchThumbNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework switch thumbs in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9514,8 +10478,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#controlBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The background used by framework controls.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9526,8 +10491,9 @@ public final class R {
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogCornerRadius}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Preferred corner radius of dialogs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9539,8 +10505,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogPreferredPadding}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Preferred padding for dialog content.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9552,8 +10519,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Theme to use for dialogs spawned from this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9564,8 +10532,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dividerHorizontal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A drawable that may be used as a horizontal divider between visual elements.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9576,8 +10545,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dividerVertical}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A drawable that may be used as a vertical divider between visual elements.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9588,8 +10558,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dropDownListViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * ListPopupWindow compatibility
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9600,8 +10571,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dropdownListPreferredItemHeight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred item height for dropdown lists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9613,8 +10585,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#editTextBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * EditText background drawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9625,8 +10598,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#editTextColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * EditText text foreground color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9640,8 +10614,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#editTextStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default EditText style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9652,8 +10627,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#homeAsUpIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Specifies a drawable to use for the 'home as up' indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9664,8 +10640,9 @@ public final class R {
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#imageButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * ImageButton background drawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9676,8 +10653,9 @@ public final class R {
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listChoiceBackgroundIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable used as a background for selected list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9688,8 +10666,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listDividerAlertDialog}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The list divider used in alert dialogs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9700,8 +10679,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listMenuViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default menu-style ListView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9724,8 +10704,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listPreferredItemHeight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9737,8 +10718,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listPreferredItemHeightLarge}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A larger, more robust list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9750,8 +10732,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listPreferredItemHeightSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A smaller, sleeker list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9763,8 +10746,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listPreferredItemPaddingLeft}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the left edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9776,8 +10760,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#listPreferredItemPaddingRight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the right edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9789,8 +10774,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#panelBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The background of a panel when it is inset from the left and right edges of the screen.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9801,8 +10787,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#panelMenuListTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Panel Menu style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9813,8 +10800,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#panelMenuListWidth}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Panel Menu width.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9826,8 +10814,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#popupMenuStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default PopupMenu style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9838,8 +10827,9 @@ public final class R {
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#popupWindowStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default PopupWindow style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9850,8 +10840,9 @@ public final class R {
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#radioButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default RadioButton style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9862,8 +10853,9 @@ public final class R {
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#ratingBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9874,8 +10866,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#ratingBarStyleIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Indicator RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9886,8 +10879,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#ratingBarStyleSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Small indicator RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9898,8 +10892,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the search query widget.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9910,8 +10905,9 @@ public final class R {
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#seekBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default SeekBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9922,8 +10918,11 @@ public final class R {
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectableItemBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9934,8 +10933,9 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectableItemBackgroundBorderless}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable for borderless standalone items that need focus/pressed states.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9946,8 +10946,9 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#spinnerDropDownItemStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Spinner style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9958,8 +10959,9 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#spinnerStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Spinner style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9970,8 +10972,9 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default style for the Switch widget.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9982,8 +10985,9 @@ public final class R {
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceLargePopupMenu}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for the text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9994,8 +10998,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceListItem}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the primary text of list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10006,8 +11011,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceListItemSecondary}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the secondary text of list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10018,8 +11024,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceListItemSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the primary text of small list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10030,8 +11037,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearancePopupMenuHeader}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for header text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10042,8 +11050,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceSearchResultSubtitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10054,8 +11063,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceSearchResultTitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10066,8 +11076,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAppearanceSmallPopupMenu}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for small text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10078,8 +11089,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textColorAlertDialogListItem}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color of list item text in alert dialogs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10093,8 +11105,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textColorSearchUrl}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color for urls in search suggestions, used by things like global search
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10108,8 +11121,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#toolbarNavigationButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Toolar NavigationButtonStyle
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10120,8 +11134,9 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#toolbarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Toolbar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10132,8 +11147,9 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tooltipForegroundColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Foreground color to use for tooltips
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10147,8 +11163,9 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tooltipFrameBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background to use for tooltips
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10169,8 +11186,10 @@ public final class R {
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowActionBar}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10179,8 +11198,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowActionBarOverlay}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether this window's Action Bar should overlay
+     * application content. Does nothing if the window would not
+     * have an Action Bar.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10189,8 +11211,10 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowActionModeOverlay}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10199,8 +11223,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowFixedHeightMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10216,8 +11243,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowFixedHeightMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10233,8 +11263,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowFixedWidthMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10250,8 +11283,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowFixedWidthMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10267,8 +11303,12 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowMinWidthMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The minimum width the window is allowed to be, along the major
+     * axis of the screen.  That is, when in landscape.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10284,8 +11324,12 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowMinWidthMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The minimum width the window is allowed to be, along the minor
+     * axis of the screen.  That is, when in portrait.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10301,8 +11345,9 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#windowNoTitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether there should be no title on this window.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10351,7 +11396,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #BackgroundStyle_android_selectableItemBackground android:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BackgroundStyle_selectableItemBackground com.example.android.tvleanback:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BackgroundStyle_selectableItemBackground com.example.android.tvleanback:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.</td></tr>
      * </table>
      * @see #BackgroundStyle_android_selectableItemBackground
      * @see #BackgroundStyle_selectableItemBackground
@@ -10372,8 +11419,9 @@ public final class R {
      */
     public static final int BackgroundStyle_android_selectableItemBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectableItemBackground}
-     * attribute's value can be found in the {@link #BackgroundStyle} array.
+     * <p>
+     * @attr description
+     * Need a non-android: attr here so that gradle doesn't remove it
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10390,7 +11438,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.android.tvleanback:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.android.tvleanback:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.</td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -10398,8 +11447,10 @@ public final class R {
       0x7f03002d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#allowStacking}
-     * attribute's value can be found in the {@link #ButtonBarLayout} array.
+     * <p>
+     * @attr description
+     * Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10417,9 +11468,11 @@ public final class R {
      * <tr><td><code>{@link #CheckBoxPreference_android_summaryOn android:summaryOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #CheckBoxPreference_android_summaryOff android:summaryOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #CheckBoxPreference_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td>The state (true for on, or false for off) that causes dependents to be disabled.</td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is unchecked.</td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is checked.</td></tr>
      * </table>
      * @see #CheckBoxPreference_android_summaryOn
      * @see #CheckBoxPreference_android_summaryOff
@@ -10463,8 +11516,10 @@ public final class R {
      */
     public static final int CheckBoxPreference_android_disableDependentsState=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#disableDependentsState}
-     * attribute's value can be found in the {@link #CheckBoxPreference} array.
+     * <p>
+     * @attr description
+     * The state (true for on, or false for off) that causes dependents to be disabled. By default,
+     * dependents will be disabled when this is unchecked, so the value of this preference is false.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10473,8 +11528,11 @@ public final class R {
      */
     public static final int CheckBoxPreference_disableDependentsState=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOff}
-     * attribute's value can be found in the {@link #CheckBoxPreference} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is unchecked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -10483,8 +11541,11 @@ public final class R {
      */
     public static final int CheckBoxPreference_summaryOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOn}
-     * attribute's value can be found in the {@link #CheckBoxPreference} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is checked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -10501,7 +11562,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.android.tvleanback:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.android.tvleanback:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -10511,8 +11572,9 @@ public final class R {
       0x010101a5, 0x0101031f, 0x7f03002e
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#color}
-     * attribute's value can be found in the {@link #ColorStateListItem} array.
+     * <p>
+     * @attr description
+     * Base color for this state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10531,8 +11593,9 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#alpha}
-     * attribute's value can be found in the {@link #ColorStateListItem} array.
+     * <p>
+     * @attr description
+     * Alpha multiplier applied to the base color.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -10547,8 +11610,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.android.tvleanback:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.android.tvleanback:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.android.tvleanback:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.android.tvleanback:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -10570,8 +11633,9 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonTint}
-     * attribute's value can be found in the {@link #CompoundButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the button drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10581,8 +11645,9 @@ public final class R {
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#buttonTintMode}
-     * attribute's value can be found in the {@link #CompoundButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the button tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10590,12 +11655,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:buttonTintMode
@@ -10608,8 +11678,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.android.tvleanback:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.android.tvleanback:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.android.tvleanback:keylines}</code></td><td>A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.android.tvleanback:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -10618,8 +11689,13 @@ public final class R {
       0x7f03011f, 0x7f0301d8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#keylines}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10630,8 +11706,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#statusBarBackground}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10652,12 +11729,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.android.tvleanback:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.android.tvleanback:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.android.tvleanback:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.android.tvleanback:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.android.tvleanback:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.android.tvleanback:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.android.tvleanback:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.android.tvleanback:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.android.tvleanback:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * for this child view.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.android.tvleanback:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.android.tvleanback:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.android.tvleanback:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -10701,8 +11781,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_anchor}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The id of an anchor view that this view should position relative to.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10713,8 +11794,10 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_anchorGravity}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -10722,28 +11805,36 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_behavior}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -10752,8 +11843,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_dodgeInsetEdges}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -10761,22 +11853,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_insetEdge}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10784,21 +11878,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_keyline}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -11015,12 +12112,12 @@ public final class R {
      * <tr><td><code>{@link #DialogPreference_android_positiveButtonText android:positiveButtonText}</code></td><td></td></tr>
      * <tr><td><code>{@link #DialogPreference_android_negativeButtonText android:negativeButtonText}</code></td><td></td></tr>
      * <tr><td><code>{@link #DialogPreference_android_dialogLayout android:dialogLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogIcon com.example.android.tvleanback:dialogIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogLayout com.example.android.tvleanback:dialogLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogMessage com.example.android.tvleanback:dialogMessage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogTitle com.example.android.tvleanback:dialogTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_negativeButtonText com.example.android.tvleanback:negativeButtonText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_positiveButtonText com.example.android.tvleanback:positiveButtonText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogIcon com.example.android.tvleanback:dialogIcon}</code></td><td>The icon for the dialog.</td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogLayout com.example.android.tvleanback:dialogLayout}</code></td><td>A layout to be used as the content View for the dialog.</td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogMessage com.example.android.tvleanback:dialogMessage}</code></td><td>The message in the dialog.</td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogTitle com.example.android.tvleanback:dialogTitle}</code></td><td>The title in the dialog.</td></tr>
+     * <tr><td><code>{@link #DialogPreference_negativeButtonText com.example.android.tvleanback:negativeButtonText}</code></td><td>The negative button text for the dialog.</td></tr>
+     * <tr><td><code>{@link #DialogPreference_positiveButtonText com.example.android.tvleanback:positiveButtonText}</code></td><td>The positive button text for the dialog.</td></tr>
      * </table>
      * @see #DialogPreference_android_dialogTitle
      * @see #DialogPreference_android_dialogMessage
@@ -11105,8 +12202,9 @@ public final class R {
      */
     public static final int DialogPreference_android_dialogLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogIcon}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * The icon for the dialog.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11117,8 +12215,11 @@ public final class R {
      */
     public static final int DialogPreference_dialogIcon=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogLayout}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * A layout to be used as the content View for the dialog. By default, this shouldn't
+     * be needed. If a custom DialogPreference is required, this should be set. For example,
+     * the EditTextPreference uses a layout with an EditText as this attribute.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11129,8 +12230,10 @@ public final class R {
      */
     public static final int DialogPreference_dialogLayout=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogMessage}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * The message in the dialog. If a dialogLayout is provided and contains
+     * a TextView with ID android:id/message, this message will be placed in there.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11139,8 +12242,9 @@ public final class R {
      */
     public static final int DialogPreference_dialogMessage=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogTitle}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * The title in the dialog.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11149,8 +12253,9 @@ public final class R {
      */
     public static final int DialogPreference_dialogTitle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#negativeButtonText}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * The negative button text for the dialog. Set to @null to hide the negative button.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11159,8 +12264,9 @@ public final class R {
      */
     public static final int DialogPreference_negativeButtonText=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#positiveButtonText}
-     * attribute's value can be found in the {@link #DialogPreference} array.
+     * <p>
+     * @attr description
+     * The positive button text for the dialog. Set to @null to hide the positive button.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11175,14 +12281,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.android.tvleanback:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.android.tvleanback:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.android.tvleanback:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.android.tvleanback:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.android.tvleanback:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.android.tvleanback:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.android.tvleanback:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.android.tvleanback:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.android.tvleanback:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.android.tvleanback:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.android.tvleanback:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.android.tvleanback:color}</code></td><td>The drawing color for the bars</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.android.tvleanback:drawableSize}</code></td><td>The total size of the drawable</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.android.tvleanback:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.android.tvleanback:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.android.tvleanback:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -11198,8 +12304,9 @@ public final class R {
       0x7f0300a1, 0x7f0300c9, 0x7f0301d1, 0x7f0301f8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#arrowHeadLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the arrow head when formed to make an arrow
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11211,8 +12318,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#arrowShaftLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the shaft when formed to make an arrow
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11224,8 +12332,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#barLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the bars when they are parallel to each other
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11237,8 +12346,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#color}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The drawing color for the bars
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11248,8 +12358,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#drawableSize}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The total size of the drawable
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11261,8 +12372,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#gapBetweenBars}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The max gap between the bars when they are parallel to each other
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11274,8 +12386,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#spinBars}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * Whether bars should rotate or not during transition
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11284,8 +12397,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#thickness}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The thickness (stroke size) for the bar paint
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11303,12 +12417,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.android.tvleanback:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.android.tvleanback:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.android.tvleanback:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.android.tvleanback:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.android.tvleanback:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.android.tvleanback:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.android.tvleanback:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.android.tvleanback:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.android.tvleanback:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.android.tvleanback:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.android.tvleanback:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.android.tvleanback:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -11322,8 +12436,9 @@ public final class R {
       0x7f0300c3, 0x7f0300c4
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderAuthority}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The authority of the Font Provider to be used for the request.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11332,8 +12447,13 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderCerts}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11344,8 +12464,15 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderFetchStrategy}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11353,16 +12480,25 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderFetchTimeout}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The length of the timeout during fetching.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -11371,15 +12507,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderPackage}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11388,8 +12527,10 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontProviderQuery}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11409,11 +12550,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.example.android.tvleanback:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.android.tvleanback:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.android.tvleanback:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.android.tvleanback:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.android.tvleanback:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.example.android.tvleanback:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.android.tvleanback:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.android.tvleanback:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.android.tvleanback:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.android.tvleanback:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -11453,8 +12594,9 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontWeight=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * References to the framework attrs
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11489,8 +12631,10 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#font}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11501,8 +12645,11 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11518,8 +12665,12 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontVariationSettings}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -11528,8 +12679,13 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontWeight}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -11537,8 +12693,10 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#ttcIndex}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -11584,8 +12742,9 @@ public final class R {
       0x01010510, 0x01010511, 0x01010512, 0x01010513
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Start color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11595,8 +12754,9 @@ public final class R {
      */
     public static final int GradientColor_android_startColor=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * End color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11606,8 +12766,9 @@ public final class R {
      */
     public static final int GradientColor_android_endColor=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#type}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Type of gradient. The default type is linear.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11624,8 +12785,9 @@ public final class R {
      */
     public static final int GradientColor_android_type=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -11637,8 +12799,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerX=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -11650,8 +12813,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerY=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#gradientRadius}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Radius of the gradient, used only with radial gradient.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11668,8 +12832,9 @@ public final class R {
      */
     public static final int GradientColor_android_gradientRadius=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#tileMode}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Defines the tile mode of the gradient. SweepGradient doesn't support tiling.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11687,8 +12852,9 @@ public final class R {
      */
     public static final int GradientColor_android_tileMode=6;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Optional center color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11698,8 +12864,10 @@ public final class R {
      */
     public static final int GradientColor_android_centerColor=7;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the start point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -11707,8 +12875,10 @@ public final class R {
      */
     public static final int GradientColor_android_startX=8;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the start point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -11716,8 +12886,10 @@ public final class R {
      */
     public static final int GradientColor_android_startY=9;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the end point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -11725,8 +12897,10 @@ public final class R {
      */
     public static final int GradientColor_android_endX=10;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the end point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -11750,8 +12924,9 @@ public final class R {
       0x010101a5, 0x01010514
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#color}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The current color for the offset inside the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11761,8 +12936,10 @@ public final class R {
      */
     public static final int GradientColorItem_android_color=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#offset}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The offset (or ratio) of this current color item inside the gradient.
+     * The value is only meaningful when it is between 0 and 1.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -11776,57 +12953,71 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceBreadcrumbStyle com.example.android.tvleanback:guidanceBreadcrumbStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceContainerStyle com.example.android.tvleanback:guidanceContainerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceDescriptionStyle com.example.android.tvleanback:guidanceDescriptionStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceEntryAnimation com.example.android.tvleanback:guidanceEntryAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceIconStyle com.example.android.tvleanback:guidanceIconStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceTitleStyle com.example.android.tvleanback:guidanceTitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionCheckedAnimation com.example.android.tvleanback:guidedActionCheckedAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidth com.example.android.tvleanback:guidedActionContentWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthNoIcon com.example.android.tvleanback:guidedActionContentWidthNoIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthWeight com.example.android.tvleanback:guidedActionContentWidthWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthWeightTwoPanels com.example.android.tvleanback:guidedActionContentWidthWeightTwoPanels}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionDescriptionMinLines com.example.android.tvleanback:guidedActionDescriptionMinLines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionDisabledChevronAlpha com.example.android.tvleanback:guidedActionDisabledChevronAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionEnabledChevronAlpha com.example.android.tvleanback:guidedActionEnabledChevronAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemCheckmarkStyle com.example.android.tvleanback:guidedActionItemCheckmarkStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemChevronStyle com.example.android.tvleanback:guidedActionItemChevronStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemContainerStyle com.example.android.tvleanback:guidedActionItemContainerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemContentStyle com.example.android.tvleanback:guidedActionItemContentStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemDescriptionStyle com.example.android.tvleanback:guidedActionItemDescriptionStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemIconStyle com.example.android.tvleanback:guidedActionItemIconStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemTitleStyle com.example.android.tvleanback:guidedActionItemTitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionPressedAnimation com.example.android.tvleanback:guidedActionPressedAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionTitleMaxLines com.example.android.tvleanback:guidedActionTitleMaxLines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionTitleMinLines com.example.android.tvleanback:guidedActionTitleMinLines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionUncheckedAnimation com.example.android.tvleanback:guidedActionUncheckedAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionUnpressedAnimation com.example.android.tvleanback:guidedActionUnpressedAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionVerticalPadding com.example.android.tvleanback:guidedActionVerticalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsBackground com.example.android.tvleanback:guidedActionsBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsBackgroundDark com.example.android.tvleanback:guidedActionsBackgroundDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsContainerStyle com.example.android.tvleanback:guidedActionsContainerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsElevation com.example.android.tvleanback:guidedActionsElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsEntryAnimation com.example.android.tvleanback:guidedActionsEntryAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsListStyle com.example.android.tvleanback:guidedActionsListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorDrawable com.example.android.tvleanback:guidedActionsSelectorDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorHideAnimation com.example.android.tvleanback:guidedActionsSelectorHideAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorShowAnimation com.example.android.tvleanback:guidedActionsSelectorShowAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorStyle com.example.android.tvleanback:guidedActionsSelectorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedButtonActionsListStyle com.example.android.tvleanback:guidedButtonActionsListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedButtonActionsWidthWeight com.example.android.tvleanback:guidedButtonActionsWidthWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepBackground com.example.android.tvleanback:guidedStepBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepEntryAnimation com.example.android.tvleanback:guidedStepEntryAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepExitAnimation com.example.android.tvleanback:guidedStepExitAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepHeightWeight com.example.android.tvleanback:guidedStepHeightWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepImeAppearingAnimation com.example.android.tvleanback:guidedStepImeAppearingAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepImeDisappearingAnimation com.example.android.tvleanback:guidedStepImeDisappearingAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepKeyline com.example.android.tvleanback:guidedStepKeyline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepReentryAnimation com.example.android.tvleanback:guidedStepReentryAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepReturnAnimation com.example.android.tvleanback:guidedStepReturnAnimation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepTheme com.example.android.tvleanback:guidedStepTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepThemeFlag com.example.android.tvleanback:guidedStepThemeFlag}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedSubActionsListStyle com.example.android.tvleanback:guidedSubActionsListStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceBreadcrumbStyle com.example.android.tvleanback:guidanceBreadcrumbStyle}</code></td><td>Theme attribute for the style of the breadcrumb in a GuidanceStylist.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceContainerStyle com.example.android.tvleanback:guidanceContainerStyle}</code></td><td>Theme attribute for the style of the main container in a GuidanceStylist.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceDescriptionStyle com.example.android.tvleanback:guidanceDescriptionStyle}</code></td><td>Theme attribute for the style of the description in a GuidanceStylist.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceEntryAnimation com.example.android.tvleanback:guidanceEntryAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceIconStyle com.example.android.tvleanback:guidanceIconStyle}</code></td><td>Theme attribute for the style of the icon in a GuidanceStylist.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidanceTitleStyle com.example.android.tvleanback:guidanceTitleStyle}</code></td><td>Theme attribute for the style of the title in a GuidanceStylist.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionCheckedAnimation com.example.android.tvleanback:guidedActionCheckedAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidth com.example.android.tvleanback:guidedActionContentWidth}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthNoIcon com.example.android.tvleanback:guidedActionContentWidthNoIcon}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthWeight com.example.android.tvleanback:guidedActionContentWidthWeight}</code></td><td>Theme attribute used for the width weight of actions in comparison to guidance area.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionContentWidthWeightTwoPanels com.example.android.tvleanback:guidedActionContentWidthWeightTwoPanels}</code></td><td>Theme attribute used for the width weight of actions and button actions in comparison to guidance area.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionDescriptionMinLines com.example.android.tvleanback:guidedActionDescriptionMinLines}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionDisabledChevronAlpha com.example.android.tvleanback:guidedActionDisabledChevronAlpha}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is disabled.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionEnabledChevronAlpha com.example.android.tvleanback:guidedActionEnabledChevronAlpha}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is enabled.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemCheckmarkStyle com.example.android.tvleanback:guidedActionItemCheckmarkStyle}</code></td><td>Theme attribute for the style of an action's checkmark in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemChevronStyle com.example.android.tvleanback:guidedActionItemChevronStyle}</code></td><td>Theme attribute for the style of an action's chevron decoration in a
+     * GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemContainerStyle com.example.android.tvleanback:guidedActionItemContainerStyle}</code></td><td>Theme attribute for the style of the container of a single action in a
+     * GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemContentStyle com.example.android.tvleanback:guidedActionItemContentStyle}</code></td><td>Theme attribute for the style of an action's content in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemDescriptionStyle com.example.android.tvleanback:guidedActionItemDescriptionStyle}</code></td><td>Theme attribute for the style of an action's description in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemIconStyle com.example.android.tvleanback:guidedActionItemIconStyle}</code></td><td>Theme attribute for the style of an action's icon in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionItemTitleStyle com.example.android.tvleanback:guidedActionItemTitleStyle}</code></td><td>Theme attribute for the style of an action's title in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionPressedAnimation com.example.android.tvleanback:guidedActionPressedAnimation}</code></td><td>Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is pressed.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionTitleMaxLines com.example.android.tvleanback:guidedActionTitleMaxLines}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to true.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionTitleMinLines com.example.android.tvleanback:guidedActionTitleMinLines}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionUncheckedAnimation com.example.android.tvleanback:guidedActionUncheckedAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionUnpressedAnimation com.example.android.tvleanback:guidedActionUnpressedAnimation}</code></td><td>Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is unpressed.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionVerticalPadding com.example.android.tvleanback:guidedActionVerticalPadding}</code></td><td>Theme attribute used in a GuidedActionsPresenter for the vertical padding between
+     * action views in the list.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsBackground com.example.android.tvleanback:guidedActionsBackground}</code></td><td>Theme attribute for the background of GuidedActions.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsBackgroundDark com.example.android.tvleanback:guidedActionsBackgroundDark}</code></td><td>Theme attribute for the dark version background of GuidedActions.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsContainerStyle com.example.android.tvleanback:guidedActionsContainerStyle}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsElevation com.example.android.tvleanback:guidedActionsElevation}</code></td><td>Theme attribute for the shadow elevation of GuidedActions.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsEntryAnimation com.example.android.tvleanback:guidedActionsEntryAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsListStyle com.example.android.tvleanback:guidedActionsListStyle}</code></td><td>Theme attribute for the style of the list in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorDrawable com.example.android.tvleanback:guidedActionsSelectorDrawable}</code></td><td>Theme attribute for the style of the item selector in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorHideAnimation com.example.android.tvleanback:guidedActionsSelectorHideAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorShowAnimation com.example.android.tvleanback:guidedActionsSelectorShowAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedActionsSelectorStyle com.example.android.tvleanback:guidedActionsSelectorStyle}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedButtonActionsListStyle com.example.android.tvleanback:guidedButtonActionsListStyle}</code></td><td>Theme attribute for the style of the list in a GuidedActionsPresenter.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedButtonActionsWidthWeight com.example.android.tvleanback:guidedButtonActionsWidthWeight}</code></td><td>Theme attribute used for the width weight of button actions in compare to actions</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepBackground com.example.android.tvleanback:guidedStepBackground}</code></td><td>Theme attribute of background drawable used by GuidedStepFragment.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepEntryAnimation com.example.android.tvleanback:guidedStepEntryAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepExitAnimation com.example.android.tvleanback:guidedStepExitAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepHeightWeight com.example.android.tvleanback:guidedStepHeightWeight}</code></td><td>Used to control the height of the fragment.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepImeAppearingAnimation com.example.android.tvleanback:guidedStepImeAppearingAnimation}</code></td><td>Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME appearing.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepImeDisappearingAnimation com.example.android.tvleanback:guidedStepImeDisappearingAnimation}</code></td><td>Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME disappearing.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepKeyline com.example.android.tvleanback:guidedStepKeyline}</code></td><td>Y offset to the bottom of the TitleView(font baseline) used to align the
+     * first action text on the right.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepReentryAnimation com.example.android.tvleanback:guidedStepReentryAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepReturnAnimation com.example.android.tvleanback:guidedStepReturnAnimation}</code></td><td>Deprecated theme attribute, do not use</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepTheme com.example.android.tvleanback:guidedStepTheme}</code></td><td>Theme attribute for the overall theme used in a GuidedStepFragment.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedStepThemeFlag com.example.android.tvleanback:guidedStepThemeFlag}</code></td><td>@hide
+     * Theme attribute used to inspect theme inheritance.</td></tr>
+     * <tr><td><code>{@link #LeanbackGuidedStepTheme_guidedSubActionsListStyle com.example.android.tvleanback:guidedSubActionsListStyle}</code></td><td>Theme attribute for the style of the sub actions list in a GuidedActionsPresenter.</td></tr>
      * </table>
      * @see #LeanbackGuidedStepTheme_guidanceBreadcrumbStyle
      * @see #LeanbackGuidedStepTheme_guidanceContainerStyle
@@ -11896,8 +13087,10 @@ public final class R {
       0x7f0300fb, 0x7f0300fc, 0x7f0300fd
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceBreadcrumbStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the breadcrumb in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceBreadcrumbStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11908,8 +13101,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceBreadcrumbStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceContainerStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the main container in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceContainerStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11920,8 +13115,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceContainerStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceDescriptionStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the description in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceDescriptionStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11932,8 +13129,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceDescriptionStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceEntryAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11944,8 +13142,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceEntryAnimation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceIconStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the icon in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceIconStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11956,8 +13156,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceIconStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidanceTitleStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the title in a GuidanceStylist. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidanceTitleStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11968,8 +13170,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidanceTitleStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionCheckedAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11980,8 +13183,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionCheckedAnimation=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionContentWidth}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11992,8 +13196,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionContentWidth=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionContentWidthNoIcon}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12004,8 +13209,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionContentWidthNoIcon=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionContentWidthWeight}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used for the width weight of actions in comparison to guidance area.  Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_width_weight}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12016,8 +13223,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionContentWidthWeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionContentWidthWeightTwoPanels}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used for the width weight of actions and button actions in comparison to guidance area.  Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_width_weight_two_panels}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12028,8 +13237,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionContentWidthWeightTwoPanels=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionDescriptionMinLines}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_description_min_lines}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12040,8 +13252,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionDescriptionMinLines=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionDisabledChevronAlpha}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is disabled. Default is {@link
+     * androidx.leanbackback.R.string#lb_guidedactions_item_disabled_chevron_alpha}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12052,8 +13267,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionDisabledChevronAlpha=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionEnabledChevronAlpha}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the alpha value of the chevron
+     * decoration when its action is enabled. Default is {@link
+     * androidx.leanbackback.R.dimen#lb_guidedactions_item_enabled_chevron_alpha}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12064,8 +13282,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionEnabledChevronAlpha=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemCheckmarkStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's checkmark in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemCheckmarkStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12076,8 +13297,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemCheckmarkStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemChevronStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's chevron decoration in a
+     * GuidedActionsPresenter. Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemChevronStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12088,8 +13312,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemChevronStyle=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemContainerStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the container of a single action in a
+     * GuidedActionsPresenter. Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemContainerStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12100,8 +13327,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemContainerStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemContentStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's content in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemContentStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12112,8 +13342,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemContentStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemDescriptionStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's description in a GuidedActionsPresenter.
+     * Default is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemDescriptionStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12124,8 +13357,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemDescriptionStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemIconStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's icon in a GuidedActionsPresenter. Default
+     * is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemIconStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12136,8 +13372,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemIconStyle=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionItemTitleStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of an action's title in a GuidedActionsPresenter. Default
+     * is {@link
+     * androidx.leanbackback.R.style#Widget_Leanback_GuidedActionItemTitleStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12148,8 +13387,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionItemTitleStyle=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionPressedAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is pressed. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedactions_item_pressed}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12160,8 +13402,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionPressedAnimation=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionTitleMaxLines}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to true. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_title_max_lines}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12172,8 +13417,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionTitleMaxLines=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionTitleMinLines}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the max lines of the title text
+     * view when the action's isMultilineDescription is set to false. Default is {@link
+     * androidx.leanbackback.R.integer#lb_guidedactions_item_title_min_lines}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12184,8 +13432,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionTitleMinLines=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionUncheckedAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12196,8 +13445,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionUncheckedAnimation=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionUnpressedAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the animation used in a GuidedActionsPresenter when an action
+     * is unpressed. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedactions_item_unpressed}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12208,8 +13460,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionUnpressedAnimation=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionVerticalPadding}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used in a GuidedActionsPresenter for the vertical padding between
+     * action views in the list. Default is {@link
+     * androidx.leanbackback.R.dimen#lb_guidedactions_vertical_padding}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12220,8 +13475,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionVerticalPadding=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsBackground}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the background of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.color#lb_guidedactions_background}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12232,8 +13489,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsBackgroundDark}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the dark version background of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.color#lb_guidedactions_background_dark}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12244,8 +13503,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsBackgroundDark=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsContainerStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12256,8 +13516,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsContainerStyle=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsElevation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the shadow elevation of GuidedActions. Default is
+     * {@landroidx.leanbackback.R.dimen#lb_guidedactions_elevation}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12273,8 +13535,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsElevation=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsEntryAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12285,8 +13548,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsEntryAnimation=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsListStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedActionsListStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12297,8 +13562,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsListStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsSelectorDrawable}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the item selector in a GuidedActionsPresenter. Default is
+     * ?android:attr/selectableItemBackground.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12309,8 +13576,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsSelectorDrawable=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsSelectorHideAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12321,8 +13589,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsSelectorHideAnimation=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsSelectorShowAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12333,8 +13602,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsSelectorShowAnimation=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedActionsSelectorStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12345,8 +13615,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedActionsSelectorStyle=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedButtonActionsListStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedButtonActionsListStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12357,8 +13629,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedButtonActionsListStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedButtonActionsWidthWeight}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute used for the width weight of button actions in compare to actions
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12369,8 +13642,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedButtonActionsWidthWeight=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepBackground}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute of background drawable used by GuidedStepFragment.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12384,8 +13658,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepBackground=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepEntryAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12396,8 +13671,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepEntryAnimation=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepExitAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12408,8 +13684,12 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepExitAnimation=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepHeightWeight}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Used to control the height of the fragment. By default this fragment will take
+     * up the full height of it's parent. The height of this fragment is governed by
+     * this property. Default weight is set to 2.0, so inorder to render the fragment
+     * in half screen mode, this attribute should be set to 1.0
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -12417,8 +13697,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepHeightWeight=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepImeAppearingAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME appearing. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedstep_slide_up}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12429,8 +13712,11 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepImeAppearingAnimation=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepImeDisappearingAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the animation used when a guided step element is animated in
+     * response to the IME disappearing. Default is {@link
+     * androidx.leanbackback.R.animator#lb_guidedstep_slide_down}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12441,8 +13727,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepImeDisappearingAnimation=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepKeyline}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Y offset to the bottom of the TitleView(font baseline) used to align the
+     * first action text on the right.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -12450,8 +13738,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepKeyline=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepReentryAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12462,8 +13751,9 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepReentryAnimation=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepReturnAnimation}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Deprecated theme attribute, do not use
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12474,8 +13764,12 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepReturnAnimation=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepTheme}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the overall theme used in a GuidedStepFragment. The Leanback themes
+     * set the default for this, but a custom theme that does not derive from a leanback theme
+     * can set this to <code>@style/Theme.Leanback.GuidedStep</code> in order to specify the
+     * default GuidedStepFragment styles.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12486,8 +13780,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepTheme=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedStepThemeFlag}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * @hide
+     * Theme attribute used to inspect theme inheritance.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12496,8 +13792,10 @@ public final class R {
      */
     public static final int LeanbackGuidedStepTheme_guidedStepThemeFlag=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#guidedSubActionsListStyle}
-     * attribute's value can be found in the {@link #LeanbackGuidedStepTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the sub actions list in a GuidedActionsPresenter. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_GuidedSubActionsListStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12514,15 +13812,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingDescriptionStyle com.example.android.tvleanback:onboardingDescriptionStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingHeaderStyle com.example.android.tvleanback:onboardingHeaderStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingLogoStyle com.example.android.tvleanback:onboardingLogoStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingMainIconStyle com.example.android.tvleanback:onboardingMainIconStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingNavigatorContainerStyle com.example.android.tvleanback:onboardingNavigatorContainerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingPageIndicatorStyle com.example.android.tvleanback:onboardingPageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingStartButtonStyle com.example.android.tvleanback:onboardingStartButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingTheme com.example.android.tvleanback:onboardingTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingTitleStyle com.example.android.tvleanback:onboardingTitleStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingDescriptionStyle com.example.android.tvleanback:onboardingDescriptionStyle}</code></td><td>Theme attribute for the style of the description text in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingHeaderStyle com.example.android.tvleanback:onboardingHeaderStyle}</code></td><td>Theme attribute for the style of the header in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingLogoStyle com.example.android.tvleanback:onboardingLogoStyle}</code></td><td>Theme attribute for the style of the logo in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingMainIconStyle com.example.android.tvleanback:onboardingMainIconStyle}</code></td><td>Theme attribute for the style of the main icon in onboarding fragment.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingNavigatorContainerStyle com.example.android.tvleanback:onboardingNavigatorContainerStyle}</code></td><td>Theme attribute for the style of the navigator container in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingPageIndicatorStyle com.example.android.tvleanback:onboardingPageIndicatorStyle}</code></td><td>Theme attribute for the style of the page indicator in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingStartButtonStyle com.example.android.tvleanback:onboardingStartButtonStyle}</code></td><td>Theme attribute for the style of the start button in onboarding screen.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingTheme com.example.android.tvleanback:onboardingTheme}</code></td><td>Theme attribute for the overall theme used in the onboarding.</td></tr>
+     * <tr><td><code>{@link #LeanbackOnboardingTheme_onboardingTitleStyle com.example.android.tvleanback:onboardingTitleStyle}</code></td><td>Theme attribute for the style of the title text in onboarding screen.</td></tr>
      * </table>
      * @see #LeanbackOnboardingTheme_onboardingDescriptionStyle
      * @see #LeanbackOnboardingTheme_onboardingHeaderStyle
@@ -12540,8 +13838,10 @@ public final class R {
       0x7f030151
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingDescriptionStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the description text in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingDescriptionStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12552,8 +13852,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingDescriptionStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingHeaderStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the header in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingHeaderStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12564,8 +13866,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingHeaderStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingLogoStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the logo in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingLogoStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12576,8 +13880,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingLogoStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingMainIconStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the main icon in onboarding fragment. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingMainIconStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12588,8 +13894,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingMainIconStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingNavigatorContainerStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the navigator container in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingNavigatorContainerStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12600,8 +13908,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingNavigatorContainerStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingPageIndicatorStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the page indicator in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingPageIndicatorStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12612,8 +13922,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingPageIndicatorStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingStartButtonStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the start button in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingStartButtonStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12624,8 +13936,12 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingStartButtonStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingTheme}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the overall theme used in the onboarding. The Leanback themes set
+     * the default for this, but a custom theme that does not derive from a leanback theme can
+     * set this to <code>@style/Theme.Leanback.Onboarding</code> in order to specify the
+     * default OnboardingFragment styles.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12636,8 +13952,10 @@ public final class R {
      */
     public static final int LeanbackOnboardingTheme_onboardingTheme=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#onboardingTitleStyle}
-     * attribute's value can be found in the {@link #LeanbackOnboardingTheme} array.
+     * <p>
+     * @attr description
+     * Theme attribute for the style of the title text in onboarding screen. Default is
+     * {@landroidx.leanbackback.R.style#Widget_Leanback_OnboardingTitleStyle}.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12654,46 +13972,48 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LeanbackTheme_baseCardViewStyle com.example.android.tvleanback:baseCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browsePaddingBottom com.example.android.tvleanback:browsePaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browsePaddingEnd com.example.android.tvleanback:browsePaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browsePaddingStart com.example.android.tvleanback:browsePaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browsePaddingTop com.example.android.tvleanback:browsePaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseRowsFadingEdgeLength com.example.android.tvleanback:browseRowsFadingEdgeLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseRowsMarginStart com.example.android.tvleanback:browseRowsMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseRowsMarginTop com.example.android.tvleanback:browseRowsMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseTitleIconStyle com.example.android.tvleanback:browseTitleIconStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseTitleTextStyle com.example.android.tvleanback:browseTitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseTitleViewLayout com.example.android.tvleanback:browseTitleViewLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_browseTitleViewStyle com.example.android.tvleanback:browseTitleViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultBrandColor com.example.android.tvleanback:defaultBrandColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultBrandColorDark com.example.android.tvleanback:defaultBrandColorDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultSearchBrightColor com.example.android.tvleanback:defaultSearchBrightColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultSearchColor com.example.android.tvleanback:defaultSearchColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_baseCardViewStyle com.example.android.tvleanback:baseCardViewStyle}</code></td><td>CardView styles</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browsePaddingBottom com.example.android.tvleanback:browsePaddingBottom}</code></td><td>bottom padding of BrowseFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browsePaddingEnd com.example.android.tvleanback:browsePaddingEnd}</code></td><td>end padding of BrowseFragment, RowsFragment, DetailsFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browsePaddingStart com.example.android.tvleanback:browsePaddingStart}</code></td><td>start padding of BrowseFragment, RowsFragment, DetailsFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browsePaddingTop com.example.android.tvleanback:browsePaddingTop}</code></td><td>top padding of BrowseFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseRowsFadingEdgeLength com.example.android.tvleanback:browseRowsFadingEdgeLength}</code></td><td>fading edge length of start of browse row when HeadersFragment is visible</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseRowsMarginStart com.example.android.tvleanback:browseRowsMarginStart}</code></td><td>start margin of RowsFragment inside BrowseFragment when HeadersFragment is visible</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseRowsMarginTop com.example.android.tvleanback:browseRowsMarginTop}</code></td><td>top margin of RowsFragment inside BrowseFragment when BrowseFragment title is visible</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseTitleIconStyle com.example.android.tvleanback:browseTitleIconStyle}</code></td><td>fragment title icon style</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseTitleTextStyle com.example.android.tvleanback:browseTitleTextStyle}</code></td><td>fragment title text style</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseTitleViewLayout com.example.android.tvleanback:browseTitleViewLayout}</code></td><td>customize title view layout file, it must have title view with id browse_title_group</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_browseTitleViewStyle com.example.android.tvleanback:browseTitleViewStyle}</code></td><td>fragment title view style</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultBrandColor com.example.android.tvleanback:defaultBrandColor}</code></td><td>Default brand color used for the background of certain leanback visual elements
+     * such as the headers fragment.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultBrandColorDark com.example.android.tvleanback:defaultBrandColorDark}</code></td><td>Default dark brand color used for the background of certain leanback visual elements
+     * such as the actions background.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultSearchBrightColor com.example.android.tvleanback:defaultSearchBrightColor}</code></td><td>Default color that search orb pulses to.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultSearchColor com.example.android.tvleanback:defaultSearchColor}</code></td><td>Default background color for Search Icon</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_defaultSearchIcon com.example.android.tvleanback:defaultSearchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultSearchIconColor com.example.android.tvleanback:defaultSearchIconColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_defaultSectionHeaderColor com.example.android.tvleanback:defaultSectionHeaderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultSearchIconColor com.example.android.tvleanback:defaultSearchIconColor}</code></td><td>Default icon color for Search Icon</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_defaultSectionHeaderColor com.example.android.tvleanback:defaultSectionHeaderColor}</code></td><td>Default color for SectionHeader, by default same as defaultSearchColor</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_detailsActionButtonStyle com.example.android.tvleanback:detailsActionButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_detailsDescriptionBodyStyle com.example.android.tvleanback:detailsDescriptionBodyStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_detailsDescriptionSubtitleStyle com.example.android.tvleanback:detailsDescriptionSubtitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_detailsDescriptionTitleStyle com.example.android.tvleanback:detailsDescriptionTitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_errorMessageStyle com.example.android.tvleanback:errorMessageStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_headerStyle com.example.android.tvleanback:headerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_headersVerticalGridStyle com.example.android.tvleanback:headersVerticalGridStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_detailsDescriptionTitleStyle com.example.android.tvleanback:detailsDescriptionTitleStyle}</code></td><td>for details overviews</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_errorMessageStyle com.example.android.tvleanback:errorMessageStyle}</code></td><td>for messages in the error fragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_headerStyle com.example.android.tvleanback:headerStyle}</code></td><td>header style inside HeadersFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_headersVerticalGridStyle com.example.android.tvleanback:headersVerticalGridStyle}</code></td><td>vertical grid style inside HeadersFragment</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewBadgeStyle com.example.android.tvleanback:imageCardViewBadgeStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewContentStyle com.example.android.tvleanback:imageCardViewContentStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewImageStyle com.example.android.tvleanback:imageCardViewImageStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewInfoAreaStyle com.example.android.tvleanback:imageCardViewInfoAreaStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewStyle com.example.android.tvleanback:imageCardViewStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_imageCardViewTitleStyle com.example.android.tvleanback:imageCardViewTitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_itemsVerticalGridStyle com.example.android.tvleanback:itemsVerticalGridStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_overlayDimActiveLevel com.example.android.tvleanback:overlayDimActiveLevel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_overlayDimDimmedLevel com.example.android.tvleanback:overlayDimDimmedLevel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_overlayDimMaskColor com.example.android.tvleanback:overlayDimMaskColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_itemsVerticalGridStyle com.example.android.tvleanback:itemsVerticalGridStyle}</code></td><td>style for a vertical grid of items</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_overlayDimActiveLevel com.example.android.tvleanback:overlayDimActiveLevel}</code></td><td>Default level of dimming for active views.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_overlayDimDimmedLevel com.example.android.tvleanback:overlayDimDimmedLevel}</code></td><td>Default level of dimming for dimmed views.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_overlayDimMaskColor com.example.android.tvleanback:overlayDimMaskColor}</code></td><td>Default color for dimmed views.</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackControlButtonLabelStyle com.example.android.tvleanback:playbackControlButtonLabelStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackControlsActionIcons com.example.android.tvleanback:playbackControlsActionIcons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_playbackControlsAutoHideTickleTimeout com.example.android.tvleanback:playbackControlsAutoHideTickleTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_playbackControlsAutoHideTimeout com.example.android.tvleanback:playbackControlsAutoHideTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_playbackControlsAutoHideTickleTimeout com.example.android.tvleanback:playbackControlsAutoHideTickleTimeout}</code></td><td>Milliseconds to auto hide playback controls after user interacts with playback controls (i.e.</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_playbackControlsAutoHideTimeout com.example.android.tvleanback:playbackControlsAutoHideTimeout}</code></td><td>Milliseconds to auto hide playback controls when media start playing.</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackControlsButtonStyle com.example.android.tvleanback:playbackControlsButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackControlsIconHighlightColor com.example.android.tvleanback:playbackControlsIconHighlightColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackControlsTimeStyle com.example.android.tvleanback:playbackControlsTimeStyle}</code></td><td></td></tr>
@@ -12709,18 +14029,18 @@ public final class R {
      * <tr><td><code>{@link #LeanbackTheme_playbackMediaListHeaderStyle com.example.android.tvleanback:playbackMediaListHeaderStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackMediaListHeaderTitleStyle com.example.android.tvleanback:playbackMediaListHeaderTitleStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackPaddingEnd com.example.android.tvleanback:playbackPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_playbackPaddingStart com.example.android.tvleanback:playbackPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_playbackPaddingStart com.example.android.tvleanback:playbackPaddingStart}</code></td><td>for playlist and playback controls styling</td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackProgressPrimaryColor com.example.android.tvleanback:playbackProgressPrimaryColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #LeanbackTheme_playbackProgressSecondaryColor com.example.android.tvleanback:playbackProgressSecondaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHeaderDescriptionStyle com.example.android.tvleanback:rowHeaderDescriptionStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHeaderDockStyle com.example.android.tvleanback:rowHeaderDockStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHeaderStyle com.example.android.tvleanback:rowHeaderStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHorizontalGridStyle com.example.android.tvleanback:rowHorizontalGridStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHoverCardDescriptionStyle com.example.android.tvleanback:rowHoverCardDescriptionStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowHoverCardTitleStyle com.example.android.tvleanback:rowHoverCardTitleStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_rowsVerticalGridStyle com.example.android.tvleanback:rowsVerticalGridStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_searchOrbViewStyle com.example.android.tvleanback:searchOrbViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LeanbackTheme_sectionHeaderStyle com.example.android.tvleanback:sectionHeaderStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHeaderDescriptionStyle com.example.android.tvleanback:rowHeaderDescriptionStyle}</code></td><td>header description style inside a row</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHeaderDockStyle com.example.android.tvleanback:rowHeaderDockStyle}</code></td><td>style for the layout that hosting Header inside a row</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHeaderStyle com.example.android.tvleanback:rowHeaderStyle}</code></td><td>header style inside a row</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHorizontalGridStyle com.example.android.tvleanback:rowHorizontalGridStyle}</code></td><td>horizontal grid style inside a row</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHoverCardDescriptionStyle com.example.android.tvleanback:rowHoverCardDescriptionStyle}</code></td><td>hover card description style</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowHoverCardTitleStyle com.example.android.tvleanback:rowHoverCardTitleStyle}</code></td><td>hover card title style</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_rowsVerticalGridStyle com.example.android.tvleanback:rowsVerticalGridStyle}</code></td><td>vertical grid style inside RowsFragment</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_searchOrbViewStyle com.example.android.tvleanback:searchOrbViewStyle}</code></td><td>Style for searchOrb</td></tr>
+     * <tr><td><code>{@link #LeanbackTheme_sectionHeaderStyle com.example.android.tvleanback:sectionHeaderStyle}</code></td><td>Non selectable header style inside HeadersFragment</td></tr>
      * </table>
      * @see #LeanbackTheme_baseCardViewStyle
      * @see #LeanbackTheme_browsePaddingBottom
@@ -12810,8 +14130,9 @@ public final class R {
       0x7f0301ab, 0x7f0301b7, 0x7f0301b9
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#baseCardViewStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * CardView styles
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12822,8 +14143,9 @@ public final class R {
      */
     public static final int LeanbackTheme_baseCardViewStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browsePaddingBottom}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * bottom padding of BrowseFragment
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12835,8 +14157,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browsePaddingBottom=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browsePaddingEnd}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * end padding of BrowseFragment, RowsFragment, DetailsFragment
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12848,8 +14171,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browsePaddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browsePaddingStart}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * start padding of BrowseFragment, RowsFragment, DetailsFragment
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12861,8 +14185,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browsePaddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browsePaddingTop}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * top padding of BrowseFragment
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12874,8 +14199,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browsePaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseRowsFadingEdgeLength}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * fading edge length of start of browse row when HeadersFragment is visible
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12887,8 +14213,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseRowsFadingEdgeLength=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseRowsMarginStart}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * start margin of RowsFragment inside BrowseFragment when HeadersFragment is visible
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12900,8 +14227,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseRowsMarginStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseRowsMarginTop}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * top margin of RowsFragment inside BrowseFragment when BrowseFragment title is visible
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12913,8 +14241,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseRowsMarginTop=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseTitleIconStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * fragment title icon style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12925,8 +14254,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseTitleIconStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseTitleTextStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * fragment title text style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12937,8 +14267,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseTitleTextStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseTitleViewLayout}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * customize title view layout file, it must have title view with id browse_title_group
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12949,8 +14280,9 @@ public final class R {
      */
     public static final int LeanbackTheme_browseTitleViewLayout=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#browseTitleViewStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * fragment title view style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12961,8 +14293,12 @@ public final class R {
      */
     public static final int LeanbackTheme_browseTitleViewStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultBrandColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default brand color used for the background of certain leanback visual elements
+     * such as the headers fragment. If your app runs on:
+     * a) SDK 21+: set colorPrimary, used by the leanback launcher and elsewhere, and defaultBrandColor will inherit it.
+     * b) SDK < 21: set the brand color explicitly via defaultBrandColor, or programatically.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12976,8 +14312,12 @@ public final class R {
      */
     public static final int LeanbackTheme_defaultBrandColor=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultBrandColorDark}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default dark brand color used for the background of certain leanback visual elements
+     * such as the actions background. If your app runs on:
+     * a) SDK 21+: set colorPrimaryDark, used by the leanback launcher and elsewhere, and defaultBrandColorDark will inherit it.
+     * b) SDK < 21: set the brand color explicitly via defaultBrandColorDark, or programatically.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12991,8 +14331,9 @@ public final class R {
      */
     public static final int LeanbackTheme_defaultBrandColorDark=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultSearchBrightColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default color that search orb pulses to.  If not set, this color is determined programatically based on the defaultSearchColor
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13006,8 +14347,9 @@ public final class R {
      */
     public static final int LeanbackTheme_defaultSearchBrightColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultSearchColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default background color for Search Icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13033,8 +14375,9 @@ public final class R {
      */
     public static final int LeanbackTheme_defaultSearchIcon=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultSearchIconColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default icon color for Search Icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13048,8 +14391,9 @@ public final class R {
      */
     public static final int LeanbackTheme_defaultSearchIconColor=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultSectionHeaderColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default color for SectionHeader, by default same as defaultSearchColor
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13099,8 +14443,9 @@ public final class R {
      */
     public static final int LeanbackTheme_detailsDescriptionSubtitleStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#detailsDescriptionTitleStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * for details overviews
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13111,8 +14456,9 @@ public final class R {
      */
     public static final int LeanbackTheme_detailsDescriptionTitleStyle=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#errorMessageStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * for messages in the error fragment
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13123,8 +14469,9 @@ public final class R {
      */
     public static final int LeanbackTheme_errorMessageStyle=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#headerStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * header style inside HeadersFragment
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13135,8 +14482,9 @@ public final class R {
      */
     public static final int LeanbackTheme_headerStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#headersVerticalGridStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * vertical grid style inside HeadersFragment
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13219,8 +14567,9 @@ public final class R {
      */
     public static final int LeanbackTheme_imageCardViewTitleStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#itemsVerticalGridStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * style for a vertical grid of items
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13231,8 +14580,9 @@ public final class R {
      */
     public static final int LeanbackTheme_itemsVerticalGridStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#overlayDimActiveLevel}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default level of dimming for active views.
      *
      * <p>May be a fractional value, which is a floating point number appended with
      * either % or %p, such as "<code>14.5%</code>".
@@ -13243,8 +14593,9 @@ public final class R {
      */
     public static final int LeanbackTheme_overlayDimActiveLevel=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#overlayDimDimmedLevel}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default level of dimming for dimmed views.
      *
      * <p>May be a fractional value, which is a floating point number appended with
      * either % or %p, such as "<code>14.5%</code>".
@@ -13255,8 +14606,9 @@ public final class R {
      */
     public static final int LeanbackTheme_overlayDimDimmedLevel=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#overlayDimMaskColor}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Default color for dimmed views.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13290,8 +14642,13 @@ public final class R {
      */
     public static final int LeanbackTheme_playbackControlsActionIcons=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#playbackControlsAutoHideTickleTimeout}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Milliseconds to auto hide playback controls after user interacts with playback controls (i.e.
+     * after fragment.tickle() is called).
+     * Default value is disabled (0), app can turn it on by setting a positive milliseconds.
+     * When enabled, value of playbackControlsAutoHideTickleTimeout usually should be set longer than playbackControlsAutoHideTimeout
+     * for user to have enough time to think.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13303,8 +14660,9 @@ public final class R {
      */
     public static final int LeanbackTheme_playbackControlsAutoHideTickleTimeout=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#playbackControlsAutoHideTimeout}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Milliseconds to auto hide playback controls when media start playing.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13501,8 +14859,9 @@ public final class R {
      */
     public static final int LeanbackTheme_playbackPaddingEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#playbackPaddingStart}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * for playlist and playback controls styling
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13544,8 +14903,9 @@ public final class R {
      */
     public static final int LeanbackTheme_playbackProgressSecondaryColor=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHeaderDescriptionStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * header description style inside a row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13556,8 +14916,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHeaderDescriptionStyle=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHeaderDockStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * style for the layout that hosting Header inside a row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13568,8 +14929,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHeaderDockStyle=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHeaderStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * header style inside a row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13580,8 +14942,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHeaderStyle=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHorizontalGridStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * horizontal grid style inside a row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13592,8 +14955,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHorizontalGridStyle=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHoverCardDescriptionStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * hover card description style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13604,8 +14968,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHoverCardDescriptionStyle=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHoverCardTitleStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * hover card title style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13616,8 +14981,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowHoverCardTitleStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowsVerticalGridStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * vertical grid style inside RowsFragment
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13628,8 +14994,9 @@ public final class R {
      */
     public static final int LeanbackTheme_rowsVerticalGridStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchOrbViewStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Style for searchOrb
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13640,8 +15007,9 @@ public final class R {
      */
     public static final int LeanbackTheme_searchOrbViewStyle=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#sectionHeaderStyle}
-     * attribute's value can be found in the {@link #LeanbackTheme} array.
+     * <p>
+     * @attr description
+     * Non selectable header style inside HeadersFragment
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13663,10 +15031,11 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.android.tvleanback:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.android.tvleanback:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.android.tvleanback:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.android.tvleanback:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.android.tvleanback:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.android.tvleanback:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.android.tvleanback:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.android.tvleanback:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -13713,8 +15082,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Should the layout be a column or a row?  Use "horizontal"
+     * for a row, "vertical" for a column.  The default is
+     * horizontal.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13730,8 +15102,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_orientation=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When set to false, prevents the layout from aligning its children's
+     * baselines. This attribute is particularly useful when the children
+     * use different values for gravity. The default value is true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13740,8 +15115,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAligned=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When a linear layout is part of another layout that is baseline
+     * aligned, it can specify which of its children to baseline align to
+     * (that is, which child TextView).
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -13749,8 +15127,13 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAlignedChildIndex=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#weightSum}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Defines the maximum weight sum. If unspecified, the sum is computed
+     * by adding the layout_weight of all of the children. This can be
+     * used for instance to give a single child 50% of the total available
+     * space by giving it a layout_weight of 0.5 and setting the weightSum
+     * to 1.0.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -13758,8 +15141,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#divider}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as a vertical divider between buttons.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13770,8 +15154,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dividerPadding}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Size of padding on either end of a divider.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13783,8 +15168,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#measureWithLargestChild}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child. If false, all children are
+     * measured normally.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13793,8 +15181,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#showDividers}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Setting for which dividers to show.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -13932,8 +15321,9 @@ public final class R {
       0x010102ac, 0x010102ad
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
-     * attribute's value can be found in the {@link #ListPopupWindow} array.
+     * <p>
+     * @attr description
+     * Amount of pixels by which the drop down should be offset horizontally.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13945,8 +15335,9 @@ public final class R {
      */
     public static final int ListPopupWindow_android_dropDownHorizontalOffset=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
-     * attribute's value can be found in the {@link #ListPopupWindow} array.
+     * <p>
+     * @attr description
+     * Amount of pixels by which the drop down should be offset vertically.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13966,8 +15357,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ListPreference_android_entries android:entries}</code></td><td></td></tr>
      * <tr><td><code>{@link #ListPreference_android_entryValues android:entryValues}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ListPreference_entries com.example.android.tvleanback:entries}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ListPreference_entryValues com.example.android.tvleanback:entryValues}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ListPreference_entries com.example.android.tvleanback:entries}</code></td><td>The human-readable array to present as a list.</td></tr>
+     * <tr><td><code>{@link #ListPreference_entryValues com.example.android.tvleanback:entryValues}</code></td><td>The array to find the value to save for a preference when an entry from
+     * entries is selected.</td></tr>
      * </table>
      * @see #ListPreference_android_entries
      * @see #ListPreference_android_entryValues
@@ -14002,8 +15394,10 @@ public final class R {
      */
     public static final int ListPreference_android_entryValues=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#entries}
-     * attribute's value can be found in the {@link #ListPreference} array.
+     * <p>
+     * @attr description
+     * The human-readable array to present as a list. Each entry must have a corresponding
+     * index in entryValues.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14014,8 +15408,11 @@ public final class R {
      */
     public static final int ListPreference_entries=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#entryValues}
-     * attribute's value can be found in the {@link #ListPreference} array.
+     * <p>
+     * @attr description
+     * The array to find the value to save for a preference when an entry from
+     * entries is selected. If a user clicks on the second item in entries, the
+     * second item in this array will be saved to the preference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14051,8 +15448,9 @@ public final class R {
       0x010101df, 0x010101e0
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14061,8 +15459,9 @@ public final class R {
      */
     public static final int MenuGroup_android_enabled=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The ID of the group.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14073,8 +15472,9 @@ public final class R {
      */
     public static final int MenuGroup_android_id=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are shown/visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14083,8 +15483,10 @@ public final class R {
      */
     public static final int MenuGroup_android_visible=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The category applied to all items within this group.
+     * (This will be or'ed with the orderInCategory attribute.)
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14102,8 +15504,10 @@ public final class R {
      */
     public static final int MenuGroup_android_menuCategory=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The order within the category applied to all items within this group.
+     * (This will be or'ed with the category attribute.)
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -14111,8 +15515,9 @@ public final class R {
      */
     public static final int MenuGroup_android_orderInCategory=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkableBehavior}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are capable of displaying a check mark.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14148,16 +15553,18 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.example.android.tvleanback:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.android.tvleanback:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.android.tvleanback:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.android.tvleanback:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.example.android.tvleanback:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.example.android.tvleanback:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.android.tvleanback:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.android.tvleanback:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.example.android.tvleanback:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.example.android.tvleanback:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.example.android.tvleanback:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.android.tvleanback:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.android.tvleanback:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
+     * action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.android.tvleanback:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.example.android.tvleanback:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.example.android.tvleanback:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.android.tvleanback:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.android.tvleanback:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.example.android.tvleanback:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.example.android.tvleanback:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -14192,8 +15599,10 @@ public final class R {
       0x7f030148, 0x7f0301c3, 0x7f030213
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#icon}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The icon associated with this item.  This icon will not always be shown, so
+     * the title should be sufficient in describing this item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14204,8 +15613,9 @@ public final class R {
      */
     public static final int MenuItem_android_icon=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14214,8 +15624,9 @@ public final class R {
      */
     public static final int MenuItem_android_enabled=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The ID of the item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14226,8 +15637,10 @@ public final class R {
      */
     public static final int MenuItem_android_id=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checked}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is checked.  Note that you must first have enabled checking with
+     * the checkable attribute or else the check mark will not appear.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14236,8 +15649,9 @@ public final class R {
      */
     public static final int MenuItem_android_checked=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is shown/visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14246,8 +15660,10 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The category applied to the item.
+     * (This will be or'ed with the orderInCategory attribute.)
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14265,8 +15681,10 @@ public final class R {
      */
     public static final int MenuItem_android_menuCategory=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The order within the category applied to the item.
+     * (This will be or'ed with the category attribute.)
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -14274,8 +15692,9 @@ public final class R {
      */
     public static final int MenuItem_android_orderInCategory=6;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#title}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The title associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14284,8 +15703,10 @@ public final class R {
      */
     public static final int MenuItem_android_title=7;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#titleCondensed}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The condensed title associated with the item.  This is used in situations where the
+     * normal title may be too long to be displayed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14294,8 +15715,10 @@ public final class R {
      */
     public static final int MenuItem_android_titleCondensed=8;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#alphabeticShortcut}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The alphabetic shortcut key.  This is the shortcut when using a keyboard
+     * with alphabetic keys.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14304,8 +15727,10 @@ public final class R {
      */
     public static final int MenuItem_android_alphabeticShortcut=9;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#numericShortcut}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
+     * keyboard.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14314,8 +15739,9 @@ public final class R {
      */
     public static final int MenuItem_android_numericShortcut=10;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is capable of displaying a check mark.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14324,8 +15750,10 @@ public final class R {
      */
     public static final int MenuItem_android_checkable=11;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#onClick}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Name of a method on the Context used to inflate the menu that will be
+     * called when the item is clicked.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14334,8 +15762,11 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionLayout}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * An optional layout to be used as an action view.
+     * See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14346,8 +15777,12 @@ public final class R {
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionProviderClass}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.
+     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14356,8 +15791,11 @@ public final class R {
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#actionViewClass}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The name of an optional View class to instantiate and use as an
+     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14366,8 +15804,10 @@ public final class R {
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#alphabeticModifiers}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The alphabetic modifier key. This is the modifier when using a keyboard
+     * with alphabetic keys. The values should be kept in sync with KeyEvent
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -14387,8 +15827,9 @@ public final class R {
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentDescription}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The content description associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14397,8 +15838,9 @@ public final class R {
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -14408,8 +15850,9 @@ public final class R {
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#iconTintMode}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the icon tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14417,20 +15860,27 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#numericModifiers}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
+     * keyboard. The values should be kept in sync with KeyEvent
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -14450,8 +15900,9 @@ public final class R {
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#showAsAction}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * How this item should display in the Action Bar, if present.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -14459,19 +15910,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td></td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
-     * <tr><td>never</td><td>0</td><td></td></tr>
-     * <tr><td>withText</td><td>4</td><td></td></tr>
+     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
+     * the system's limits of how much stuff to put there. This may make
+     * your action bar look bad on some screens. In most cases you should
+     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
+     * item. When expanded, the action view takes over a
+     * larger segment of its container.</td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
+     * by the system. Favor this option over "always" where possible.
+     * Mutually exclusive with "never" and "always".</td></tr>
+     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
+     * Mutually exclusive with "ifRoom" and "always".</td></tr>
+     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
+     * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#tooltipText}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The tooltip text associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14493,8 +15954,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.android.tvleanback:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.android.tvleanback:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.android.tvleanback:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.android.tvleanback:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -14512,8 +15973,9 @@ public final class R {
       0x7f0301d9
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default animations for the menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14524,8 +15986,9 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemTextAppearance}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default appearance of menu item text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14536,8 +15999,9 @@ public final class R {
      */
     public static final int MenuView_android_itemTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#horizontalDivider}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default horizontal divider between rows of menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14548,8 +16012,9 @@ public final class R {
      */
     public static final int MenuView_android_horizontalDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#verticalDivider}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default vertical divider between menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14560,8 +16025,9 @@ public final class R {
      */
     public static final int MenuView_android_verticalDivider=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default background for the menu header.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14575,8 +16041,9 @@ public final class R {
      */
     public static final int MenuView_android_headerBackground=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemBackground}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default background for each menu item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14590,8 +16057,9 @@ public final class R {
      */
     public static final int MenuView_android_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemIconDisabledAlpha}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default disabled icon alpha for each menu item that shows an icon.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -14599,8 +16067,9 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preserveIconSpacing}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Whether space should be reserved in layout when an icon is missing.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14609,8 +16078,9 @@ public final class R {
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subMenuArrow}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Drawable for the arrow icon indicating a particular item is a submenu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14629,8 +16099,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MultiSelectListPreference_android_entries android:entries}</code></td><td></td></tr>
      * <tr><td><code>{@link #MultiSelectListPreference_android_entryValues android:entryValues}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MultiSelectListPreference_entries com.example.android.tvleanback:entries}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MultiSelectListPreference_entryValues com.example.android.tvleanback:entryValues}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MultiSelectListPreference_entries com.example.android.tvleanback:entries}</code></td><td>The human-readable array to present as a list.</td></tr>
+     * <tr><td><code>{@link #MultiSelectListPreference_entryValues com.example.android.tvleanback:entryValues}</code></td><td>The array to find the value to save for a preference when an entry from
+     * entries is selected.</td></tr>
      * </table>
      * @see #MultiSelectListPreference_android_entries
      * @see #MultiSelectListPreference_android_entryValues
@@ -14665,8 +16136,10 @@ public final class R {
      */
     public static final int MultiSelectListPreference_android_entryValues=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#entries}
-     * attribute's value can be found in the {@link #MultiSelectListPreference} array.
+     * <p>
+     * @attr description
+     * The human-readable array to present as a list. Each entry must have a corresponding
+     * index in entryValues.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14677,8 +16150,11 @@ public final class R {
      */
     public static final int MultiSelectListPreference_entries=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#entryValues}
-     * attribute's value can be found in the {@link #MultiSelectListPreference} array.
+     * <p>
+     * @attr description
+     * The array to find the value to save for a preference when an entry from
+     * entries is selected. If a user clicks the second item in entries, the
+     * second item in this array will be saved to the preference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14695,13 +16171,13 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PagingIndicator_arrowBgColor com.example.android.tvleanback:arrowBgColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_arrowColor com.example.android.tvleanback:arrowColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_arrowRadius com.example.android.tvleanback:arrowRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_dotBgColor com.example.android.tvleanback:dotBgColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_dotToArrowGap com.example.android.tvleanback:dotToArrowGap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_dotToDotGap com.example.android.tvleanback:dotToDotGap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PagingIndicator_lbDotRadius com.example.android.tvleanback:lbDotRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PagingIndicator_arrowBgColor com.example.android.tvleanback:arrowBgColor}</code></td><td>Attribute for background color of the arrow in PagingIndicator.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_arrowColor com.example.android.tvleanback:arrowColor}</code></td><td>Attribute for the arrow color in PagingIndicator.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_arrowRadius com.example.android.tvleanback:arrowRadius}</code></td><td>Attributes for the radius of the arrow.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_dotBgColor com.example.android.tvleanback:dotBgColor}</code></td><td>Attribute for background color of the dots in PagingIndicator.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_dotToArrowGap com.example.android.tvleanback:dotToArrowGap}</code></td><td>Attributes for the distance between the centers of the arrow circle and the adjacent dot.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_dotToDotGap com.example.android.tvleanback:dotToDotGap}</code></td><td>Attributes for the distance between the centers of the adjacent dots.</td></tr>
+     * <tr><td><code>{@link #PagingIndicator_lbDotRadius com.example.android.tvleanback:lbDotRadius}</code></td><td>Attributes for the radius of the dot.</td></tr>
      * </table>
      * @see #PagingIndicator_arrowBgColor
      * @see #PagingIndicator_arrowColor
@@ -14716,8 +16192,9 @@ public final class R {
       0x7f03009f, 0x7f0300a0, 0x7f03012a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#arrowBgColor}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attribute for background color of the arrow in PagingIndicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14728,8 +16205,9 @@ public final class R {
      */
     public static final int PagingIndicator_arrowBgColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#arrowColor}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attribute for the arrow color in PagingIndicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14740,8 +16218,9 @@ public final class R {
      */
     public static final int PagingIndicator_arrowColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#arrowRadius}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attributes for the radius of the arrow.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14752,8 +16231,9 @@ public final class R {
      */
     public static final int PagingIndicator_arrowRadius=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dotBgColor}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attribute for background color of the dots in PagingIndicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14764,8 +16244,9 @@ public final class R {
      */
     public static final int PagingIndicator_dotBgColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dotToArrowGap}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attributes for the distance between the centers of the arrow circle and the adjacent dot.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14776,8 +16257,9 @@ public final class R {
      */
     public static final int PagingIndicator_dotToArrowGap=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dotToDotGap}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attributes for the distance between the centers of the adjacent dots.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14788,8 +16270,9 @@ public final class R {
      */
     public static final int PagingIndicator_dotToDotGap=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#lbDotRadius}
-     * attribute's value can be found in the {@link #PagingIndicator} array.
+     * <p>
+     * @attr description
+     * Attributes for the radius of the dot.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14900,7 +16383,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.android.tvleanback:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.android.tvleanback:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -14937,8 +16420,9 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#overlapAnchor}
-     * attribute's value can be found in the {@link #PopupWindow} array.
+     * <p>
+     * @attr description
+     * Whether the popup window should overlap its anchor view.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14953,7 +16437,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.android.tvleanback:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.android.tvleanback:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -14961,8 +16445,9 @@ public final class R {
       0x7f0301d7
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#state_above_anchor}
-     * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
+     * <p>
+     * @attr description
+     * State identifier indicating the popup will be above the anchor.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -14993,25 +16478,29 @@ public final class R {
      * <tr><td><code>{@link #Preference_android_fragment android:fragment}</code></td><td></td></tr>
      * <tr><td><code>{@link #Preference_android_singleLineTitle android:singleLineTitle}</code></td><td></td></tr>
      * <tr><td><code>{@link #Preference_android_iconSpaceReserved android:iconSpaceReserved}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_allowDividerAbove com.example.android.tvleanback:allowDividerAbove}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_allowDividerBelow com.example.android.tvleanback:allowDividerBelow}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_defaultValue com.example.android.tvleanback:defaultValue}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_dependency com.example.android.tvleanback:dependency}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_enabled com.example.android.tvleanback:enabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_fragment com.example.android.tvleanback:fragment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_icon com.example.android.tvleanback:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_iconSpaceReserved com.example.android.tvleanback:iconSpaceReserved}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_isPreferenceVisible com.example.android.tvleanback:isPreferenceVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_key com.example.android.tvleanback:key}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_layout com.example.android.tvleanback:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_order com.example.android.tvleanback:order}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_persistent com.example.android.tvleanback:persistent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_selectable com.example.android.tvleanback:selectable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_shouldDisableView com.example.android.tvleanback:shouldDisableView}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_singleLineTitle com.example.android.tvleanback:singleLineTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_summary com.example.android.tvleanback:summary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_allowDividerAbove com.example.android.tvleanback:allowDividerAbove}</code></td><td>Whether the preference allows displaying divider on top</td></tr>
+     * <tr><td><code>{@link #Preference_allowDividerBelow com.example.android.tvleanback:allowDividerBelow}</code></td><td>Whether the preference allows displaying divider below it</td></tr>
+     * <tr><td><code>{@link #Preference_defaultValue com.example.android.tvleanback:defaultValue}</code></td><td>The default value for the preference, which will be set either if persistence
+     * is off or persistence is on and the preference is not found in the persistent
+     * storage.</td></tr>
+     * <tr><td><code>{@link #Preference_dependency com.example.android.tvleanback:dependency}</code></td><td>The key of another Preference that this Preference will depend on.</td></tr>
+     * <tr><td><code>{@link #Preference_enabled com.example.android.tvleanback:enabled}</code></td><td>Whether the Preference is enabled.</td></tr>
+     * <tr><td><code>{@link #Preference_fragment com.example.android.tvleanback:fragment}</code></td><td>When used inside of a modern PreferenceActivity, this declares
+     * a new PreferenceFragment to be shown when the user selects this item.</td></tr>
+     * <tr><td><code>{@link #Preference_icon com.example.android.tvleanback:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #Preference_iconSpaceReserved com.example.android.tvleanback:iconSpaceReserved}</code></td><td>Whether the space for the preference icon view will be reserved.</td></tr>
+     * <tr><td><code>{@link #Preference_isPreferenceVisible com.example.android.tvleanback:isPreferenceVisible}</code></td><td>Whether the Preference is visible.</td></tr>
+     * <tr><td><code>{@link #Preference_key com.example.android.tvleanback:key}</code></td><td>The key to store the Preference value.</td></tr>
+     * <tr><td><code>{@link #Preference_layout com.example.android.tvleanback:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #Preference_order com.example.android.tvleanback:order}</code></td><td>The order for the Preference (lower values are to be ordered first).</td></tr>
+     * <tr><td><code>{@link #Preference_persistent com.example.android.tvleanback:persistent}</code></td><td>Whether the Preference stores its value to the shared preferences.</td></tr>
+     * <tr><td><code>{@link #Preference_selectable com.example.android.tvleanback:selectable}</code></td><td>Whether the Preference is selectable.</td></tr>
+     * <tr><td><code>{@link #Preference_shouldDisableView com.example.android.tvleanback:shouldDisableView}</code></td><td>Whether the view of this Preference should be disabled when
+     * this Preference is disabled.</td></tr>
+     * <tr><td><code>{@link #Preference_singleLineTitle com.example.android.tvleanback:singleLineTitle}</code></td><td>Whether to use single line for the preference title text.</td></tr>
+     * <tr><td><code>{@link #Preference_summary com.example.android.tvleanback:summary}</code></td><td>The summary for the Preference in a PreferenceActivity screen.</td></tr>
      * <tr><td><code>{@link #Preference_title com.example.android.tvleanback:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_widgetLayout com.example.android.tvleanback:widgetLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_widgetLayout com.example.android.tvleanback:widgetLayout}</code></td><td>The layout for the controllable widget portion of a Preference.</td></tr>
      * </table>
      * @see #Preference_android_icon
      * @see #Preference_android_persistent
@@ -15234,8 +16723,9 @@ public final class R {
      */
     public static final int Preference_android_iconSpaceReserved=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#allowDividerAbove}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the preference allows displaying divider on top
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15244,8 +16734,9 @@ public final class R {
      */
     public static final int Preference_allowDividerAbove=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#allowDividerBelow}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the preference allows displaying divider below it
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15254,8 +16745,11 @@ public final class R {
      */
     public static final int Preference_allowDividerBelow=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultValue}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The default value for the preference, which will be set either if persistence
+     * is off or persistence is on and the preference is not found in the persistent
+     * storage.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15272,8 +16766,10 @@ public final class R {
      */
     public static final int Preference_defaultValue=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dependency}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The key of another Preference that this Preference will depend on.  If the other
+     * Preference is not set or is off, this Preference will be disabled.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15282,8 +16778,9 @@ public final class R {
      */
     public static final int Preference_dependency=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#enabled}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the Preference is enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15292,8 +16789,10 @@ public final class R {
      */
     public static final int Preference_enabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fragment}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * When used inside of a modern PreferenceActivity, this declares
+     * a new PreferenceFragment to be shown when the user selects this item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15302,8 +16801,9 @@ public final class R {
      */
     public static final int Preference_fragment=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#icon}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The optional icon for the preference
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15314,8 +16814,12 @@ public final class R {
      */
     public static final int Preference_icon=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#iconSpaceReserved}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the space for the preference icon view will be reserved. If set to true, the
+     * preference will be offset as if it would have the icon and thus aligned with other
+     * preferences having icons. By default, preference icon view visibility will be set to
+     * GONE when there is no icon provided, so the default value of this attribute is false.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15324,8 +16828,9 @@ public final class R {
      */
     public static final int Preference_iconSpaceReserved=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#isPreferenceVisible}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the Preference is visible. By default, this is set to true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15334,8 +16839,9 @@ public final class R {
      */
     public static final int Preference_isPreferenceVisible=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#key}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The key to store the Preference value.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15344,8 +16850,10 @@ public final class R {
      */
     public static final int Preference_key=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The layout for the Preference in a PreferenceActivity screen. This should
+     * rarely need to be changed, look at widgetLayout instead.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15356,8 +16864,10 @@ public final class R {
      */
     public static final int Preference_layout=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#order}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The order for the Preference (lower values are to be ordered first). If this is not
+     * specified, the default ordering will be alphabetic.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -15365,8 +16875,9 @@ public final class R {
      */
     public static final int Preference_order=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#persistent}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the Preference stores its value to the shared preferences.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15375,8 +16886,9 @@ public final class R {
      */
     public static final int Preference_persistent=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectable}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the Preference is selectable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15385,8 +16897,10 @@ public final class R {
      */
     public static final int Preference_selectable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#shouldDisableView}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether the view of this Preference should be disabled when
+     * this Preference is disabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15395,8 +16909,10 @@ public final class R {
      */
     public static final int Preference_shouldDisableView=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#singleLineTitle}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * Whether to use single line for the preference title text. By default, preference title
+     * will be constrained to one line, so the default value of this attribute is true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15405,8 +16921,9 @@ public final class R {
      */
     public static final int Preference_singleLineTitle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summary}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15415,8 +16932,9 @@ public final class R {
      */
     public static final int Preference_summary=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#title}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The title for the Preference in a PreferenceActivity screen.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15425,8 +16943,12 @@ public final class R {
      */
     public static final int Preference_title=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#widgetLayout}
-     * attribute's value can be found in the {@link #Preference} array.
+     * <p>
+     * @attr description
+     * The layout for the controllable widget portion of a Preference. This is inflated
+     * into the layout for a Preference and should be used more frequently than
+     * the layout attribute. For example, a checkbox preference would specify
+     * a custom layout (consisting of just the CheckBox) here.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15446,7 +16968,7 @@ public final class R {
      * <tr><td><code>{@link #PreferenceFragment_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragment_android_divider android:divider}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragment_android_dividerHeight android:dividerHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceFragment_allowDividerAfterLastItem com.example.android.tvleanback:allowDividerAfterLastItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceFragment_allowDividerAfterLastItem com.example.android.tvleanback:allowDividerAfterLastItem}</code></td><td>Whether a divider is allowed to draw after the last item</td></tr>
      * </table>
      * @see #PreferenceFragment_android_layout
      * @see #PreferenceFragment_android_divider
@@ -15457,8 +16979,9 @@ public final class R {
       0x010100f2, 0x01010129, 0x0101012a, 0x7f03002b
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout}
-     * attribute's value can be found in the {@link #PreferenceFragment} array.
+     * <p>
+     * @attr description
+     * The layout for the PreferenceFragment. This should rarely need to be changed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15469,8 +16992,9 @@ public final class R {
      */
     public static final int PreferenceFragment_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#divider}
-     * attribute's value can be found in the {@link #PreferenceFragment} array.
+     * <p>
+     * @attr description
+     * List separator to draw between preference views
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15484,8 +17008,9 @@ public final class R {
      */
     public static final int PreferenceFragment_android_divider=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dividerHeight}
-     * attribute's value can be found in the {@link #PreferenceFragment} array.
+     * <p>
+     * @attr description
+     * List separator height
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -15497,8 +17022,9 @@ public final class R {
      */
     public static final int PreferenceFragment_android_dividerHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#allowDividerAfterLastItem}
-     * attribute's value can be found in the {@link #PreferenceFragment} array.
+     * <p>
+     * @attr description
+     * Whether a divider is allowed to draw after the last item
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15516,7 +17042,7 @@ public final class R {
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_divider android:divider}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_dividerHeight android:dividerHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceFragmentCompat_allowDividerAfterLastItem com.example.android.tvleanback:allowDividerAfterLastItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceFragmentCompat_allowDividerAfterLastItem com.example.android.tvleanback:allowDividerAfterLastItem}</code></td><td>Whether a divider is allowed to draw after the last item</td></tr>
      * </table>
      * @see #PreferenceFragmentCompat_android_layout
      * @see #PreferenceFragmentCompat_android_divider
@@ -15527,8 +17053,9 @@ public final class R {
       0x010100f2, 0x01010129, 0x0101012a, 0x7f03002b
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout}
-     * attribute's value can be found in the {@link #PreferenceFragmentCompat} array.
+     * <p>
+     * @attr description
+     * The layout for the PreferenceFragment. This should rarely need to be changed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15539,8 +17066,9 @@ public final class R {
      */
     public static final int PreferenceFragmentCompat_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#divider}
-     * attribute's value can be found in the {@link #PreferenceFragmentCompat} array.
+     * <p>
+     * @attr description
+     * List separator to draw between preference views
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15554,8 +17082,9 @@ public final class R {
      */
     public static final int PreferenceFragmentCompat_android_divider=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dividerHeight}
-     * attribute's value can be found in the {@link #PreferenceFragmentCompat} array.
+     * <p>
+     * @attr description
+     * List separator height
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -15567,8 +17096,9 @@ public final class R {
      */
     public static final int PreferenceFragmentCompat_android_dividerHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#allowDividerAfterLastItem}
-     * attribute's value can be found in the {@link #PreferenceFragmentCompat} array.
+     * <p>
+     * @attr description
+     * Whether a divider is allowed to draw after the last item
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15584,8 +17114,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PreferenceGroup_android_orderingFromXml android:orderingFromXml}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceGroup_initialExpandedChildrenCount com.example.android.tvleanback:initialExpandedChildrenCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceGroup_orderingFromXml com.example.android.tvleanback:orderingFromXml}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceGroup_initialExpandedChildrenCount com.example.android.tvleanback:initialExpandedChildrenCount}</code></td><td>The maximal number of children that are shown when the preference group is launched
+     * where the rest of the children will be hidden.</td></tr>
+     * <tr><td><code>{@link #PreferenceGroup_orderingFromXml com.example.android.tvleanback:orderingFromXml}</code></td><td>Whether to order the Preference under this group as they appear in the XML file.</td></tr>
      * </table>
      * @see #PreferenceGroup_android_orderingFromXml
      * @see #PreferenceGroup_initialExpandedChildrenCount
@@ -15605,8 +17136,18 @@ public final class R {
      */
     public static final int PreferenceGroup_android_orderingFromXml=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#initialExpandedChildrenCount}
-     * attribute's value can be found in the {@link #PreferenceGroup} array.
+     * <p>
+     * @attr description
+     * The maximal number of children that are shown when the preference group is launched
+     * where the rest of the children will be hidden. If some children are hidden an expand
+     * button will be provided to show all the hidden children.
+     * Any child in any level of the hierarchy that is also a preference group (e.g.
+     * preference category) will not be counted towards the limit. But instead the children of
+     * such group will be counted.
+     * By default, all children will be shown, so the default value of this attribute is equal
+     * to Integer.MAX_VALUE.
+     * The group should have a key defined if an expandable preference is present to correctly
+     * persist state.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -15614,8 +17155,11 @@ public final class R {
      */
     public static final int PreferenceGroup_initialExpandedChildrenCount=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#orderingFromXml}
-     * attribute's value can be found in the {@link #PreferenceGroup} array.
+     * <p>
+     * @attr description
+     * Whether to order the Preference under this group as they appear in the XML file.
+     * If this is false, the ordering will follow the Preference order attribute and
+     * default to alphabetic for those without the order attribute.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -15702,29 +17246,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PreferenceTheme_checkBoxPreferenceStyle com.example.android.tvleanback:checkBoxPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_dialogPreferenceStyle com.example.android.tvleanback:dialogPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_dropdownPreferenceStyle com.example.android.tvleanback:dropdownPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_editTextPreferenceStyle com.example.android.tvleanback:editTextPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceActivityStyle com.example.android.tvleanback:preferenceActivityStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceCategoryStyle com.example.android.tvleanback:preferenceCategoryStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentCompatStyle com.example.android.tvleanback:preferenceFragmentCompatStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentListStyle com.example.android.tvleanback:preferenceFragmentListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentPaddingSide com.example.android.tvleanback:preferenceFragmentPaddingSide}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentStyle com.example.android.tvleanback:preferenceFragmentStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceHeaderPanelStyle com.example.android.tvleanback:preferenceHeaderPanelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceInformationStyle com.example.android.tvleanback:preferenceInformationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceLayoutChild com.example.android.tvleanback:preferenceLayoutChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceListStyle com.example.android.tvleanback:preferenceListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferencePanelStyle com.example.android.tvleanback:preferencePanelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceScreenStyle com.example.android.tvleanback:preferenceScreenStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceStyle com.example.android.tvleanback:preferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceTheme com.example.android.tvleanback:preferenceTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_ringtonePreferenceStyle com.example.android.tvleanback:ringtonePreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_seekBarPreferenceStyle com.example.android.tvleanback:seekBarPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceCompatStyle com.example.android.tvleanback:switchPreferenceCompatStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceStyle com.example.android.tvleanback:switchPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_yesNoPreferenceStyle com.example.android.tvleanback:yesNoPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_checkBoxPreferenceStyle com.example.android.tvleanback:checkBoxPreferenceStyle}</code></td><td>Default style for CheckBoxPreference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_dialogPreferenceStyle com.example.android.tvleanback:dialogPreferenceStyle}</code></td><td>Default style for DialogPreference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_dropdownPreferenceStyle com.example.android.tvleanback:dropdownPreferenceStyle}</code></td><td>Default style for DropDownPreference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_editTextPreferenceStyle com.example.android.tvleanback:editTextPreferenceStyle}</code></td><td>Default style for EditTextPreference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceActivityStyle com.example.android.tvleanback:preferenceActivityStyle}</code></td><td>Default style for the PreferenceActivity.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceCategoryStyle com.example.android.tvleanback:preferenceCategoryStyle}</code></td><td>Default style for PreferenceCategory.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentCompatStyle com.example.android.tvleanback:preferenceFragmentCompatStyle}</code></td><td>Default style for Headers pane in PreferenceActivity.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentListStyle com.example.android.tvleanback:preferenceFragmentListStyle}</code></td><td>Preference fragment list style</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentPaddingSide com.example.android.tvleanback:preferenceFragmentPaddingSide}</code></td><td>Preference fragment padding side</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentStyle com.example.android.tvleanback:preferenceFragmentStyle}</code></td><td>Default style for Headers pane in PreferenceActivity.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceHeaderPanelStyle com.example.android.tvleanback:preferenceHeaderPanelStyle}</code></td><td>Preference headers panel style</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceInformationStyle com.example.android.tvleanback:preferenceInformationStyle}</code></td><td>Default style for informational Preference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceLayoutChild com.example.android.tvleanback:preferenceLayoutChild}</code></td><td>The preference layout that has the child/tabbed effect.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceListStyle com.example.android.tvleanback:preferenceListStyle}</code></td><td>Preference list style</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferencePanelStyle com.example.android.tvleanback:preferencePanelStyle}</code></td><td>Preference panel style</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceScreenStyle com.example.android.tvleanback:preferenceScreenStyle}</code></td><td>Default style for PreferenceScreen.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceStyle com.example.android.tvleanback:preferenceStyle}</code></td><td>Default style for Preference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceTheme com.example.android.tvleanback:preferenceTheme}</code></td><td>Theme for inflating Preference objects</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_ringtonePreferenceStyle com.example.android.tvleanback:ringtonePreferenceStyle}</code></td><td>Default style for RingtonePreference.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_seekBarPreferenceStyle com.example.android.tvleanback:seekBarPreferenceStyle}</code></td><td>Default style for seekbar preferences.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceCompatStyle com.example.android.tvleanback:switchPreferenceCompatStyle}</code></td><td>Default style for switch compat preferences.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceStyle com.example.android.tvleanback:switchPreferenceStyle}</code></td><td>Default style for switch preferences.</td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_yesNoPreferenceStyle com.example.android.tvleanback:yesNoPreferenceStyle}</code></td><td>Default style for YesNoPreference.</td></tr>
      * </table>
      * @see #PreferenceTheme_checkBoxPreferenceStyle
      * @see #PreferenceTheme_dialogPreferenceStyle
@@ -15759,8 +17303,9 @@ public final class R {
       0x7f0301e6, 0x7f0301e7, 0x7f03022b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#checkBoxPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for CheckBoxPreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15771,8 +17316,9 @@ public final class R {
      */
     public static final int PreferenceTheme_checkBoxPreferenceStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dialogPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for DialogPreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15783,8 +17329,9 @@ public final class R {
      */
     public static final int PreferenceTheme_dialogPreferenceStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#dropdownPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for DropDownPreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15795,8 +17342,9 @@ public final class R {
      */
     public static final int PreferenceTheme_dropdownPreferenceStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#editTextPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for EditTextPreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15807,8 +17355,9 @@ public final class R {
      */
     public static final int PreferenceTheme_editTextPreferenceStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceActivityStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for the PreferenceActivity.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15819,8 +17368,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceActivityStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceCategoryStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for PreferenceCategory.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15831,8 +17381,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceCategoryStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceFragmentCompatStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for Headers pane in PreferenceActivity.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15843,8 +17394,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceFragmentCompatStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceFragmentListStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Preference fragment list style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15855,8 +17407,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceFragmentListStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceFragmentPaddingSide}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Preference fragment padding side
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -15868,8 +17421,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceFragmentPaddingSide=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceFragmentStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for Headers pane in PreferenceActivity.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15880,8 +17434,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceFragmentStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceHeaderPanelStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Preference headers panel style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15892,8 +17447,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceHeaderPanelStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceInformationStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for informational Preference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15904,8 +17460,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceInformationStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceLayoutChild}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * The preference layout that has the child/tabbed effect.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15916,8 +17473,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceLayoutChild=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceListStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Preference list style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15928,8 +17486,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceListStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferencePanelStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Preference panel style
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15940,8 +17499,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferencePanelStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceScreenStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for PreferenceScreen.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15952,8 +17512,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceScreenStyle=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for Preference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15964,8 +17525,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#preferenceTheme}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Theme for inflating Preference objects
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15976,8 +17538,9 @@ public final class R {
      */
     public static final int PreferenceTheme_preferenceTheme=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#ringtonePreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for RingtonePreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15988,8 +17551,9 @@ public final class R {
      */
     public static final int PreferenceTheme_ringtonePreferenceStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#seekBarPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for seekbar preferences.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16000,8 +17564,9 @@ public final class R {
      */
     public static final int PreferenceTheme_seekBarPreferenceStyle=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchPreferenceCompatStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for switch compat preferences.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16012,8 +17577,9 @@ public final class R {
      */
     public static final int PreferenceTheme_switchPreferenceCompatStyle=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for switch preferences.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16024,8 +17590,9 @@ public final class R {
      */
     public static final int PreferenceTheme_switchPreferenceStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#yesNoPreferenceStyle}
-     * attribute's value can be found in the {@link #PreferenceTheme} array.
+     * <p>
+     * @attr description
+     * Default style for YesNoPreference.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16042,8 +17609,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.android.tvleanback:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.android.tvleanback:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.android.tvleanback:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.android.tvleanback:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -16052,8 +17619,9 @@ public final class R {
       0x7f030158, 0x7f03015b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#paddingBottomNoButtons}
-     * attribute's value can be found in the {@link #RecycleListView} array.
+     * <p>
+     * @attr description
+     * Bottom padding to use when no buttons are present.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16065,8 +17633,9 @@ public final class R {
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#paddingTopNoTitle}
-     * attribute's value can be found in the {@link #RecycleListView} array.
+     * <p>
+     * @attr description
+     * Top padding to use when no title is present.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16092,7 +17661,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.example.android.tvleanback:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.example.android.tvleanback:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.example.android.tvleanback:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.android.tvleanback:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.android.tvleanback:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout com.example.android.tvleanback:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount com.example.android.tvleanback:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.android.tvleanback:stackFromEnd}</code></td><td></td></tr>
@@ -16219,8 +17788,17 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layoutManager}
-     * attribute's value can be found in the {@link #RecyclerView} array.
+     * <p>
+     * @attr description
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must ext androidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16268,19 +17846,20 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.example.android.tvleanback:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.example.android.tvleanback:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.android.tvleanback:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.example.android.tvleanback:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.android.tvleanback:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.example.android.tvleanback:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.example.android.tvleanback:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.example.android.tvleanback:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.android.tvleanback:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.example.android.tvleanback:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.example.android.tvleanback:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.android.tvleanback:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.example.android.tvleanback:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.example.android.tvleanback:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.example.android.tvleanback:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.android.tvleanback:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.example.android.tvleanback:goIcon}</code></td><td>Go button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.android.tvleanback:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.example.android.tvleanback:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.example.android.tvleanback:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.example.android.tvleanback:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.android.tvleanback:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.example.android.tvleanback:searchIcon}</code></td><td>Search icon</td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.example.android.tvleanback:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.android.tvleanback:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.example.android.tvleanback:voiceIcon}</code></td><td>Voice button icon</td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -16326,8 +17905,9 @@ public final class R {
      */
     public static final int SearchView_android_focusable=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * An optional maximum width of the SearchView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16339,8 +17919,9 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#inputType}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The input type to set on the query text field.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16386,8 +17967,9 @@ public final class R {
      */
     public static final int SearchView_android_inputType=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#imeOptions}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The IME options to set on the query text field.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16418,8 +18000,9 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Close button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16430,8 +18013,9 @@ public final class R {
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#commitIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Commit icon shown in the query suggestion row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16442,8 +18026,10 @@ public final class R {
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#defaultQueryHint}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16452,8 +18038,9 @@ public final class R {
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#goIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Go button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16464,8 +18051,10 @@ public final class R {
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#iconifiedByDefault}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The default state of the SearchView. If true, it will be iconified when not in
+     * use and expanded when clicked.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16474,8 +18063,9 @@ public final class R {
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The layout to use for the search view.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16486,8 +18076,9 @@ public final class R {
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#queryBackground}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Background for the section containing the search query
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16498,8 +18089,9 @@ public final class R {
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#queryHint}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * An optional user-defined query hint string to be displayed in the empty query field.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16508,8 +18100,9 @@ public final class R {
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchHintIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Search icon displayed as a text field hint
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16520,8 +18113,9 @@ public final class R {
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Search icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16532,8 +18126,9 @@ public final class R {
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#submitBackground}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Background for the section containing the action (e.g. voice search)
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16544,8 +18139,9 @@ public final class R {
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#suggestionRowLayout}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Layout for query suggestion rows
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16556,8 +18152,9 @@ public final class R {
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#voiceIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Voice button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16576,10 +18173,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SeekBarPreference_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #SeekBarPreference_android_max android:max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_adjustable com.example.android.tvleanback:adjustable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_adjustable com.example.android.tvleanback:adjustable}</code></td><td>Attribute indicating whether the slider within this preference can be adjusted, that is
+     * pressing left/right keys when this preference is focused will move the slider accordingly
+     * (e.g.</td></tr>
      * <tr><td><code>{@link #SeekBarPreference_min com.example.android.tvleanback:min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_seekBarIncrement com.example.android.tvleanback:seekBarIncrement}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_showSeekBarValue com.example.android.tvleanback:showSeekBarValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_seekBarIncrement com.example.android.tvleanback:seekBarIncrement}</code></td><td>Attribute controlling the amount to increment or decrement the seekbar when the user
+     * presses the arrow keys</td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_showSeekBarValue com.example.android.tvleanback:showSeekBarValue}</code></td><td>Flag indicating whether the TextView next to the seekbar that shows the current seekbar
+     * value will be displayed.</td></tr>
      * </table>
      * @see #SeekBarPreference_android_layout
      * @see #SeekBarPreference_android_max
@@ -16614,8 +18215,12 @@ public final class R {
      */
     public static final int SeekBarPreference_android_max=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#adjustable}
-     * attribute's value can be found in the {@link #SeekBarPreference} array.
+     * <p>
+     * @attr description
+     * Attribute indicating whether the slider within this preference can be adjusted, that is
+     * pressing left/right keys when this preference is focused will move the slider accordingly
+     * (e.g. inline adjustable preferences). False, if the slider within the preference is
+     * read-only and cannot be adjusted. By default, the seekbar is adjustable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16633,8 +18238,10 @@ public final class R {
      */
     public static final int SeekBarPreference_min=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#seekBarIncrement}
-     * attribute's value can be found in the {@link #SeekBarPreference} array.
+     * <p>
+     * @attr description
+     * Attribute controlling the amount to increment or decrement the seekbar when the user
+     * presses the arrow keys
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -16642,8 +18249,11 @@ public final class R {
      */
     public static final int SeekBarPreference_seekBarIncrement=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#showSeekBarValue}
-     * attribute's value can be found in the {@link #SeekBarPreference} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether the TextView next to the seekbar that shows the current seekbar
+     * value will be displayed. If true, the view is VISIBLE; if false, the view will be GONE.
+     * By default, this view is VISIBLE.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16898,7 +18508,8 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -16911,8 +18522,9 @@ public final class R {
       0x7f03017d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#entries}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Reference to an array resource that will populate the Spinner.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16923,8 +18535,9 @@ public final class R {
      */
     public static final int Spinner_android_entries=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for the dropdown in spinnerMode="dropdown".
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16938,8 +18551,9 @@ public final class R {
      */
     public static final int Spinner_android_popupBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#prompt}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * The prompt to display when the spinner's dialog is shown.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16950,8 +18564,9 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownWidth}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Width of the dropdown in spinnerMode="dropdown".
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16973,8 +18588,9 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Theme to use for the drop-down or dialog popup window.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17010,8 +18626,11 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dither}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Enables or disables dithering of the bitmap if the bitmap does not have the
+     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
+     * an RGB 565 screen).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17020,8 +18639,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_dither=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Indicates whether the drawable should be initially visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17030,8 +18650,14 @@ public final class R {
      */
     public static final int StateListDrawable_android_visible=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * If true, allows the drawable's padding to change based on the
+     * current state that is selected.  If false, the padding will
+     * stay the same (based on the maximum padding of all the states).
+     * Enabling this feature requires that the owner of the drawable
+     * deal with performing layout when the state changes, which is
+     * often not supported.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17040,8 +18666,12 @@ public final class R {
      */
     public static final int StateListDrawable_android_variablePadding=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * If true, the drawable's reported internal size will remain
+     * constant as the state changes; the size is the maximum of all
+     * of the states.  If false, the size will vary based on the
+     * current state.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17050,8 +18680,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_constantSize=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade in a new state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17059,8 +18690,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_enterFadeDuration=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade out an old state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17082,8 +18714,10 @@ public final class R {
       0x01010199
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #StateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Reference to a drawable resource to use for the state. If not
+     * given, the drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17103,17 +18737,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.example.android.tvleanback:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.android.tvleanback:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.android.tvleanback:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.android.tvleanback:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.android.tvleanback:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.android.tvleanback:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.android.tvleanback:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.android.tvleanback:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.example.android.tvleanback:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.android.tvleanback:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.android.tvleanback:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.example.android.tvleanback:showText}</code></td><td>Whether to draw on/off text.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.android.tvleanback:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.android.tvleanback:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.android.tvleanback:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.android.tvleanback:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.android.tvleanback:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.android.tvleanback:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.android.tvleanback:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.example.android.tvleanback:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.android.tvleanback:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.android.tvleanback:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -17137,8 +18771,9 @@ public final class R {
       0x7f030216, 0x7f030217
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textOn}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Text to use when the switch is in the checked/"on" state.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17147,8 +18782,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOn=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textOff}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Text to use when the switch is in the unchecked/"off" state.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17157,8 +18793,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOff=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#thumb}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as the "thumb" that switches back and forth.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17169,8 +18806,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#showText}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Whether to draw on/off text.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17179,8 +18817,9 @@ public final class R {
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#splitTrack}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Whether to split the track and leave a gap for the thumb drawable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17189,8 +18828,9 @@ public final class R {
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchMinWidth}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Minimum width for the switch component
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17202,8 +18842,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchPadding}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Minimum space between the switch and caption text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17215,8 +18856,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchTextAppearance}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * TextAppearance style for text displayed on the switch thumb.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17227,8 +18869,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#thumbTextPadding}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Amount of padding on either side of text within the switch thumb.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17240,8 +18883,9 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#thumbTint}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the thumb drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17251,8 +18895,9 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#thumbTintMode}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the thumb tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17260,20 +18905,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#track}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as the "track" that the switch thumb slides within.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17284,8 +18935,9 @@ public final class R {
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#trackTint}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the track.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17295,8 +18947,9 @@ public final class R {
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#trackTintMode}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the track tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17304,12 +18957,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:trackTintMode
@@ -17327,11 +18985,13 @@ public final class R {
      * <tr><td><code>{@link #SwitchPreference_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreference_android_switchTextOn android:switchTextOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreference_android_switchTextOff android:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_switchTextOff com.example.android.tvleanback:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_switchTextOn com.example.android.tvleanback:switchTextOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td>The state (true for on, or false for off) that causes dependents to be disabled.</td></tr>
+     * <tr><td><code>{@link #SwitchPreference_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is unchecked.</td></tr>
+     * <tr><td><code>{@link #SwitchPreference_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is checked.</td></tr>
+     * <tr><td><code>{@link #SwitchPreference_switchTextOff com.example.android.tvleanback:switchTextOff}</code></td><td>The text used on the switch itself when in the "off" state.</td></tr>
+     * <tr><td><code>{@link #SwitchPreference_switchTextOn com.example.android.tvleanback:switchTextOn}</code></td><td>The text used on the switch itself when in the "on" state.</td></tr>
      * </table>
      * @see #SwitchPreference_android_summaryOn
      * @see #SwitchPreference_android_summaryOff
@@ -17400,8 +19060,10 @@ public final class R {
      */
     public static final int SwitchPreference_android_switchTextOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#disableDependentsState}
-     * attribute's value can be found in the {@link #SwitchPreference} array.
+     * <p>
+     * @attr description
+     * The state (true for on, or false for off) that causes dependents to be disabled. By default,
+     * dependents will be disabled when this is unchecked, so the value of this preference is false.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17410,8 +19072,11 @@ public final class R {
      */
     public static final int SwitchPreference_disableDependentsState=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOff}
-     * attribute's value can be found in the {@link #SwitchPreference} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * SwitchPreference is unchecked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17420,8 +19085,11 @@ public final class R {
      */
     public static final int SwitchPreference_summaryOff=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOn}
-     * attribute's value can be found in the {@link #SwitchPreference} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * SwitchPreference is checked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17430,8 +19098,10 @@ public final class R {
      */
     public static final int SwitchPreference_summaryOn=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchTextOff}
-     * attribute's value can be found in the {@link #SwitchPreference} array.
+     * <p>
+     * @attr description
+     * The text used on the switch itself when in the "off" state.
+     * This should be a very SHORT string, as it appears in a small space.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17440,8 +19110,10 @@ public final class R {
      */
     public static final int SwitchPreference_switchTextOff=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchTextOn}
-     * attribute's value can be found in the {@link #SwitchPreference} array.
+     * <p>
+     * @attr description
+     * The text used on the switch itself when in the "on" state.
+     * This should be a very SHORT string, as it appears in a small space.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17461,11 +19133,13 @@ public final class R {
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_switchTextOn android:switchTextOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_switchTextOff android:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOff com.example.android.tvleanback:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOn com.example.android.tvleanback:switchTextOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_disableDependentsState com.example.android.tvleanback:disableDependentsState}</code></td><td>The state (true for on, or false for off) that causes dependents to be disabled.</td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOff com.example.android.tvleanback:summaryOff}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is unchecked.</td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOn com.example.android.tvleanback:summaryOn}</code></td><td>The summary for the Preference in a PreferenceActivity screen when the
+     * CheckBoxPreference is checked.</td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOff com.example.android.tvleanback:switchTextOff}</code></td><td>The text used on the switch itself when in the "off" state.</td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOn com.example.android.tvleanback:switchTextOn}</code></td><td>The text used on the switch itself when in the "on" state.</td></tr>
      * </table>
      * @see #SwitchPreferenceCompat_android_summaryOn
      * @see #SwitchPreferenceCompat_android_summaryOff
@@ -17534,8 +19208,10 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_android_switchTextOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#disableDependentsState}
-     * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
+     * <p>
+     * @attr description
+     * The state (true for on, or false for off) that causes dependents to be disabled. By default,
+     * dependents will be disabled when this is unchecked, so the value of this preference is false.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17544,8 +19220,11 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_disableDependentsState=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOff}
-     * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * SwitchPreference is unchecked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17554,8 +19233,11 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_summaryOff=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#summaryOn}
-     * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
+     * <p>
+     * @attr description
+     * The summary for the Preference in a PreferenceActivity screen when the
+     * SwitchPreference is checked. If separate on/off summaries are not
+     * needed, the summary attribute can be used instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17564,8 +19246,10 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_summaryOn=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchTextOff}
-     * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
+     * <p>
+     * @attr description
+     * The text used on the switch itself when in the "off" state.
+     * This should be a very SHORT string, as it appears in a small space.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17574,8 +19258,10 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_switchTextOff=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#switchTextOn}
-     * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
+     * <p>
+     * @attr description
+     * The text used on the switch itself when in the "on" state.
+     * This should be a very SHORT string, as it appears in a small space.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17601,8 +19287,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.android.tvleanback:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.android.tvleanback:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.android.tvleanback:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.android.tvleanback:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -17768,8 +19454,9 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#fontFamily}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * The attribute for the font family.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17778,8 +19465,9 @@ public final class R {
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#textAllCaps}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17801,32 +19489,39 @@ public final class R {
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_buttonGravity com.example.android.tvleanback:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.android.tvleanback:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.android.tvleanback:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.android.tvleanback:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.android.tvleanback:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.android.tvleanback:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.android.tvleanback:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.android.tvleanback:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.android.tvleanback:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.example.android.tvleanback:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.example.android.tvleanback:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.android.tvleanback:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.android.tvleanback:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.android.tvleanback:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.android.tvleanback:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * are present.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.android.tvleanback:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.android.tvleanback:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.android.tvleanback:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.android.tvleanback:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.example.android.tvleanback:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.example.android.tvleanback:logoDescription}</code></td><td>A content description string to describe the appearance of the
+     * associated logo image.</td></tr>
      * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.android.tvleanback:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.android.tvleanback:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.android.tvleanback:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.example.android.tvleanback:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.android.tvleanback:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
+     * located at the start of the toolbar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.android.tvleanback:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
+     * the start of the toolbar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.example.android.tvleanback:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.example.android.tvleanback:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
      * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.android.tvleanback:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.android.tvleanback:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.android.tvleanback:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
      * <tr><td><code>{@link #Toolbar_title com.example.android.tvleanback:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.example.android.tvleanback:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.android.tvleanback:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.android.tvleanback:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.android.tvleanback:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.android.tvleanback:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.example.android.tvleanback:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.example.android.tvleanback:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.android.tvleanback:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.android.tvleanback:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.android.tvleanback:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.android.tvleanback:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.example.android.tvleanback:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
      * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.android.tvleanback:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.android.tvleanback:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.android.tvleanback:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -17858,6 +19553,7 @@ public final class R {
      * @see #Toolbar_titleTextAppearance
      * @see #Toolbar_titleTextColor
      */
+    @Deprecated
     public static final int[] Toolbar={
       0x010100af, 0x01010140, 0x7f030056, 0x7f030066, 
       0x7f030067, 0x7f030076, 0x7f030077, 0x7f030078, 
@@ -17920,16 +19616,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#collapseContentDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the collapse button.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17938,8 +19635,9 @@ public final class R {
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#collapseIcon}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Icon drawable to use for the collapse button.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17950,8 +19648,10 @@ public final class R {
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetEnd}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17963,8 +19663,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetEndWithActions}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17976,8 +19678,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetLeft}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17989,8 +19693,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetRight}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18002,8 +19708,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetStart}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18015,8 +19723,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#contentInsetStartWithNavigation}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18028,8 +19738,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#logo}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Drawable to set as the logo that appears at the starting side of
+     * the Toolbar, just after the navigation button.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18040,8 +19752,10 @@ public final class R {
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#logoDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A content description string to describe the appearance of the
+     * associated logo image.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -18063,8 +19777,10 @@ public final class R {
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#navigationContentDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the navigation button
+     * located at the start of the toolbar.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -18073,8 +19789,10 @@ public final class R {
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#navigationIcon}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Icon drawable to use for the navigation button located at
+     * the start of the toolbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18085,8 +19803,10 @@ public final class R {
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the toolbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18097,8 +19817,9 @@ public final class R {
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subtitle}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies subtitle text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -18119,8 +19840,9 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#subtitleTextColor}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A color to apply to the subtitle string.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18140,8 +19862,10 @@ public final class R {
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMargin}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18153,8 +19877,11 @@ public final class R {
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMarginBottom}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the bottom side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18166,8 +19893,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMarginEnd}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the end side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18179,8 +19909,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMarginStart}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the start side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18192,8 +19925,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMarginTop}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the top side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18205,8 +19941,9 @@ public final class R {
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleMargins}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * {@deprecated Use titleMargin}
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18216,6 +19953,7 @@ public final class R {
      *
      * @attr name com.example.android.tvleanback:titleMargins
      */
+    @Deprecated
     public static final int Toolbar_titleMargins=26;
     /**
      * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleTextAppearance}
@@ -18230,8 +19968,9 @@ public final class R {
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#titleTextColor}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A color to apply to the title string.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18249,9 +19988,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.example.android.tvleanback:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.example.android.tvleanback:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.example.android.tvleanback:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.example.android.tvleanback:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.example.android.tvleanback:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_theme com.example.android.tvleanback:theme}</code></td><td>Deprecated.</td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -18264,8 +20003,11 @@ public final class R {
       0x7f0301f7
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#theme}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Specifies a theme override for a view. When a theme override is set, the
+     * view will be inflated using a {@link android.content.Context} themed with
+     * the specified resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18276,8 +20018,14 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#focusable}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Boolean that controls whether a view can take focus.  By default the user can not
+     * move focus to a view; by setting this attribute to true the view is
+     * allowed to take focus.  This value does not impact the behavior of
+     * directly calling {@link android.view.View#requestFocus}, which will
+     * always request focus regardless of this view.  It only impacts where
+     * focus navigation will try to move focus.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18294,8 +20042,9 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#paddingEnd}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18307,8 +20056,9 @@ public final class R {
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#paddingStart}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18320,8 +20070,9 @@ public final class R {
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#theme}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Deprecated.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18339,8 +20090,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.android.tvleanback:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.android.tvleanback:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.android.tvleanback:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.android.tvleanback:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -18365,8 +20116,9 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18376,8 +20128,9 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18385,12 +20138,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:backgroundTintMode
@@ -18427,8 +20185,11 @@ public final class R {
      */
     public static final int ViewStubCompat_android_id=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout}
-     * attribute's value can be found in the {@link #ViewStubCompat} array.
+     * <p>
+     * @attr description
+     * Supply an identifier for the layout resource to inflate when the ViewStub
+     * becomes visible or when forced to do so. The layout resource must be a
+     * valid reference to a layout.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18439,8 +20200,9 @@ public final class R {
      */
     public static final int ViewStubCompat_android_layout=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#inflatedId}
-     * attribute's value can be found in the {@link #ViewStubCompat} array.
+     * <p>
+     * @attr description
+     * Overrides the id of the inflated View with this value.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18457,14 +20219,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbBaseCardView_activatedAnimationDuration com.example.android.tvleanback:activatedAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_cardBackground com.example.android.tvleanback:cardBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_cardForeground com.example.android.tvleanback:cardForeground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_cardType com.example.android.tvleanback:cardType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_extraVisibility com.example.android.tvleanback:extraVisibility}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_infoVisibility com.example.android.tvleanback:infoVisibility}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_selectedAnimationDelay com.example.android.tvleanback:selectedAnimationDelay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseCardView_selectedAnimationDuration com.example.android.tvleanback:selectedAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_activatedAnimationDuration com.example.android.tvleanback:activatedAnimationDuration}</code></td><td>Defines the duration in milliseconds of the activated animation for
+     * a card layout.</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_cardBackground com.example.android.tvleanback:cardBackground}</code></td><td>Defines the background of card</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_cardForeground com.example.android.tvleanback:cardForeground}</code></td><td>Defines the background of card</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_cardType com.example.android.tvleanback:cardType}</code></td><td>Defines the type of the card layout</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_extraVisibility com.example.android.tvleanback:extraVisibility}</code></td><td>Defines when the extra region of a card layout is displayed.</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_infoVisibility com.example.android.tvleanback:infoVisibility}</code></td><td>Defines when the info region of a card layout is displayed.</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_selectedAnimationDelay com.example.android.tvleanback:selectedAnimationDelay}</code></td><td>Defines the delay in milliseconds before the selection animation
+     * runs for a card layout.</td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_selectedAnimationDuration com.example.android.tvleanback:selectedAnimationDuration}</code></td><td>Defines the duration in milliseconds of the selection animation for
+     * a card layout.</td></tr>
      * </table>
      * @see #lbBaseCardView_activatedAnimationDuration
      * @see #lbBaseCardView_cardBackground
@@ -18480,8 +20245,10 @@ public final class R {
       0x7f0300b0, 0x7f030116, 0x7f0301c0, 0x7f0301c1
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#activatedAnimationDuration}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the duration in milliseconds of the activated animation for
+     * a card layout.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18489,8 +20256,9 @@ public final class R {
      */
     public static final int lbBaseCardView_activatedAnimationDuration=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#cardBackground}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the background of card
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18504,8 +20272,9 @@ public final class R {
      */
     public static final int lbBaseCardView_cardBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#cardForeground}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the background of card
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18519,8 +20288,9 @@ public final class R {
      */
     public static final int lbBaseCardView_cardForeground=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#cardType}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the type of the card layout
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18528,18 +20298,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>infoOver</td><td>1</td><td></td></tr>
-     * <tr><td>infoUnder</td><td>2</td><td></td></tr>
-     * <tr><td>infoUnderWithExtra</td><td>3</td><td></td></tr>
-     * <tr><td>mainOnly</td><td>0</td><td></td></tr>
+     * <tr><td>infoOver</td><td>1</td><td>A card layout with two layout regions: a main area which is
+     * always visible, and an info region that appears over the lower
+     * area of the main region.</td></tr>
+     * <tr><td>infoUnder</td><td>2</td><td>A card layout with two layout regions: a main area which is
+     * always visible, and an info region that appears below the main
+     * region.</td></tr>
+     * <tr><td>infoUnderWithExtra</td><td>3</td><td>A card layout with three layout regions: a main area which is
+     * always visible, an info region that appears below the main
+     * region, and an extra region that appears below the info region
+     * after a small delay.</td></tr>
+     * <tr><td>mainOnly</td><td>0</td><td>A simple card layout with a single layout region.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:cardType
      */
     public static final int lbBaseCardView_cardType=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#extraVisibility}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines when the extra region of a card layout is displayed.
+     * Depends on infoVisibility, meaning the extra region never displays
+     * if the info region is not displayed as well.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18547,17 +20327,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>activated</td><td>1</td><td></td></tr>
-     * <tr><td>always</td><td>0</td><td></td></tr>
-     * <tr><td>selected</td><td>2</td><td></td></tr>
+     * <tr><td>activated</td><td>1</td><td>Display the extra region only when activated.</td></tr>
+     * <tr><td>always</td><td>0</td><td>Always display the extra region.</td></tr>
+     * <tr><td>selected</td><td>2</td><td>Display the extra region only when selected.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:extraVisibility
      */
     public static final int lbBaseCardView_extraVisibility=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#infoVisibility}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines when the info region of a card layout is displayed.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18565,17 +20346,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>activated</td><td>1</td><td></td></tr>
-     * <tr><td>always</td><td>0</td><td></td></tr>
-     * <tr><td>selected</td><td>2</td><td></td></tr>
+     * <tr><td>activated</td><td>1</td><td>Display the info region only when activated.</td></tr>
+     * <tr><td>always</td><td>0</td><td>Always display the info region.</td></tr>
+     * <tr><td>selected</td><td>2</td><td>Display the info region only when selected.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:infoVisibility
      */
     public static final int lbBaseCardView_infoVisibility=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectedAnimationDelay}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the delay in milliseconds before the selection animation
+     * runs for a card layout.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18583,8 +20366,10 @@ public final class R {
      */
     public static final int lbBaseCardView_selectedAnimationDelay=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#selectedAnimationDuration}
-     * attribute's value can be found in the {@link #lbBaseCardView} array.
+     * <p>
+     * @attr description
+     * Defines the duration in milliseconds of the selection animation for
+     * a card layout.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18598,7 +20383,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbBaseCardView_Layout_layout_viewType com.example.android.tvleanback:layout_viewType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbBaseCardView_Layout_layout_viewType com.example.android.tvleanback:layout_viewType}</code></td><td>The card layout region defined by this element.</td></tr>
      * </table>
      * @see #lbBaseCardView_Layout_layout_viewType
      */
@@ -18606,8 +20391,11 @@ public final class R {
       0x7f030129
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#layout_viewType}
-     * attribute's value can be found in the {@link #lbBaseCardView_Layout} array.
+     * <p>
+     * @attr description
+     * The card layout region defined by this element. At most one of
+     * element of each type should be specified as an immediate child of
+     * the card layout.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18615,9 +20403,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>extra</td><td>2</td><td></td></tr>
-     * <tr><td>info</td><td>1</td><td></td></tr>
-     * <tr><td>main</td><td>0</td><td></td></tr>
+     * <tr><td>extra</td><td>2</td><td>The extra region of the card.</td></tr>
+     * <tr><td>info</td><td>1</td><td>The info region of the card.</td></tr>
+     * <tr><td>main</td><td>0</td><td>The main region of the card.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:layout_viewType
@@ -18633,12 +20421,15 @@ public final class R {
      * <tr><td><code>{@link #lbBaseGridView_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #lbBaseGridView_android_horizontalSpacing android:horizontalSpacing}</code></td><td></td></tr>
      * <tr><td><code>{@link #lbBaseGridView_android_verticalSpacing android:verticalSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_focusOutEnd com.example.android.tvleanback:focusOutEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_focusOutFront com.example.android.tvleanback:focusOutFront}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_focusOutSideEnd com.example.android.tvleanback:focusOutSideEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_focusOutSideStart com.example.android.tvleanback:focusOutSideStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_horizontalMargin com.example.android.tvleanback:horizontalMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbBaseGridView_verticalMargin com.example.android.tvleanback:verticalMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_focusOutEnd com.example.android.tvleanback:focusOutEnd}</code></td><td>Allow DPAD key to navigate out at the end of the view, default is false</td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_focusOutFront com.example.android.tvleanback:focusOutFront}</code></td><td>Allow DPAD key to navigate out at the front of the View (where position = 0),
+     * default is false</td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_focusOutSideEnd com.example.android.tvleanback:focusOutSideEnd}</code></td><td>Allow DPAD key to navigate out of last row, for HorizontalGridView, it's the
+     * bottom edge, for VerticalGridView it's the "end" edge.</td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_focusOutSideStart com.example.android.tvleanback:focusOutSideStart}</code></td><td>Allow DPAD key to navigate out of first row, for HorizontalGridView, it's the
+     * top edge, for VerticalGridView it's the "start" edge.</td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_horizontalMargin com.example.android.tvleanback:horizontalMargin}</code></td><td>Deprecated, use android:horizontalSpacing</td></tr>
+     * <tr><td><code>{@link #lbBaseGridView_verticalMargin com.example.android.tvleanback:verticalMargin}</code></td><td>Deprecated, use android:verticalSpacing</td></tr>
      * </table>
      * @see #lbBaseGridView_android_gravity
      * @see #lbBaseGridView_android_horizontalSpacing
@@ -18656,8 +20447,9 @@ public final class R {
       0x7f03021d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#gravity}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Defining gravity of child view
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -18685,8 +20477,9 @@ public final class R {
      */
     public static final int lbBaseGridView_android_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#horizontalSpacing}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Defining space between two items horizontally
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18698,8 +20491,9 @@ public final class R {
      */
     public static final int lbBaseGridView_android_horizontalSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#verticalSpacing}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Defining space between two items vertically
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18711,8 +20505,9 @@ public final class R {
      */
     public static final int lbBaseGridView_android_verticalSpacing=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#focusOutEnd}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Allow DPAD key to navigate out at the end of the view, default is false
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18721,8 +20516,10 @@ public final class R {
      */
     public static final int lbBaseGridView_focusOutEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#focusOutFront}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Allow DPAD key to navigate out at the front of the View (where position = 0),
+     * default is false
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18731,8 +20528,10 @@ public final class R {
      */
     public static final int lbBaseGridView_focusOutFront=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#focusOutSideEnd}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Allow DPAD key to navigate out of last row, for HorizontalGridView, it's the
+     * bottom edge, for VerticalGridView it's the "end" edge.  Default value is true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18741,8 +20540,10 @@ public final class R {
      */
     public static final int lbBaseGridView_focusOutSideEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#focusOutSideStart}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Allow DPAD key to navigate out of first row, for HorizontalGridView, it's the
+     * top edge, for VerticalGridView it's the "start" edge.  Default value is true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18751,8 +20552,9 @@ public final class R {
      */
     public static final int lbBaseGridView_focusOutSideStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#horizontalMargin}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Deprecated, use android:horizontalSpacing
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18764,8 +20566,9 @@ public final class R {
      */
     public static final int lbBaseGridView_horizontalMargin=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#verticalMargin}
-     * attribute's value can be found in the {@link #lbBaseGridView} array.
+     * <p>
+     * @attr description
+     * Deprecated, use android:verticalSpacing
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18785,7 +20588,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #lbDatePicker_android_minDate android:minDate}</code></td><td></td></tr>
      * <tr><td><code>{@link #lbDatePicker_android_maxDate android:maxDate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbDatePicker_datePickerFormat com.example.android.tvleanback:datePickerFormat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbDatePicker_datePickerFormat com.example.android.tvleanback:datePickerFormat}</code></td><td>e.g.</td></tr>
      * </table>
      * @see #lbDatePicker_android_minDate
      * @see #lbDatePicker_android_maxDate
@@ -18815,8 +20618,9 @@ public final class R {
      */
     public static final int lbDatePicker_android_maxDate=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#datePickerFormat}
-     * attribute's value can be found in the {@link #lbDatePicker} array.
+     * <p>
+     * @attr description
+     * e.g. "MDY", "MY"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -18831,8 +20635,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbHorizontalGridView_numberOfRows com.example.android.tvleanback:numberOfRows}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbHorizontalGridView_rowHeight com.example.android.tvleanback:rowHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbHorizontalGridView_numberOfRows com.example.android.tvleanback:numberOfRows}</code></td><td>Defining number of rows</td></tr>
+     * <tr><td><code>{@link #lbHorizontalGridView_rowHeight com.example.android.tvleanback:rowHeight}</code></td><td>Defining height of each row of HorizontalGridView</td></tr>
      * </table>
      * @see #lbHorizontalGridView_numberOfRows
      * @see #lbHorizontalGridView_rowHeight
@@ -18841,8 +20645,9 @@ public final class R {
       0x7f030147, 0x7f0301a7
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#numberOfRows}
-     * attribute's value can be found in the {@link #lbHorizontalGridView} array.
+     * <p>
+     * @attr description
+     * Defining number of rows
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18850,8 +20655,9 @@ public final class R {
      */
     public static final int lbHorizontalGridView_numberOfRows=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#rowHeight}
-     * attribute's value can be found in the {@link #lbHorizontalGridView} array.
+     * <p>
+     * @attr description
+     * Defining height of each row of HorizontalGridView
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18877,8 +20683,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbImageCardView_infoAreaBackground com.example.android.tvleanback:infoAreaBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbImageCardView_lbImageCardViewType com.example.android.tvleanback:lbImageCardViewType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbImageCardView_infoAreaBackground com.example.android.tvleanback:infoAreaBackground}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #lbImageCardView_lbImageCardViewType com.example.android.tvleanback:lbImageCardViewType}</code></td><td>Defines what components the ImageCardView will use.</td></tr>
      * </table>
      * @see #lbImageCardView_infoAreaBackground
      * @see #lbImageCardView_lbImageCardViewType
@@ -18887,8 +20693,9 @@ public final class R {
       0x7f030115, 0x7f03012b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#infoAreaBackground}
-     * attribute's value can be found in the {@link #lbImageCardView} array.
+     * <p>
+     * @attr description
+     * Deprecated. Use 'imageCardViewInfoAreaStyle' instead.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18902,8 +20709,9 @@ public final class R {
      */
     public static final int lbImageCardView_infoAreaBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#lbImageCardViewType}
-     * attribute's value can be found in the {@link #lbImageCardView} array.
+     * <p>
+     * @attr description
+     * Defines what components the ImageCardView will use.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -18914,7 +20722,7 @@ public final class R {
      * <tr><td>Content</td><td>2</td><td></td></tr>
      * <tr><td>IconOnLeft</td><td>8</td><td></td></tr>
      * <tr><td>IconOnRight</td><td>4</td><td></td></tr>
-     * <tr><td>ImageOnly</td><td>0</td><td></td></tr>
+     * <tr><td>ImageOnly</td><td>0</td><td>Only display the main image.</td></tr>
      * <tr><td>Title</td><td>1</td><td></td></tr>
      * </table>
      *
@@ -19167,11 +20975,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbResizingTextView_maintainLineSpacing com.example.android.tvleanback:maintainLineSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbResizingTextView_resizeTrigger com.example.android.tvleanback:resizeTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbResizingTextView_resizedPaddingAdjustmentBottom com.example.android.tvleanback:resizedPaddingAdjustmentBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbResizingTextView_resizedPaddingAdjustmentTop com.example.android.tvleanback:resizedPaddingAdjustmentTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbResizingTextView_resizedTextSize com.example.android.tvleanback:resizedTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbResizingTextView_maintainLineSpacing com.example.android.tvleanback:maintainLineSpacing}</code></td><td>Whether to maintain the same line spacing when text is resized, default is false</td></tr>
+     * <tr><td><code>{@link #lbResizingTextView_resizeTrigger com.example.android.tvleanback:resizeTrigger}</code></td><td>Conditions used to trigger text resizing</td></tr>
+     * <tr><td><code>{@link #lbResizingTextView_resizedPaddingAdjustmentBottom com.example.android.tvleanback:resizedPaddingAdjustmentBottom}</code></td><td>Adjustment to bottom padding for resized text</td></tr>
+     * <tr><td><code>{@link #lbResizingTextView_resizedPaddingAdjustmentTop com.example.android.tvleanback:resizedPaddingAdjustmentTop}</code></td><td>Adjustment to top padding for resized text</td></tr>
+     * <tr><td><code>{@link #lbResizingTextView_resizedTextSize com.example.android.tvleanback:resizedTextSize}</code></td><td>Text size for resized text</td></tr>
      * </table>
      * @see #lbResizingTextView_maintainLineSpacing
      * @see #lbResizingTextView_resizeTrigger
@@ -19184,8 +20992,9 @@ public final class R {
       0x7f03019f
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#maintainLineSpacing}
-     * attribute's value can be found in the {@link #lbResizingTextView} array.
+     * <p>
+     * @attr description
+     * Whether to maintain the same line spacing when text is resized, default is false
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19194,8 +21003,9 @@ public final class R {
      */
     public static final int lbResizingTextView_maintainLineSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#resizeTrigger}
-     * attribute's value can be found in the {@link #lbResizingTextView} array.
+     * <p>
+     * @attr description
+     * Conditions used to trigger text resizing
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19203,15 +21013,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>maxLines</td><td>1</td><td></td></tr>
+     * <tr><td>maxLines</td><td>1</td><td>Resize text whenever it lays out into the maximum number of lines</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:resizeTrigger
      */
     public static final int lbResizingTextView_resizeTrigger=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#resizedPaddingAdjustmentBottom}
-     * attribute's value can be found in the {@link #lbResizingTextView} array.
+     * <p>
+     * @attr description
+     * Adjustment to bottom padding for resized text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19223,8 +21034,9 @@ public final class R {
      */
     public static final int lbResizingTextView_resizedPaddingAdjustmentBottom=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#resizedPaddingAdjustmentTop}
-     * attribute's value can be found in the {@link #lbResizingTextView} array.
+     * <p>
+     * @attr description
+     * Adjustment to top padding for resized text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19236,8 +21048,9 @@ public final class R {
      */
     public static final int lbResizingTextView_resizedPaddingAdjustmentTop=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#resizedTextSize}
-     * attribute's value can be found in the {@link #lbResizingTextView} array.
+     * <p>
+     * @attr description
+     * Text size for resized text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19255,10 +21068,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbSearchOrbView_searchOrbBrightColor com.example.android.tvleanback:searchOrbBrightColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbSearchOrbView_searchOrbColor com.example.android.tvleanback:searchOrbColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbSearchOrbView_searchOrbIcon com.example.android.tvleanback:searchOrbIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbSearchOrbView_searchOrbIconColor com.example.android.tvleanback:searchOrbIconColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbSearchOrbView_searchOrbBrightColor com.example.android.tvleanback:searchOrbBrightColor}</code></td><td>Defining pulse color of the search affordance</td></tr>
+     * <tr><td><code>{@link #lbSearchOrbView_searchOrbColor com.example.android.tvleanback:searchOrbColor}</code></td><td>Defining color of the search affordance</td></tr>
+     * <tr><td><code>{@link #lbSearchOrbView_searchOrbIcon com.example.android.tvleanback:searchOrbIcon}</code></td><td>Defining icon of the search affordance</td></tr>
+     * <tr><td><code>{@link #lbSearchOrbView_searchOrbIconColor com.example.android.tvleanback:searchOrbIconColor}</code></td><td>Defining icon tint color of the search affordance</td></tr>
      * </table>
      * @see #lbSearchOrbView_searchOrbBrightColor
      * @see #lbSearchOrbView_searchOrbColor
@@ -19269,8 +21082,9 @@ public final class R {
       0x7f0301b3, 0x7f0301b4, 0x7f0301b5, 0x7f0301b6
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchOrbBrightColor}
-     * attribute's value can be found in the {@link #lbSearchOrbView} array.
+     * <p>
+     * @attr description
+     * Defining pulse color of the search affordance
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19284,8 +21098,9 @@ public final class R {
      */
     public static final int lbSearchOrbView_searchOrbBrightColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchOrbColor}
-     * attribute's value can be found in the {@link #lbSearchOrbView} array.
+     * <p>
+     * @attr description
+     * Defining color of the search affordance
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19299,8 +21114,9 @@ public final class R {
      */
     public static final int lbSearchOrbView_searchOrbColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchOrbIcon}
-     * attribute's value can be found in the {@link #lbSearchOrbView} array.
+     * <p>
+     * @attr description
+     * Defining icon of the search affordance
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19311,8 +21127,9 @@ public final class R {
      */
     public static final int lbSearchOrbView_searchOrbIcon=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#searchOrbIconColor}
-     * attribute's value can be found in the {@link #lbSearchOrbView} array.
+     * <p>
+     * @attr description
+     * Defining icon tint color of the search affordance
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19335,7 +21152,7 @@ public final class R {
      * <tr><td><code>{@link #lbSlide_android_interpolator android:interpolator}</code></td><td></td></tr>
      * <tr><td><code>{@link #lbSlide_android_duration android:duration}</code></td><td></td></tr>
      * <tr><td><code>{@link #lbSlide_android_startDelay android:startDelay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbSlide_lb_slideEdge com.example.android.tvleanback:lb_slideEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbSlide_lb_slideEdge com.example.android.tvleanback:lb_slideEdge}</code></td><td>A duplication of Slide attribute slideEdge for KitKat</td></tr>
      * </table>
      * @see #lbSlide_android_interpolator
      * @see #lbSlide_android_duration
@@ -19376,8 +21193,9 @@ public final class R {
      */
     public static final int lbSlide_android_startDelay=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#lb_slideEdge}
-     * attribute's value can be found in the {@link #lbSlide} array.
+     * <p>
+     * @attr description
+     * A duplication of Slide attribute slideEdge for KitKat
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19385,12 +21203,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Slide to and from the bottom edge of the Scene.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Slide to and from the x-axis position at the end of the Scene root.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Slide to and from the left edge of the Scene.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Slide to and from the right edge of the Scene.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Slide to and from the x-axis position at the start of the Scene root.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Slide to and from the top edge of the Scene.</td></tr>
      * </table>
      *
      * @attr name com.example.android.tvleanback:lb_slideEdge
@@ -19403,8 +21221,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbTimePicker_is24HourFormat com.example.android.tvleanback:is24HourFormat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbTimePicker_useCurrentTime com.example.android.tvleanback:useCurrentTime}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbTimePicker_is24HourFormat com.example.android.tvleanback:is24HourFormat}</code></td><td>attr indicating whether time is in 24 hour format (true) or AM/PM format (false).</td></tr>
+     * <tr><td><code>{@link #lbTimePicker_useCurrentTime com.example.android.tvleanback:useCurrentTime}</code></td><td>attr indicating whether time fields should be initially set to the current time.</td></tr>
      * </table>
      * @see #lbTimePicker_is24HourFormat
      * @see #lbTimePicker_useCurrentTime
@@ -19413,8 +21231,9 @@ public final class R {
       0x7f030119, 0x7f03021a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#is24HourFormat}
-     * attribute's value can be found in the {@link #lbTimePicker} array.
+     * <p>
+     * @attr description
+     * attr indicating whether time is in 24 hour format (true) or AM/PM format (false).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19423,8 +21242,10 @@ public final class R {
      */
     public static final int lbTimePicker_is24HourFormat=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#useCurrentTime}
-     * attribute's value can be found in the {@link #lbTimePicker} array.
+     * <p>
+     * @attr description
+     * attr indicating whether time fields should be initially set to the current time.
+     * By default, it's true i.e. TimePicker initializes fields with the current time.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19439,8 +21260,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #lbVerticalGridView_columnWidth com.example.android.tvleanback:columnWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #lbVerticalGridView_numberOfColumns com.example.android.tvleanback:numberOfColumns}</code></td><td></td></tr>
+     * <tr><td><code>{@link #lbVerticalGridView_columnWidth com.example.android.tvleanback:columnWidth}</code></td><td>Defining width of each column of VerticalGridView</td></tr>
+     * <tr><td><code>{@link #lbVerticalGridView_numberOfColumns com.example.android.tvleanback:numberOfColumns}</code></td><td>Defining number of columns</td></tr>
      * </table>
      * @see #lbVerticalGridView_columnWidth
      * @see #lbVerticalGridView_numberOfColumns
@@ -19449,8 +21270,9 @@ public final class R {
       0x7f030073, 0x7f030146
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#columnWidth}
-     * attribute's value can be found in the {@link #lbVerticalGridView} array.
+     * <p>
+     * @attr description
+     * Defining width of each column of VerticalGridView
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19470,8 +21292,9 @@ public final class R {
      */
     public static final int lbVerticalGridView_columnWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.tvleanback.R.attr#numberOfColumns}
-     * attribute's value can be found in the {@link #lbVerticalGridView} array.
+     * <p>
+     * @attr description
+     * Defining number of columns
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *

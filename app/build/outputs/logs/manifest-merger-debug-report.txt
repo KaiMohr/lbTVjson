@@ -29,21 +29,21 @@ ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifes
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:16:1-142:12
-MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/04d8c63c22aa1a584173ab629f3a2d5c/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.leanback:leanback:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-1.0.0.aar/556d63cea119e195f3d9700b59aa4280/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-preference-v14:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/legacy-preference-v14-1.0.0.aar/236ab192d4779ab69bcd455e0390459c/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.preference:preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/31aaf3654a19e2d508238c9f55bf8539/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recyclerview-1.1.0.aar/1b85b31b9146e9223055d7795af2ad4c/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:2:1-12:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/cfe7f89f70dc30d19bd3ca080b5a2fb6/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/9c27d8b3a3952bc6d9caf98376284265/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/133346f3049867074cf02ad9e3612db9/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/116f8d578fae5970c644e93dd614d800/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/f25579dcfc84b8ffb0e69e78eac4b343/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/e8bf52607da1e9de16314c984867ed49/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/08b36b7eee533ff659254590fda59eb3/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/b4e1e15811b76d07ce229c1ceab9b5a2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2fb140f88b208318b969ac18a3255ef1/AndroidManifest.xml:17:1-22:12
@@ -122,10 +122,10 @@ ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifes
 		ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:36:9-49
 application
 ADDED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml:39:5-140:19
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/cfe7f89f70dc30d19bd3ca080b5a2fb6/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/cfe7f89f70dc30d19bd3ca080b5a2fb6/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/9c27d8b3a3952bc6d9caf98376284265/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/9c27d8b3a3952bc6d9caf98376284265/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/1de4c5f29e515f92989bacdcd77ba4ed/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/3a104d179607f81862255dc05acfcaac/AndroidManifest.xml:24:5-25:19
@@ -290,8 +290,8 @@ uses-sdk
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
 INJECTED from /Users/kai/AndroidStudioProjects/lbTVjson/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/b825a3605655ebd854ca2e841edd6280/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/04d8c63c22aa1a584173ab629f3a2d5c/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:extension-leanback:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-extension-leanback-2.6.1.aar/04d8c63c22aa1a584173ab629f3a2d5c/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:20:5-44
 MERGED from [androidx.leanback:leanback-preference:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-preference-1.0.0.aar/05fab8e0c10fd1398e3b0a3e878700ee/AndroidManifest.xml:20:5-44
 MERGED from [androidx.leanback:leanback:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/leanback-1.0.0.aar/556d63cea119e195f3d9700b59aa4280/AndroidManifest.xml:20:5-44
@@ -304,22 +304,22 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recyclerview-1.1.0.aar/1b85b31b9146e9223055d7795af2ad4c/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recommendation:recommendation:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/recommendation-1.0.0.aar/0c5d1b3456d29183669cca137ebd6685/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/d92e1df0d11e5efe1e2e23a415ce334e/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/b0cb1762f09960465f0edfb15fd866b0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/cfe7f89f70dc30d19bd3ca080b5a2fb6/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/cfe7f89f70dc30d19bd3ca080b5a2fb6/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/9c27d8b3a3952bc6d9caf98376284265/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/9c27d8b3a3952bc6d9caf98376284265/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.android.exoplayer:exoplayer:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/exoplayer-2.6.1.aar/209ed86584b591cbd956ca69d0dd1631/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/061272c6fcd24d82b822641d131d3da8/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/77f0317164e14b72b3c7cdef6db8789d/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/afaa4bb27a6b09a417dd504231ad1a55/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/f23cf56975cf98d9b78f1bdf29bba095/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/133346f3049867074cf02ad9e3612db9/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-dash-2.6.1.aar/133346f3049867074cf02ad9e3612db9/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/116f8d578fae5970c644e93dd614d800/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-hls-2.6.1.aar/116f8d578fae5970c644e93dd614d800/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/f25579dcfc84b8ffb0e69e78eac4b343/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-smoothstreaming-2.6.1.aar/f25579dcfc84b8ffb0e69e78eac4b343/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/e8bf52607da1e9de16314c984867ed49/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/e8bf52607da1e9de16314c984867ed49/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/08b36b7eee533ff659254590fda59eb3/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.6.1.aar/08b36b7eee533ff659254590fda59eb3/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/kai/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/b4e1e15811b76d07ce229c1ceab9b5a2/AndroidManifest.xml:20:5-44

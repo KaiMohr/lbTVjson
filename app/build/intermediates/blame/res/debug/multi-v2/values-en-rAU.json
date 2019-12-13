@@ -4,6 +4,23 @@
             "outputFile": "/Users/kai/AndroidStudioProjects/lbTVjson/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
+                    "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/e8bf52607da1e9de16314c984867ed49/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,135,206,273,338,417,494,572,649,718,789",
+                        "endColumns": "79,70,66,64,78,76,77,76,68,70,64",
+                        "endOffsets": "130,201,268,333,412,489,567,644,713,784,849"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2764,2844,2915,2982,3047,3126,3203,3281,3358,3427,3498",
+                        "endColumns": "79,70,66,64,78,76,77,76,68,70,64",
+                        "endOffsets": "2839,2910,2977,3042,3121,3198,3276,3353,3422,3493,3558"
+                    }
+                },
+                {
                     "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -69,23 +86,6 @@
                         "startOffsets": "3563,8054,8223,8303",
                         "endColumns": "86,168,79,75",
                         "endOffsets": "3645,8218,8298,8374"
-                    }
-                },
-                {
-                    "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,135,206,273,338,417,494,572,649,718,789",
-                        "endColumns": "79,70,66,64,78,76,77,76,68,70,64",
-                        "endOffsets": "130,201,268,333,412,489,567,644,713,784,849"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2764,2844,2915,2982,3047,3126,3203,3281,3358,3427,3498",
-                        "endColumns": "79,70,66,64,78,76,77,76,68,70,64",
-                        "endOffsets": "2839,2910,2977,3042,3121,3198,3276,3353,3422,3493,3558"
                     }
                 }
             ]

@@ -4,6 +4,23 @@
             "outputFile": "/Users/kai/AndroidStudioProjects/lbTVjson/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
+                    "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/e8bf52607da1e9de16314c984867ed49/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,189,253,316,384,457,529,604,669,737",
+                        "endColumns": "69,63,63,62,67,72,71,74,64,67,62",
+                        "endOffsets": "120,184,248,311,379,452,524,599,664,732,795"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2666,2736,2800,2864,2927,2995,3068,3140,3215,3280,3348",
+                        "endColumns": "69,63,63,62,67,72,71,74,64,67,62",
+                        "endOffsets": "2731,2795,2859,2922,2990,3063,3135,3210,3275,3343,3406"
+                    }
+                },
+                {
                     "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/7f3525ca678d917995faf46e5a4a5983/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -69,23 +86,6 @@
                         "startOffsets": "7473",
                         "endColumns": "100",
                         "endOffsets": "7569"
-                    }
-                },
-                {
-                    "source": "/Users/kai/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-ui-2.6.1.aar/1e961304204fc1dda2c3a1a27eb7d218/res/values-zh-rCN/values-zh-rCN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,189,253,316,384,457,529,604,669,737",
-                        "endColumns": "69,63,63,62,67,72,71,74,64,67,62",
-                        "endOffsets": "120,184,248,311,379,452,524,599,664,732,795"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2666,2736,2800,2864,2927,2995,3068,3140,3215,3280,3348",
-                        "endColumns": "69,63,63,62,67,72,71,74,64,67,62",
-                        "endOffsets": "2731,2795,2859,2922,2990,3063,3135,3210,3275,3343,3406"
                     }
                 }
             ]
