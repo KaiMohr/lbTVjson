@@ -148,11 +148,6 @@
         <activity
             android:name="com.example.android.tvleanback.ui.AuthenticationActivity"
             android:theme="@style/Theme.Example.Leanback.GuidedStep" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.android.tvleanback.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

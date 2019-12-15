@@ -1595,9 +1595,9 @@ public final class R {
         public static final int transport_row = 0x7f090181;
         public static final int uniform = 0x7f090182;
         public static final int up = 0x7f090183;
-        public static final int video_surface = 0x7f090186;
-        public static final int video_surface_container = 0x7f090187;
-        public static final int wrap_content = 0x7f090189;
+        public static final int video_surface = 0x7f090187;
+        public static final int video_surface_container = 0x7f090188;
+        public static final int wrap_content = 0x7f09018a;
     }
     public static final class integer {
         private integer() {}
@@ -1779,7 +1779,7 @@ public final class R {
         public static final int select_dialog_multichoice_material = 0x7f0b008d;
         public static final int select_dialog_singlechoice_material = 0x7f0b008e;
         public static final int support_simple_spinner_dropdown_item = 0x7f0b0090;
-        public static final int video_surface_fragment = 0x7f0b0092;
+        public static final int video_surface_fragment = 0x7f0b0093;
     }
     public static final class raw {
         private raw() {}
@@ -1874,8 +1874,8 @@ public final class R {
         public static final int search_menu_title = 0x7f0d009b;
         public static final int status_bar_notification_info_overflow = 0x7f0d009e;
         public static final int summary_collapsed_preference_list = 0x7f0d009f;
-        public static final int v7_preference_off = 0x7f0d00a0;
-        public static final int v7_preference_on = 0x7f0d00a1;
+        public static final int v7_preference_off = 0x7f0d00a1;
+        public static final int v7_preference_on = 0x7f0d00a2;
     }
     public static final class style {
         private style() {}

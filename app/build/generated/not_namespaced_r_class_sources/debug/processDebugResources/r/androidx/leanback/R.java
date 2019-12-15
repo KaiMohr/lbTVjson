@@ -891,9 +891,9 @@ public final class R {
         public static final int total_time = 0x7f09017f;
         public static final int transitionPosition = 0x7f090180;
         public static final int transport_row = 0x7f090181;
-        public static final int video_surface = 0x7f090186;
-        public static final int video_surface_container = 0x7f090187;
-        public static final int wrap_content = 0x7f090189;
+        public static final int video_surface = 0x7f090187;
+        public static final int video_surface_container = 0x7f090188;
+        public static final int wrap_content = 0x7f09018a;
     }
     public static final class integer {
         private integer() {}
@@ -1013,7 +1013,7 @@ public final class R {
         public static final int notification_template_media_custom = 0x7f0b0077;
         public static final int notification_template_part_chronometer = 0x7f0b0078;
         public static final int notification_template_part_time = 0x7f0b0079;
-        public static final int video_surface_fragment = 0x7f0b0092;
+        public static final int video_surface_fragment = 0x7f0b0093;
     }
     public static final class raw {
         private raw() {}

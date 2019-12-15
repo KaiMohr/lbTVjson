@@ -723,7 +723,7 @@ public final class R {
         public static final int topPanel = 0x7f09017e;
         public static final int uniform = 0x7f090182;
         public static final int up = 0x7f090183;
-        public static final int wrap_content = 0x7f090189;
+        public static final int wrap_content = 0x7f09018a;
     }
     public static final class integer {
         private integer() {}

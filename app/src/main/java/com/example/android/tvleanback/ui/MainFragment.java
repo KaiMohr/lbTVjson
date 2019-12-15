@@ -17,15 +17,19 @@
 package com.example.android.tvleanback.ui;
 
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.core.content.IntentCompat;
 import androidx.leanback.app.BackgroundManager;
 import androidx.leanback.app.BrowseSupportFragment;
 import androidx.leanback.widget.ArrayObjectAdapter;
@@ -59,6 +63,7 @@ import com.example.android.tvleanback.data.FetchVideoService;
 import com.example.android.tvleanback.data.VideoContract;
 import com.example.android.tvleanback.data.VideoDbBuilder;
 import com.example.android.tvleanback.data.VideoDbHelper;
+import com.example.android.tvleanback.mobile.MobileWelcomeActivity;
 import com.example.android.tvleanback.model.Video;
 import com.example.android.tvleanback.model.VideoCursorMapper;
 import com.example.android.tvleanback.presenter.CardPresenter;
@@ -122,32 +127,6 @@ public class MainFragment extends BrowseSupportFragment
         mCategoryRowAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         setAdapter(mCategoryRowAdapter);
 
-        new AlertDialog.Builder(getActivity())
-                .setTitle("aktualisieren ?")
-                .setPositiveButton("JA", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // User chose YES
-                        Log.i("info", "kai I am updating");
-
-                        try {
-
-                            resetAndRedownloadDatabase();
-
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                })
-                .setNegativeButton("Nein", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        // User chose NO
-                    }
-                })
-                .create().show();
-
-
         // updateRecommendations();
     }
 
@@ -160,41 +139,7 @@ public class MainFragment extends BrowseSupportFragment
 
     @Override
     public void onStop() {
-
         Log.i("info", "kai I am on stop");
-        new AlertDialog.Builder(getActivity())
-                .setTitle("aktualisieren ?")
-                .setPositiveButton("JA", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // User chose YES
-                        Log.i("info", "kai I am updating");
-
-                        try {
-
-                            resetAndRedownloadDatabase();
-
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                })
-                .setNegativeButton("Nein", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        // User chose NO
-                    }
-                })
-                .create().show();
-
-
-//        try {
-//
-//         resetAndRedownloadDatabase();
-//
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
 
         mBackgroundManager.release();
         super.onStop();
@@ -207,17 +152,11 @@ public class MainFragment extends BrowseSupportFragment
         this.onCreate(null);
         Log.i("info", "kai I have resumed");
 
-
-
-
     }
 
     public void resetAndRedownloadDatabase() throws InterruptedException {
         Log.i("info", "kai I have video");
-
-
         mContext = getContext();
-
         VideoDbHelper mVideoDbHelper = new VideoDbHelper(mContext);
         // Clear database by downgrading
         mVideoDbHelper.onDowngrade(mVideoDbHelper.getReadableDatabase(), 4, 0);
@@ -240,60 +179,60 @@ public class MainFragment extends BrowseSupportFragment
                 null
         );
 
-
         mCursor.close();
-//        try {
-//
-//            mContext.startService(new Intent(mContext, FetchVideoService.class));
-//            Log.i("info", "kai thread sleeping");
+        Toast.makeText(getActivity(), ((String) "start"), Toast.LENGTH_SHORT)
+                .show();
+        try {
 
-//           Thread.sleep(1000*20);
-//            mCursor = mVideoDbHelper.getReadableDatabase().query(
-//                    VideoContract.VideoEntry.TABLE_NAME,
-//                    queryColumns,
-//                    null,
-//                    null,
-//                    null,
-//                    null,
-//                    null
-//            );
-//            Log.i("info", "kai cursor close");
-//            mCursor.close();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//            throw new InterruptedException("Thread was interrupted, cannot check download");
-//        }
+            mContext.startService(new Intent(mContext, FetchVideoService.class));
+            Log.i("info", "kai thread sleeping");
 
-//
+           Thread.sleep(100*20);
+            mCursor = mVideoDbHelper.getReadableDatabase().query(
+                    VideoContract.VideoEntry.TABLE_NAME,
+                    queryColumns,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+            );
+            mCursor.close();
+            Log.i("info", "kai cursor close");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            throw new InterruptedException("Thread was interrupted, cannot check download");
+        }
 
 
-//
-//
-//        Intent videoHelperVideoIntent = new Intent(getActivity(), VideoDbHelper.class);
-//
-//        getActivity().startService(videoHelperVideoIntent);
 
-     //  videoHelperVideoIntent.getData();
-//
-//
+        Intent videoHelperVideoIntent = new Intent(getActivity(), VideoDbHelper.class);
 
+        getActivity().startService(videoHelperVideoIntent);
+        Log.i("info", "kai get data");
+       videoHelperVideoIntent.getData();
+
+        Log.i("info", "kai done");
+        Toast.makeText(getActivity(), ((String) "fertig"), Toast.LENGTH_SHORT)
+                .show();
+
+        //
+        //
+      Runtime.getRuntime().exit(0);
+        //
+        //
 //
 //        Intent buildVideoIntent = new Intent(getActivity(), VideoDbBuilder.class);
 //        getActivity().startService(buildVideoIntent);
 //        buildVideoIntent.getData();
 
-
 //        Intent videoProvider = new Intent(getActivity(), VideoProvider.class);
 //        getActivity().startService(videoProvider);
-//
-//        Intent fetchVideoIntent = new Intent(getActivity(), FetchVideoService.class);
-//        getActivity().startService(fetchVideoIntent);
 
+ //       Intent fetchVideoIntent = new Intent(getActivity(), FetchVideoService.class);
+ //       getActivity().startService(fetchVideoIntent);
 
-
-//
     }
-
 
     private void prepareBackgroundManager() {
         mBackgroundManager = BackgroundManager.getInstance(getActivity());
@@ -305,11 +244,11 @@ public class MainFragment extends BrowseSupportFragment
     }
 
     private void setupUIElements() {
-        setBadgeDrawable(
-                getActivity().getResources().getDrawable(R.drawable.videos_by_google_banner, null));
-        setTitle(getString(R.string.browse_title)); // Badge, when set, takes precedent over title
-        setHeadersState(HEADERS_ENABLED);
-        setHeadersTransitionOnBackEnabled(true);
+        // kai removed banner
+        // setBadgeDrawable(getActivity().getResources().getDrawable(R.drawable.videos_by_google_banner, null));
+        // setTitle(getString(R.string.browse_title)); // Badge, when set, takes precedent over title
+        //  setHeadersState(HEADERS_ENABLED);
+        //  setHeadersTransitionOnBackEnabled(true);
 
         // Set fastLane (or headers) background color
         setBrandColor(ContextCompat.getColor(getActivity(), R.color.fastlane_background));
@@ -449,10 +388,12 @@ public class MainFragment extends BrowseSupportFragment
                 HeaderItem gridHeader = new HeaderItem(getString(R.string.more_samples));
                 GridItemPresenter gridPresenter = new GridItemPresenter(this);
                 ArrayObjectAdapter gridRowAdapter = new ArrayObjectAdapter(gridPresenter);
-                gridRowAdapter.add(getString(R.string.grid_view));
-                gridRowAdapter.add(getString(R.string.guidedstep_first_title));
-                gridRowAdapter.add(getString(R.string.error_fragment));
-                gridRowAdapter.add(getString(R.string.personal_settings));
+               // removed by kai
+                // gridRowAdapter.add(getString(R.string.grid_view));
+               // gridRowAdapter.add(getString(R.string.guidedstep_first_title));
+               // gridRowAdapter.add(getString(R.string.error_fragment));
+                gridRowAdapter.add(getString(R.string.update_settings));
+               // gridRowAdapter.add(getString(R.string.personal_settings));
                 ListRow row = new ListRow(gridHeader, gridRowAdapter);
                 mCategoryRowAdapter.add(row);
 
@@ -527,6 +468,36 @@ public class MainFragment extends BrowseSupportFragment
                             ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity())
                                     .toBundle();
                     startActivity(intent, bundle);
+                } else if (((String) item).contains(getString(R.string.update_settings))) {
+
+                    new AlertDialog.Builder(getActivity())
+                            .setTitle("Aktualisiernen. Die App muss anschielssend neu geoeffnet werdem")
+                            .setPositiveButton("JA", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // User chose YES
+                                    Log.i("info", "kai I am updating");
+                                    try {
+                                        resetAndRedownloadDatabase();
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            })
+                            .setNegativeButton("Nein", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    // User chose NO
+                                }
+                            })
+                            .create().show();
+
+
+//                        Intent intent = new Intent(getActivity(), UpdateActivity.class);
+//                        Bundle bundle =
+//                                ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity())
+//                                        .toBundle();
+//                        startActivity(intent, bundle);
                 } else {
                     Toast.makeText(getActivity(), ((String) item), Toast.LENGTH_SHORT)
                             .show();

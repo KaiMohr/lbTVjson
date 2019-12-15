@@ -18,6 +18,7 @@ package com.example.android.tvleanback.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.android.tvleanback.R;
 
@@ -26,5 +27,6 @@ public class SettingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_fragment);
+        Log.i("info", "kai I am in the settings fragment");
     }
 }

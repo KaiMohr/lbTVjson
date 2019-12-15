@@ -816,7 +816,7 @@ public final class R {
         public static final int topPanel = 0x7f09017e;
         public static final int uniform = 0x7f090182;
         public static final int up = 0x7f090183;
-        public static final int wrap_content = 0x7f090189;
+        public static final int wrap_content = 0x7f09018a;
     }
     public static final class integer {
         private integer() {}
@@ -932,8 +932,8 @@ public final class R {
         public static final int search_menu_title = 0x7f0d009b;
         public static final int status_bar_notification_info_overflow = 0x7f0d009e;
         public static final int summary_collapsed_preference_list = 0x7f0d009f;
-        public static final int v7_preference_off = 0x7f0d00a0;
-        public static final int v7_preference_on = 0x7f0d00a1;
+        public static final int v7_preference_off = 0x7f0d00a1;
+        public static final int v7_preference_on = 0x7f0d00a2;
     }
     public static final class style {
         private style() {}
